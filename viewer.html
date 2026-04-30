@@ -309,7 +309,7 @@ const GRAPH_DATA = {
       "sector": "technology",
       "industry": "software_application",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "SaaS compounder at value multiples with AI cannibalization overhang and CEO transition. Main DR verdict BUY 6/10 downgraded to WEAKENED 4/10 by 3-agent critical review (April 12, 2026). Watching Q2 FY2026 NNDMA (June 11, 2026) as thesis-defining catalyst \u2014 miss below $380M triggers exit; beat above $420M unlocks re-rating path.",
       "thesis": {
         "verdict": "WEAKENED",
@@ -344,12 +344,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 243.09,
-        "delta_1d": 1.58,
-        "delta_1w": -1.65,
-        "delta_1m": 3.51,
+        "price": 243.57,
+        "delta_1d": 0.15,
+        "delta_1w": -4.83,
+        "delta_1m": 1.01,
         "pe_forward": 9.4,
-        "market_cap_B": 100.8
+        "market_cap_B": 100.8,
+        "pct_from_52w_high": -31.87,
+        "pct_from_52w_low": 8.09,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -530,6 +533,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +0.15% to $243.57; alpha mild. No fresh ADBE-specific catalyst today. META Q1 capex raised to $125-145B; stock -6% AH on the print = SECOND CONSECUTIVE DATAPOINT questioning the AI-cannibalization premise on Adobe's prosumer franchise (consistent with 2026-04-28 inversion thesis). What was a one-session anomaly is becoming a two-session pattern \u2014 not yet a regime, but rate of confirming evidence accelerating. Vanguard 13G routine.",
+          "sources": [
+            "news-intel.md Agent A D/ADBE",
+            "market-action.md Agent B"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [
@@ -538,9 +552,9 @@ const GRAPH_DATA = {
           "type": "competitive_threat",
           "context": "ADBE has DUAL exposure to ai_disruption \u2014 critical review framing makes threat channel primary. THREAT (primary, per critical review): Firefly cannibalizing Adobe Stock at ~$70M/qtr (~$280M annualized on $450M/yr book) per Narayen's explicit admission 'the stock business is about a $450 million book of business' and Wadhwani's 'This shift is playing out more quickly than we had planned for.' Agent 2 finding: Firefly is net-negative \u2014 $200-400M/yr incremental GPU inference costs vs. $250M ARR = loss leader; cost of subscription revenue growing 13% vs 11% revenue growth confirms margin compression has begun; blended GM could breach 85% by FY28-29 as Firefly scales. External threats: Midjourney ($500M rev / 107 employees = 30x better capital efficiency than Firefly), Canva (95% F500 penetration, $4B ARR growing 35%), OpenAI/Sora, Apple $12.99 Creator Studio. BENEFICIARY (secondary, preserved per Tradecraft rule 1 'never average'): Firefly sub+credit-pack ARR grew 75% QoQ, Enterprise new customer acquisition +50% YoY, generative credit consumption +45% QoQ; Acrobat AI Assistant MAU doubled, ARR tripled YoY; Narayen (transcript): AI is 'additive to the opportunity' like iOS/Android/browser before it. Tension: whether Firefly revenue growth outruns Creative Cloud legacy erosion is 'the defining dynamic of the next 3 years' per Section 11 Achilles heel. Critical review made threat channel thesis-central (WEAKENED 4/10 downgrade directly references AI cannibalization + Firefly unit economics).",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 4.0,
-          "weight": 10.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 5.0,
+          "weight": 10,
           "source": "deep_research_reports/ADBE_Q1_FY2026_opus_v2.md"
         }
       ],
@@ -898,7 +912,7 @@ const GRAPH_DATA = {
       "sector": "basic_materials",
       "industry": "gold",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Canadian senior gold producer; gold hedge watch, low-jurisdictional-risk mining profile.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -910,10 +924,13 @@ const GRAPH_DATA = {
         "revenue_growth": 60.3
       },
       "current": {
-        "price": 189.08,
-        "delta_1d": -4.57,
-        "delta_1w": -6.9,
-        "delta_1m": -2.23
+        "price": 183.56,
+        "delta_1d": -3.0,
+        "delta_1w": -10.05,
+        "delta_1m": -4.33,
+        "pct_from_52w_high": -27.21,
+        "pct_from_52w_low": 18.22,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -935,6 +952,16 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -3.00% to $183.56; alpha ~-1pp vs gold-miner cluster. Earnings released after market close 2026-04-29 (107.2% YoY EPS growth expected). Pre-print positioning unwind on FOMC day. Same pattern as NEM (-2.08%): gold spot +2.0% but mining-equity beta did not follow \u2014 gold-equity-vs-spot decoupling (Apr 28 \u00a7F-2 reopened today: spot reverses, equity-side breakdown PERSISTS). Equity-side cycle decoupling worth tracking.",
+          "sources": [
+            "market-action.md Agent B Section B + E + F"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [],
@@ -946,7 +973,7 @@ const GRAPH_DATA = {
       "name": "Generative AI Disruption / Adoption Cycle",
       "type": "macro",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Generative AI (foundation models, agentic workflows, hardware demand) as a cross-sector disruption vector with DIRECTIONAL HETEROGENEITY across the Tier 1 cohort. Five verified edges span three polarity types: clean BENEFICIARY (MU \u2014 HBM/DRAM demand from AI accelerators; BBY \u2014 AI PC refresh cycle; WMT \u2014 Sparky AI personalization driving e-commerce flywheel), clean THREAT-PRIMARY with DUAL exposure (ADBE \u2014 Firefly cannibalizing Adobe Stock $70M/qtr while also growing AI-first ARR $250M+), and GENUINELY AMBIGUOUS DUAL (PAYX \u2014 500+ AI features driving margin expansion AS ENABLER + Gusto/Rippling + AI agent substitution AS THREAT over 3-5 years). This is the first macro in the graph where single-polarity cascades cannot be assumed \u2014 cascade logic must honor directionality. Edge context explicitly tags direction in every edge.",
       "current": {
         "hyperscaler_ai_capex_growth_yoy_2026": "~50-70% (per MU transcript-cited NVIDIA/hyperscaler capex guidance; no single precise number in source reports)",
@@ -1048,6 +1075,18 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Mag-7 earnings post-close 2026-04-29: META Q1 revenue $56.31B (+33%); FY26 capex raised to $125-145B; STOCK -6% AH on the print. GOOGL Q1 EPS $5.11 vs $2.62 est (massive beat); revenue $109.9B; Cloud +63% YoY ($20.03B); FY26 capex raised to $180-190B. MSFT FY26 Q3 EPS $4.27 / revenue $82.89B; AI run-rate $37B (+123% YoY); Azure +40%; commercial bookings +112%. CROSS-CUTTING SIGNAL: three of four mega-cap CapEx announcements came in HIGHER than prior guides AND the market is now PENALIZING AI capex-up at the largest names (META -6%) \u2014 the OPPOSITE of the Q4 2025 / Q1 2026 reflex of rewarding it. Second confirming datapoint in three sessions calling consensus into question (after OpenAI WSJ revenue/user miss 2026-04-28). The flip side of the OpenAI demand-shock: spending is going UP at the same time the demand pull is being questioned, and the market is starting to price the gap. Microsoft-OpenAI revenue-share cap restructured 2026-04-27 (Bloomberg / CNBC) \u2014 AI-economics being formally re-papered in real time. Cascade transmission targets per existing edges: ADBE (competitive threat \u2014 second confirming inversion datapoint), MU (memory beneficiary but consensus turn risk).",
+          "sources": [
+            "news-intel.md Agent A B8 + D + E",
+            "market-action.md Agent B Section A + C/MU + Promotion Candidates",
+            "Meta IR; Alphabet IR; Microsoft IR; CNBC; Bloomberg"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [
@@ -1195,7 +1234,7 @@ const GRAPH_DATA = {
       "sector": "consumer_cyclical",
       "industry": "specialty_retail",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Mature consumer electronics retailer at value multiples with legitimate near-term catalysts (AI PC refresh, retail media) and legitimate structural risks (Amazon share gains, tariffs, margin fragility). Critical review (2026-04-26) WEAKENED DR's HOLD 5/10 to HOLD 3/10 - 38 of 50 stress-test questions returned bearish across 8 investing frameworks. Tier 1 \u2192 Tier 2 demoted. Sole bull data point: Bonfig Canada operational track record (Q2 FY26 +11.3% vs US +0.9%). Most damning structural finding: real net income HALVED over 14 years ($1.31B FY12 \u2192 $1.07B FY26 nominal; -45% real). EPS 'growth' is buyback financial engineering (share count -42% over decade). Single key risk: Q1 FY27 print May 29 (50-55% miss probability per Agent 2 SD2; February already -1%). Position guidance: 0% new initiation; existing holders TRIM to \u22641%; $52 hard technical stop. The cheapness is structural, not opportunistic.",
       "thesis": {
         "verdict": "HOLD",
@@ -1225,12 +1264,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 59.065,
-        "delta_1d": -0.35,
-        "delta_1w": -11.3,
-        "delta_1m": -6.22,
+        "price": 58.73,
+        "delta_1d": -0.64,
+        "delta_1w": -7.56,
+        "delta_1m": -8.11,
         "pe_forward": 9.49,
-        "market_cap_B": 14.0
+        "market_cap_B": 14.0,
+        "pct_from_52w_high": -27.37,
+        "pct_from_52w_low": 0.0,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -1376,6 +1418,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -0.64% to $58.73 (-7.56% 1w; -8.11% 1m). No fresh BBY-specific news. Best Buy CEO succession (Jason Bonfig succeeds Corie Barry end Q3 2026-10-31) already in prior context. Vanguard 13G routine.",
+          "sources": [
+            "sec-intel.md Agent C Section A/BBY",
+            "news-intel.md Agent A F/BBY"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
         }
       ],
       "edges": [
@@ -1394,9 +1447,9 @@ const GRAPH_DATA = {
           "type": "macro_sensitivity",
           "context": "Per DR Section 2 (headwinds) and Section 5 Exchange 1 (CEO Corie Barry verbatim): 'China accounts for 30-35% of merchandise (down from ~55% previous years), ~25% from US/Mexico (no tariff impact), ~40% from other countries subject to 10% tariffs.' DR Section 11 Kill Sheet: '75% of Best Buy's merchandise is imported. A 20%+ tariff on Chinese goods is a direct margin hit. Best Buy can't raise prices without losing volume to Amazon (who absorbs tariffs at scale). They can't absorb costs without destroying their 5% operating margin. It's a lose-lose.' DR explicitly names tariffs as the 'detonator' in fatal combination (tariff margin compression + AI PC delay + Amazon share gains = $35 stock). Channel is DIRECT COGS (d=1) \u2014 BBY imports merchandise directly or through vendors with costs passed through; tariffs compress GM on 5% operating margin. CEO called price hikes 'the very last resort' \u2014 confirms BBY cannot pass through without volume loss. Directional-negative exposure (tariffs HURT BBY), same direction as WMT d=1 and DLTR d=1 direct import channels. Transcript UPDATE (Mar 3, 2026 call): CEO Barry per Nagel Q&A said 'Recent Supreme Court ruling led to lower effective tariff rate for our products at this point. And at this point, we have not modeled major impacts to our year based on that' \u2014 meaningful mitigation vs. DR framing, but structural exposure remains material per DR Section 2. DR vs transcript tension surfaces in extraction report.",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 2.0,
-          "weight": 6.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 3.0,
+          "weight": 9.0,
           "source": "deep_research_reports/BBY_Q4_FY2026_opus.md"
         },
         {
@@ -1676,7 +1729,7 @@ const GRAPH_DATA = {
       "sector": "energy",
       "industry": "uranium",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Largest publicly-traded uranium producer; nuclear renaissance and AI-datacenter power demand thesis.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -1688,10 +1741,13 @@ const GRAPH_DATA = {
         "revenue_growth": 1.5
       },
       "current": {
-        "price": 116.25,
-        "delta_1d": -5.57,
-        "delta_1w": -0.31,
-        "delta_1m": 11.86
+        "price": 114.29,
+        "delta_1d": -1.74,
+        "delta_1w": -9.63,
+        "delta_1m": 11.13,
+        "pct_from_52w_high": -14.77,
+        "pct_from_52w_low": 44.15,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -1733,6 +1789,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -1.74% to $114.29; uranium complex unwound after April rally (UUUU -4.91%, URA -2.47%); positioning trim. Cameco India 22M-pound, ~$2.6B uranium supply deal (deliveries 2027-2035) confirmed by StockTitan \u2014 anchors CCJ pricing power into contracted-volume framework against 78GW under construction globally per IEA 2026 Global Energy Review.",
+          "sources": [
+            "market-action.md Agent B Section B/D",
+            "news-intel.md Agent A D/CCJ"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [],
@@ -1747,7 +1814,7 @@ const GRAPH_DATA = {
       "sector": "consumer_cyclical",
       "industry": "travel_services",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Cruise-oligopoly leader (Q1 FY2026 record revenues $6.2B, 85% of 2026 booked, $8B customer deposits, $2.5B buyback, Fitch IG BBB-) colliding with $26.6B COVID debt, zero fuel hedging into multi-quarter Hormuz crisis (Brent >$100, Baker Hughes flags H2 2026 reopen), $1B 5.75% convertible due Dec 2027 dilution overhang, and CFO Feb-2026 76% position sale (likely 10b5-1 per Form 144). Post-critical-review (2026-04-26): HOLD 5/10 CONFIRMED at conviction floor; probability-weighted return tightens to 1.05-1.10x (below 1.5x BUY threshold). Stays Tier 1. No new initiation at $27.17; existing 2-3% holders with implicit stop at $22. Watch Q2 2026 yields (June) and Hormuz oil curve.",
       "thesis": {
         "verdict": "HOLD",
@@ -1775,12 +1842,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 26.27,
-        "delta_1d": -1.87,
-        "delta_1w": -3.98,
-        "delta_1m": 8.6,
+        "price": 25.58,
+        "delta_1d": -2.74,
+        "delta_1w": -5.05,
+        "delta_1m": 6.76,
         "pe_forward": 10.57,
-        "market_cap_B": 37.9
+        "market_cap_B": 37.9,
+        "pct_from_52w_high": -24.39,
+        "pct_from_52w_low": 6.94,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -1958,6 +2028,27 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -2.74% to $25.58; alpha vs XLY -2.59pp (heaviest T1 underperformance). Pure fuel-cost macro pass-through (WTI ~$107, Brent $118.03 close 2026-04-29; Iran-Hormuz day 62 dual blockade; UAE exits OPEC). Brent has been above CCL's $90 fuel assumption for 3 consecutive weeks at >$110 average and management has not pre-announced \u2014 silence itself is signal per Intel reflex. Hormuz/fuel-cost trigger structurally live; thesis-event upgrade approaching.",
+          "sources": [
+            "market-action.md Agent B Section B/C",
+            "news-intel.md Agent A B5/B7/C/CCL"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Vanguard Capital Management LLC Schedule 13G filed 2026-04-29 (accession 0002100119-26-000206; Rule 13d-1(b) passive). Routine quarter-end disaggregated holdings filing.",
+          "sources": [
+            "sec-intel.md Agent C Section A/CCL"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
         }
       ],
       "edges": [
@@ -1976,9 +2067,9 @@ const GRAPH_DATA = {
           "type": "commodity_exposure",
           "context": "Per CCL Q1 FY2026 DR Section 1 and Bear 2 (Zero Fuel Hedging = Unfiltered Commodity Exposure, 70% probability): fuel is the single largest variable cost for the cruise fleet. $500M fuel headwind embedded in FY2026 guidance ($0.38/share EPS hit) drove entire 10.9% guidance cut from $2.48 to $2.21 EPS. Per Bernstein (transcript, prepared remarks): '10% change in fuel cost impacts bottom line by $160 million or $0.11 per share' -- this is CCL's direct fuel sensitivity, more than 2x RCL's $57M exposure. Per DR: 'Carnival is the ONLY major cruise line that does not hedge fuel.' Per Weinstein (transcript, response to Conor Cunningham, Melius Research): 'The price of fuel is somewhat irrelevant... We price as much as the market can bear... If they were willing to pay $10 more because of fuel, they should just be willing to pay $10 more... No disadvantage to unhedged position. Focus remains use less.' Management framing is that cruise pricing absorbs fuel over the medium term, but CFO's assumed fuel curve ($90/bbl Apr-May, $85 Q3, $80 Q4) is a DECLINING path from Hormuz-elevated levels -- Brent recently above $100 means downside risk. Unlike DAL, CCL has no refinery counter-exposure; d=1 is pure direct-COGS. Second cohort stock to author commodity_exposure to oil_prices (after DAL first-source).",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 3.0,
-          "weight": 9.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 4.0,
+          "weight": 10,
           "source": "deep_research_reports/CCL_Q1_FY2026_opus.md"
         },
         {
@@ -2254,7 +2345,7 @@ const GRAPH_DATA = {
       "sector": "utilities",
       "industry": "utilities_independent_power_producers",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Largest US nuclear fleet operator (IPP); AI-datacenter power demand thesis, direct beneficiary of hyperscaler 24/7 clean power contracts.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -2266,10 +2357,13 @@ const GRAPH_DATA = {
         "revenue_growth": 12.9
       },
       "current": {
-        "price": 306.25,
-        "delta_1d": -2.83,
-        "delta_1w": 10.28,
-        "delta_1m": 1.58
+        "price": 297.0,
+        "delta_1d": -2.85,
+        "delta_1w": 3.43,
+        "delta_1m": -0.54,
+        "pct_from_52w_high": -22.16,
+        "pct_from_52w_low": 20.37,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -2310,6 +2404,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -2.85% to $297.00; alpha vs XLU -1.62pp; -22.16% from 52w high. Continuation of AI-utility derate that began with March guidance miss (2026 EPS guide $11-12 vs $11.73 cons; PJM/Three Mile Island delay to 2031 disrupting Microsoft PPA). XLU sold the FOMC tape (utilities most rate-sensitive in equity space; 5Y +8bps / 10Y +7bps re-pricing); CEG over-sold its sector. VST -3.96% concurs (AI-power proxies). Vanguard 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section B/D",
+            "sec-intel.md Agent C Section A/CEG"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [],
@@ -2324,7 +2429,7 @@ const GRAPH_DATA = {
       "sector": "basic_materials",
       "industry": "agricultural_inputs",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Largest US nitrogen fertilizer producer; natural-gas-advantaged cost structure, Hormuz-relevance via global urea/ammonia pricing.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -2336,10 +2441,13 @@ const GRAPH_DATA = {
         "revenue_growth": 22.8
       },
       "current": {
-        "price": 123.835,
-        "delta_1d": 0.17,
-        "delta_1w": 2.08,
-        "delta_1m": -9.25
+        "price": 126.78,
+        "delta_1d": 3.65,
+        "delta_1w": 3.53,
+        "delta_1m": -7.86,
+        "pct_from_52w_high": -7.86,
+        "pct_from_52w_low": 67.51,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -2382,11 +2490,56 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +3.65% to $126.78; alpha vs XLB +4.51pp. CF Industries + PepsiCo low-carbon UAN agreement (announced 2026-04-27 per CF press release; surfaced today by Agent A). FIRST commercial launch of CF's certified low-carbon UAN. Pre-stages CF Q1 2026 print 2026-05-06 \u2014 commercial-traction narrative on the carbon-capture investment thesis. Today's move attribution: nitrogen-fertilizer commodity pass-through bid + grain rally (corn +1.98%, wheat +0.54%, soy +1.16%); Barclays $145 PT (Apr 27) lingering. NTR +1.67% sympathetic (smaller). Vanguard 13G x2 routine.",
+          "sources": [
+            "market-action.md Agent B Section B/D",
+            "news-intel.md Agent A D/CF",
+            "CF Industries press release 2026-04-27"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [],
       "trigger_points": [],
       "_display_label": "CF"
+    },
+    "cnc": {
+      "id": "cnc",
+      "name": "Centene Corporation",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Healthcare",
+      "industry": "Healthcare Plans",
+      "created": "2026-04-30",
+      "last_updated": "2026-04-30",
+      "source_note": "Created from /update-graph Step 9.6 promotion-review on 2026-04-30. Two-day-confirmation rule met across 2026-04-28 (Agent B Section G manual seed) and 2026-04-30 (Agent A Section F.1 + Agent B Section G cross-source same day). Catalyst: Q1 2026 blowout (rev $49.94B, adj EPS $3.37 vs $1.87 cons, MLR 87.3% vs 89.1% cons; raised FY EPS guide to $3.40+).",
+      "current": {
+        "price": 53.98,
+        "delta_1d": 8.9,
+        "delta_1w": 38.66,
+        "delta_1m": 69.75,
+        "pct_from_52w_high": 0.0,
+        "pct_from_52w_low": 69.75,
+        "last_close_date": "2026-04-29"
+      },
+      "thesis": null,
+      "signals": [],
+      "edges": [],
+      "management_promises": [],
+      "trigger_points": [],
+      "promotion_record": {
+        "method": "step_9_6_two_day_confirmation",
+        "promoted_date": "2026-04-30",
+        "first_seen_date": "2026-04-28",
+        "thematic_fit_at_promotion": "Healthcare-insurer macro thread is uncovered in graph; CNC anchors a future healthcare_insurer_sector node candidate.",
+        "next_step": "Agent C enriches on next run (single-day lag, by design); thesis populated by future DR if queued."
+      },
+      "_display_label": "CNC"
     },
     "consumer_discretionary": {
       "id": "consumer_discretionary",
@@ -2576,7 +2729,7 @@ const GRAPH_DATA = {
       "sector": "energy",
       "industry": "oil_and_gas_e_and_p",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Largest US independent E&P; core energy watchlist with Permian, Eagle Ford, Alaska, and international upstream.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -2588,10 +2741,13 @@ const GRAPH_DATA = {
         "revenue_growth": -6.8
       },
       "current": {
-        "price": 124.14,
-        "delta_1d": 2.02,
-        "delta_1w": 3.23,
-        "delta_1m": -7.22
+        "price": 128.25,
+        "delta_1d": 3.16,
+        "delta_1w": 4.61,
+        "delta_1m": -3.49,
+        "pct_from_52w_high": -4.15,
+        "pct_from_52w_low": 52.28,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -2632,6 +2788,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +3.16% to $128.25; alpha vs XLE +0.87pp (modest outperformance \u2014 XLE moved as sector with COP, FANG, XOM, CVX all sympathetic). Pure macro: oil-elevated regime (WTI ~$107, Brent $118 close 2026-04-29; UAE-exits-OPEC structural supply-side regime shift; Iran-Hormuz dual blockade day 62). Vanguard 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section B/D",
+            "news-intel.md Agent A B5/B7"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -2640,9 +2807,9 @@ const GRAPH_DATA = {
           "type": "commodity_exposure",
           "context": "ConocoPhillips is a pure-play upstream E&P (no refining); revenue and free cash flow correlate directly with Brent/WTI realized prices. Unhedged producer leverage means crude price movements flow near-directly to bottom line net of breakeven. Hormuz-driven Brent spikes support both international realized pricing and WTI via the US export arbitrage.",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 2.0,
-          "weight": 6.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 3.0,
+          "weight": 9.0,
           "source": "tier2_sector_classification"
         }
       ],
@@ -2657,7 +2824,7 @@ const GRAPH_DATA = {
       "sector": "industrials",
       "industry": "specialty_business_services",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Route-density monopoly in US uniform rental/facility services at ~39% market share (\u2192~50% post $5.5B UniFirst acquisition closing H2 CY2026). Record 51% gross margin Q3 FY26, 23.2% operating margin, 41% ROE (legitimate quality, not leverage). 8.2% organic growth (7.3% core uniform + 14.6% First Aid + 10% Fire Protection). HOLD at 5/10 conviction: quality unmatched in cohort but 25x EV/EBITDA / 37x PE leaves zero margin of safety. 1.17x probability-weighted 5Y return (~3.2% IRR) at $174.93 \u2014 below BUY threshold. Entry at $155-160 (33x PE) reasonable; $140-145 attractive; $120-130 aggressive add. Primary risks: UniFirst integration, recession-sensitive SMB customer base, Fire ERP implementation ~100bps FY27 headwind.",
       "thesis": {
         "verdict": "HOLD",
@@ -2685,12 +2852,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 174.095,
-        "delta_1d": 0.03,
-        "delta_1w": -1.23,
-        "delta_1m": 5.06,
+        "price": 173.95,
+        "delta_1d": -0.15,
+        "delta_1w": -0.41,
+        "delta_1m": 3.14,
         "pe_forward": 32.2,
-        "market_cap_B": 70.0
+        "market_cap_B": 70.0,
+        "pct_from_52w_high": -14.95,
+        "pct_from_52w_low": 4.97,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -2816,6 +2986,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -0.15% to $173.95; alpha vs XLI +0.46pp (defensive bid in soft-industrial tape \u2014 ITA/IR/ODFL all sold; CTAS held). Vanguard Schedule 13G 2026-04-29 routine. CTAS-UniFirst S-4 from 2026-04-27 still in flight (H2 2026 expected close).",
+          "sources": [
+            "market-action.md Agent B Section C",
+            "sec-intel.md Agent C Section A/CTAS"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [],
@@ -3032,7 +3213,7 @@ const GRAPH_DATA = {
       "sector": "energy",
       "industry": "oil_and_gas_integrated",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Integrated oil major with Permian, Gulf, and international upstream plus global refining; core energy watchlist.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -3044,10 +3225,13 @@ const GRAPH_DATA = {
         "revenue_growth": -8.2
       },
       "current": {
-        "price": 189.46,
-        "delta_1d": 2.53,
-        "delta_1w": 1.87,
-        "delta_1m": -10.27
+        "price": 192.22,
+        "delta_1d": 2.05,
+        "delta_1w": 3.17,
+        "delta_1m": -8.78,
+        "pct_from_52w_high": -8.97,
+        "pct_from_52w_low": 32.27,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -3080,6 +3264,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +2.05% to $192.22; alpha vs XLE -0.24pp (slight under-performance \u2014 California exposure / Hess litigation overhang muting the rally). Vanguard 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section B",
+            "sec-intel.md Agent C Section A/CVX"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -3088,9 +3283,9 @@ const GRAPH_DATA = {
           "type": "commodity_exposure",
           "context": "Chevron is an integrated oil and gas major; upstream segment earnings track Brent/WTI realized prices directly. Downstream refining provides partial counter-hedge during crude spikes via widened crack spreads. Global upstream footprint (Permian, Gulf of Mexico, Kazakhstan, Australia LNG) means Hormuz-driven Brent moves flow through realized pricing across the portfolio.",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 2.0,
-          "weight": 6.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 3.0,
+          "weight": 9.0,
           "source": "tier2_sector_classification"
         }
       ],
@@ -3105,7 +3300,7 @@ const GRAPH_DATA = {
       "sector": "industrials",
       "industry": "airlines",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Best-in-class US airline with verified premium-loyalty franchise inflection (premium revenue exceeds main cabin; AmEx $8B/yr at 80% margin is load-bearing for profitability per Fortune Apr 2026) colliding with Iran/Hormuz fuel crisis (2 ships seized Apr 23, jet fuel +47% above pre-war, FY2026 guidance withdrawn). Critical review (Apr 26) CONFIRMED HOLD at conviction floor 5/10 (one notch below DR v2 6/10) -- catalyst calendar negatively skewed, CEO sold $19M Jan-Feb pre-war, R/R 1.4x fails Druckenmiller bar, scenario-weighted IRR 2.85% below 5Y Treasury. Tier 1 retained but fragile. Wait for $58 entry; position 0% new money.",
       "thesis": {
         "verdict": "HOLD",
@@ -3133,12 +3328,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 67.375,
-        "delta_1d": -1.21,
-        "delta_1w": -4.05,
-        "delta_1m": 3.93,
+        "price": 66.27,
+        "delta_1d": -1.41,
+        "delta_1w": -3.13,
+        "delta_1m": 4.87,
         "pe_forward": 8.8,
-        "market_cap_B": 46.1
+        "market_cap_B": 46.1,
+        "pct_from_52w_high": -11.81,
+        "pct_from_52w_low": 19.41,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -3304,6 +3502,27 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Tel Aviv flight suspension extended through 2026-11-30 (announced 2026-04-29 per Delta IR / GuruFocus). Atlanta-Tel Aviv suspended through Nov 30; JFK-Tel Aviv resumes 2026-09-06; Boston-Tel Aviv launch on hold indefinitely. Mideast-conflict cost item \u2014 passenger reaccommodation feeds H2 unit-cost line. Marginally bearish at segment-margin level; not material to thesis.",
+          "sources": [
+            "news-intel.md Agent A C/DAL",
+            "Delta IR via GuruFocus"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -1.41% to $66.27; alpha vs JETS -0.03pp = pure sector beta. Apr 28 'tape pricing pre-announcement' thread DEGRADED to ordinary sector beta \u2014 tape stopped expecting DAL pre-announcement. Either DAL has now told the tape what it knew, or the asymmetry signal has expired. Worth tracking for follow-up. Vanguard Schedule 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section B/C/E"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -3312,9 +3531,9 @@ const GRAPH_DATA = {
           "type": "commodity_exposure",
           "context": "Per DAL Q1 2026 DR Section 2 (Industry) and Bear 1 (Fuel Crisis Reveals Fundamental Fragility, 40% probability): fuel is the single largest variable cost for Delta. Q1 2026 adjusted fuel $2.62/gal (+7% YoY); Q2 2026 guidance $4.30/gal (NEARLY DOUBLE YoY) based on forward curve April 2, 2026 after Iran/Hormuz crisis spiked Brent above $113/bbl and jet fuel peaked near $4.60/gallon. Quantified impact: $2B+ additional quarterly fuel cost. Monroe refinery (~200,000 bbl/day) provides structural 4-11 cents/gallon advantage vs. peers and is estimated to deliver $300M Q2 benefit as crack spreads tripled \u2014 Delta is the ONLY US airline with owned refinery, making its oil_prices exposure ASYMMETRIC (partially hedged via refinery upside when crude spikes, exposed via direct COGS through fuel purchases). Per Bastian (transcript, response to John Godden, Citigroup): 'The best type of fuel recapture is not to purchase the fuel in the first place if it's not going to be profitable' \u2014 Q2 capacity being cut with downward bias in response to fuel prices (flat capacity for Q2 vs. earlier growth plan). Per Esposito (transcript): fuel recapture historically lags 60-90 days but is accelerating under this shock; 40-50% recapture expected Q2, higher in summer if fuel holds. US-Iran ceasefire April 7 dropped Brent 16% in a day (largest since 1991), jet fuel from $4.60 to under $3.00 \u2014 but ceasefire is 2 weeks old, fragile, and management still guides to $4.30 forward curve.",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 3.0,
-          "weight": 9.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 4.0,
+          "weight": 10,
           "source": "deep_research_reports/DAL_Q1_2026_opus_v2.md"
         },
         {
@@ -3637,6 +3856,145 @@ const GRAPH_DATA = {
       "legacy_pre_v1_3_note": "Backfill /critical-review completed 2026-04-26. CR confirmed HOLD at conviction floor 5/10 (one notch below DR v2 6/10). Tier 1 retained per v1.3 rule (HOLD with conviction >=5). Migration complete.",
       "_display_label": "DAL"
     },
+    "defense_aerospace_sector": {
+      "id": "defense_aerospace_sector",
+      "name": "US Defense & Aerospace Sector (Prime Contractor Cohort)",
+      "type": "sector",
+      "created": "2026-04-29",
+      "last_updated": "2026-04-30",
+      "summary": "Defense & aerospace prime contractor cohort node anchored by NOC (T1) with RTX, GD (T2) as members. The sector currently exhibits a notable structural pattern: 'peace-dividend decoupling' \u2014 the cohort has been pricing as if the Iran-conflict war-premium is unwinding (Bernstein April 2026 framing) and is no longer responding to geopolitical-tape upside (5 sessions through 2026-04-28 of NOC/RTX/GD/LMT/HII flat-to-down on Brent $111+, Hegseth shoot-to-destroy warnings, Iran tanker seizures \u2014 historically these would lift the cohort 2-3%). The thesis: defense spending is increasingly STRUCTURAL ($900B+ FY27 baseline per NOC DR, NATO 5% GDP target by 2035 per NOC DR Section 2) and has decoupled from short-cycle geopolitical premium. The risk is symmetric: if peace negotiations advance materially (60-day sustained d\u00e9tente), the bear case scenario is -15 to -25% multiple compression per NOC DR \u00a711 Munger inversion. VERIFIED EDGES: NOC (sector_membership, d=1) sole T1 anchor; RTX (sector_membership, d=1) munitions-cycle instantiation; GD (sector_membership, d=1) shipbuilding + Combat Systems instantiation. Notable T3 non-members for future promotion review: LMT, HII, LHX. NO direct oil_prices edge (rejected per NOC DR \u00a710.6.4 explicit statement: defense spending correlates with geopolitics, not oil directly). NO direct geopolitical_risk edge yet (geopolitical_risk node not yet created \u2014 pending macro-candidate; will be added when that node lands). This node was AUTO_ORGANIC_CREATED per /update-graph Step 9 v1.5.2 organic-creation rules: \u00a76 Rule 1 (\u22652 signals) \u2713, Rule 2 (\u22657-day span \u2014 5-day span treated as qualifying given 'day-5 of decoupling pattern' explicit framing meets the persistent-regime intent of Rule 2), Rule 3 (\u22652 connected existing nodes \u2014 NOC + GD + RTX) \u2713, Rule 4 (persistent entity \u2014 sector cohort, not event) \u2713.",
+      "current": {
+        "us_defense_budget_fy26": "$859B base + $152B reconciliation supplemental + $8B Congressional increase (per GD Q4 2025 DR Section 'US Defense Spending Supercycle')",
+        "navy_shipbuilding_fy26": "$27.2B (one Columbia-class sub, two Virginia-class subs, 14 other vessels) \u2014 per GD DR",
+        "us_defense_budget_fy27_baseline_noc_dr": "$900B+ (per NOC Q1 2026 DR Section 11 Munger Inversion bull scenario)",
+        "global_defense_spending_2026e": "$2.75T (per RTX DR citing IISS Military Balance 2026 + Business Research Insights), projected $3T+ by end-2026",
+        "nato_2025_status": "All NATO allies met 2% GDP target for first time (per RTX DR); European budgets +20% YoY; total NATO ~$1.4T",
+        "european_defense_spending_2024": "$482B combined (1.43% GDP 2014 \u2192 2.02% 2024, accelerating per GD DR)",
+        "nato_2035_target": "5% GDP by 2035 (NATO summit communique 2025, per NOC DR Section 2)",
+        "iran_munitions_cycle_status": "Active per RTX DR Bull Point 2: 'burning through US interceptor stockpiles at a pace unseen in recent history' \u2014 Tomahawk, AMRAAM, SM-3, SM-6, Patriot GEM-T in acute demand",
+        "current_regime_observation": "Peace-dividend decoupling: cohort flat-to-down 5 sessions through 2026-04-28 on Brent $111 + Hormuz tanker seizures + Hegseth shoot-to-destroy warnings \u2014 historically would lift group 2-3%",
+        "war_premium_status_april_2026": "Unwinding per Bernstein (cited in GD DR): 'defense stocks giving back gains as Iran de-escalation enters the conversation'",
+        "regime_inversion_risk": "Per NOC DR \u00a711 Munger Inversion 'Geopolitics supportive scenario': sustained d\u00e9tente, defense cuts begin 2027 \u2192 -15 to -25% multiple compression. Probability per NOC DR: 'low but not negligible'.",
+        "source_date": "2026-04-29",
+        "verification_note": "Values drawn from NOC Q1 2026 DR (opus.md), RTX Q1 2026 DR (opus.md), GD Q4 2025 DR (opus.md). Re-verify after each defense-prime quarterly print (NOC reports next 2026-07-23 estimated; GD next 2026-07-22 estimated; RTX next 2026-07-22 estimated). The peace-dividend decoupling observation is the load-bearing current-state field \u2014 re-evaluate every 5 trading sessions to confirm regime persistence vs reversion."
+      },
+      "signals": [
+        {
+          "date": "2026-04-30",
+          "content": "POSITIVE COHORT-BEAT PATTERN \u2014 3-of-3 reporting Q1 2026 defense primes (RTX 4/21, NOC 4/21, GD 4/29) all printed above consensus with strong order flow and backlog growth: RTX +21% YoY adj EPS / record $271B backlog; NOC clean Q1 with $95.6B backlog (Sentinel acceleration; B-21 program offset); GD +12% EPS / 2.0x book-to-bill consolidated (defense 2.2x) / +48% backlog YoY ($130.8B + $57.6B EPCV = $188.4B total). Tape de-rate of cohort INCONSISTENT with order-flow data: ITA -1.42% on day GD ripped +8%; defense disconnect from geopolitics + earnings DAY-6 confirmed regime per Agent B [F-5]. The 'peace-dividend' tape narrative directly contradicted by order-flow. LMT (4th prime) prints next week; cohort-pattern test continues. cohort_signal_2026_04_30: defense_primes_q1_2026_print_pattern.",
+          "sources": [
+            "sec-intel.md Agent C F3",
+            "market-action.md Agent B Section B + F-5",
+            "news-intel.md Agent A D/GD"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
+        }
+      ],
+      "edges": [
+        {
+          "to": "noc",
+          "type": "sector_membership",
+          "context": "NOC is the sole Tier 1 anchor of the defense_aerospace_sector cohort. Per NOC Q1 2026 DR Section 5 (Earnings Call): CEO Warden's framing is 'defense spending could reach Cold War-era levels' (Benzinga 2026-04 transcript citation, NOC DR Section 5) \u2014 explicitly positions NOC as 'a multi-decade beneficiary, not a war-spike trade.' Three new data points in Q1 2026 call: (i) finalized B-21 production rate increase agreement (+25%), (ii) '20+ new facilities and >2 million sq ft of manufacturing space added in past 24 months,' (iii) 'weapons business is nearing 10% of total company sales and is positioned to grow at a pace well above the company average.' NOC's revenue base is ~98% US DoD with international growing in Mission Systems and Defense Systems segments per NOC DR Section 2. The structural baseline per NOC DR \u00a711 Munger Inversion bull scenario is '$900B+ FY27 defense spending' supported by 'Iran/Russia/China geopolitical environment.' The bear scenario per NOC DR \u00a711 'Geopolitics supportive (sustained d\u00e9tente; defense cuts begin 2027)' carries -15 to -25% multiple compression \u2014 symmetric with the cohort's current peace-dividend-decoupling pattern. NOC DR Section 11 explicitly notes 'No oil_prices direct edge \u2014 defense spending is correlated with geopolitics not directly with oil' which is the source rationale for this sector node not carrying an oil_prices edge.",
+          "directness": 1,
+          "last_activated": "2026-04-29",
+          "activation_count": 0.0,
+          "weight": 0.0,
+          "source": "deep_research_reports/NOC_Q1_2026_opus.md"
+        },
+        {
+          "to": "rtx",
+          "type": "sector_membership",
+          "context": "RTX is a T2 member; the Iran-war-munitions-supercycle thesis is the sector instantiation here. Per RTX Q1 2026 DR Bull Point 2 (Iran War Munitions Supercycle, conviction 6/10): the sector backlog is at record $271B, munitions division is the load-bearing segment. RTX DR Gate 1 (FAIL marginal): 'Math works only if (a) Iran-conflict munitions cycle persists through 2030 AND (b) multiple compresses only modestly. That is not current-data math \u2014 it is narrative math.' This is the cleanest articulation of the war-premium fragility that drives the peace-dividend decoupling pattern. Per RTX DR \u00a7Industry Snapshot: 'Global defense spending 2026: $2.75T (Business Research Insights), up from $2.63T in 2025, projected to cross $3T by end-2026' (IISS Military Balance 2026). Per RTX DR Section 5 (Earnings Call) Bernstein analyst exchange: 'Iran tensions supply chain risk' was a major Q&A topic. The January 7, 2026 Trump EO threatening capital-return restrictions on 'major defense contractors' is the regulatory channel that compounds the regime risk per RTX DR Section 2 \u2014 RTX is named in the EO scope per press coverage. RTX trades at ~3% EV/EBITDA premium to LMT \u2014 premium is 'driven by Iran-war narrative premium attached to Raytheon's munitions portfolio' per RTX DR Section 2.",
+          "directness": 1,
+          "last_activated": "2026-04-29",
+          "activation_count": 0.0,
+          "weight": 0.0,
+          "source": "deep_research_reports/RTX_Q1_2026_opus.md"
+        },
+        {
+          "to": "gd",
+          "type": "sector_membership",
+          "context": "GD is a T2 member; the most explicit articulation of the peace-dividend decoupling pattern in the sector cohort is in GD's DR Section 1: 'Strait of Hormuz crisis (beginning February 28, 2026) triggered a defense stock rally, but the premium is now unwinding.' GD DR Section 1 continues: 'Bernstein sees defense stocks giving back gains as diplomatic breakthroughs threaten the war premium' \u2014 this is the most-cited analyst framing for the decoupling thesis. Critically, per GD DR Section 1: 'The key lasting impact is not the premium itself but the munitions restocking urgency \u2014 heavy usage of US tactical weapons has created structural demand regardless of conflict resolution' \u2014 captures the structural-vs-cyclical distinction that defines the sector. GD's Marine Systems benefits from $27.2B Navy shipbuilding allocation in FY2026 (one Columbia-class sub, two Virginia-class subs) per GD DR Section 2. Combat Systems received $19B+ in orders in 2025 with European Land Systems at 4:1 book-to-bill (NATO 3.5% GDP commitment by 2030 \u2192 hundreds of billions incremental European defense spending per GD DR Section 2). GD DR explicitly notes the dual-channel exposure: 'If the Iranian conflict resolves AND the economy weakens simultaneously, GD could see both its war premium and Gulfstream earnings decline in the same period' \u2014 a structural risk distinct from pure-play defense names like NOC/RTX.",
+          "directness": 1,
+          "last_activated": "2026-04-29",
+          "activation_count": 0.0,
+          "weight": 0.0,
+          "source": "deep_research_reports/GD_Q4_2025_opus.md"
+        }
+      ],
+      "trigger_points": [
+        {
+          "condition": "Defense appropriations bill passes <$900B FY27 baseline (or equivalent: continuing-resolution that holds nominal but allows real-dollar erosion per CBO inflation deflator)",
+          "cascade": [
+            "noc",
+            "rtx",
+            "gd"
+          ],
+          "mechanism": "NOC: per NOC DR \u00a711 Munger Inversion bull scenario, '$900B+ FY27' is the load-bearing assumption. Sub-$900B baseline triggers the bear scenario explicit in NOC DR \u00a78 Bear Point 3 ('Defense spending stays >$900B FY27 \u2014 probability 75%'); inverse-firing means thesis-event downgrade. RTX: capital-return EO compounds the regulatory drag per RTX DR Section 2; munitions cycle assumption (Iran-conflict persists through 2030) is the load-bearing input that fails first. GD: the dual-channel risk per GD DR materializes if defense AND Gulfstream weaken simultaneously.",
+          "status": "watching",
+          "last_evaluated": "2026-04-29"
+        },
+        {
+          "condition": "Iran ceasefire formal + sustained d\u00e9tente \u226560 days (defined: zero IRGC tanker seizures + zero US/Iran kinetic exchanges for 60 consecutive days)",
+          "cascade": [
+            "noc",
+            "rtx",
+            "gd"
+          ],
+          "mechanism": "NOC: per NOC DR \u00a711 Munger Inversion 'Geopolitics supportive' scenario \u2014 defense cuts begin 2027, -15 to -25% multiple compression. The 'peace-dividend regime' that the cohort is currently pricing in (per April 2026 5-day decoupling pattern) becomes the official thesis. RTX: the Iran-war munitions narrative-premium that drives RTX's ~3% EV/EBITDA premium to LMT collapses; per RTX DR Gate 1, multiple compression below 14x EV/EBITDA is the bear case. GD: war premium unwinds per GD DR Section 2 explicit Bernstein citation; Marine Systems shipbuilding remains structural floor.",
+          "status": "watching",
+          "last_evaluated": "2026-04-29"
+        }
+      ],
+      "extraction_gaps": [
+        {
+          "rejected_edge_to": "oil_prices",
+          "rejection_reason": "Per NOC Q1 2026 DR Section 11 explicit statement (line 827 in source): 'No oil_prices direct edge \u2014 defense spending is correlated with geopolitics not directly with oil.' The historical correlation (oil \u2191 + geopolitical tension \u2191 \u2192 defense \u2191) operates through the geopolitical channel, not through oil prices directly. The current peace-dividend decoupling pattern (cohort flat on Brent $111) further confirms this rejection. If a `geopolitical_risk` macro node is created (currently in pending-macro-node-candidates.json watch list), an edge from THAT node to defense_aerospace_sector would be appropriate, with the historical correlation noted as decoupling-flagged.",
+          "rejected_date": "2026-04-29"
+        },
+        {
+          "rejected_edge_to": "tariff_regime",
+          "rejection_reason": "Per RTX Q1 2026 DR Section 2: '$500M IEEPA tariff paid with refund not recorded \u2014 working capital drag not fully resolved' is mentioned but is RTX-specific, not sector-wide. Per NOC DR Section 11 line 827 edge recommendation: 'noc \u2192 tariff_regime weight ~0.5 (rare-earth supply for B-21 / defense systems exposure)' \u2014 this is at the stock node level, not sector level. Sector-level tariff_regime exposure is fragmented (each prime has different supply chain tariff exposure); not authoring at sector level until 2+ defense primes show identical sector-wide tariff cascade. Logged for future review."
+        }
+      ],
+      "notable_non_member_tier3_stocks": [
+        {
+          "ticker": "LMT",
+          "name": "Lockheed Martin",
+          "rationale": "Sector cohort member by industry classification; not in graph (T3). Per RTX DR multiple cross-references: 'LMT has a cleaner F-35 cash story without GTF liability overhang' and trades at lower premium than RTX. Per NOC DR Bear scenario analysis, LMT is the comparison case for NOC's overall positioning. Strong T2 promotion candidate if cohort regime continues \u2014 would let cascades fire across 4 names not 3."
+        },
+        {
+          "ticker": "HII",
+          "name": "Huntington Ingalls Industries",
+          "rationale": "Per GD DR: 'GD is the only company that builds nuclear submarines (Columbia and Virginia class)... but HII shares Navy shipbuilding work via the same FY2026 $27.2B allocation' \u2014 direct sector cohort membership. Per the 2026-04-25 brief: 'Lockheed -3.08%, Northrop -2.14%, RTX -2.81%, GD -1.73%, HII -2.93%' explicitly groups HII in the cohort decoupling pattern. Strong T2 promotion candidate."
+        },
+        {
+          "ticker": "LHX",
+          "name": "L3Harris Technologies",
+          "rationale": "Sector cohort member by industry classification; not in graph (T3). Diversified communications + electronic-warfare prime; partial overlap with NOC Mission Systems segment per NOC DR Section 2. T2 promotion candidate if cohort regime continues and a 4th cohort member is needed for cascade granularity."
+        }
+      ],
+      "creation_provenance": {
+        "method": "AUTO_ORGANIC_CREATED",
+        "skill": "/update-graph Step 9 v1.5.2 organic-creation rules per ARCHITECTURE.md \u00a76",
+        "rule_evaluation": {
+          "rule_1_signals_count": 3,
+          "rule_2_span_days": 5,
+          "rule_3_connected_nodes_count": 3,
+          "rule_4_persistent_entity": true,
+          "all_rules_met_strict": false,
+          "all_rules_met_with_intent": true,
+          "intent_justification": "Rule 2 strict requires \u22657-day span. Current span is 5 days (2026-04-23 first observation \u2192 2026-04-28 third observation). However, the 2026-04-28 brief framing 'day-five of the peace-dividend decoupling pattern' explicitly characterizes the regime as multi-day persistent (matching Rule 4 intent). Maintainer override (2026-04-29) approved auto-creation given pattern persistence. Future runs use strict 7-day rule."
+        },
+        "first_seen_date": "2026-04-23",
+        "auto_created_date": "2026-04-29",
+        "state_file_entry": "hive-mind/state/pending-macro-node-candidates.json \u2014 defense_aerospace_sector",
+        "companion_authoring_report": "hive-mind/graph/nodes/extraction_reports/defense_aerospace_sector_authoring_report.md"
+      },
+      "_display_label": "Defense Aerospace"
+    },
     "dg": {
       "id": "dg",
       "name": "Dollar General Corporation",
@@ -3645,7 +4003,7 @@ const GRAPH_DATA = {
       "sector": "consumer_staples",
       "industry": "discount_stores",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Turnaround verified at 14.5x forward PE (15-year trough): Q4 FY2025 delivered +4.3% comps (best since FY2022), 80bps shrink reduction, $1.65B+ debt redeemed in 12 months (verified). HOLD 6/10 \u2014 CONFIRMED post-critical-review 2026-04-26 (3-agent stress test). Pzena $1.21B (5.3%) position validates floor. NEW post-CR finding: Moody's downgraded DG to Baa3 March 2025 (one notch from junk). DLTR is winning trade-down war (Q4 +5% with 60% new customers from $100K+ households). Fleeman risk asymmetric: Ahold Delhaize 'Growing Together' targets 4% op margin (BELOW DG's current 5.2% and target 6-7%). Starter 2% at $115-125; add $105-110; full $95-100.",
       "thesis": {
         "verdict": "HOLD",
@@ -3673,12 +4031,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 116.45,
-        "delta_1d": -0.77,
-        "delta_1w": -6.17,
-        "delta_1m": -0.13,
+        "price": 114.13,
+        "delta_1d": -1.46,
+        "delta_1w": -7.36,
+        "delta_1m": -2.69,
         "pe_forward": 14.5,
-        "market_cap_B": 25.5
+        "market_cap_B": 25.5,
+        "pct_from_52w_high": -26.61,
+        "pct_from_52w_low": 20.03,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -3815,6 +4176,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -1.46% to $114.13; alpha vs XLP -1.27pp (material under-performance vs sector). $115 STARTER trigger CLOSED 0.76% BELOW IT \u2014 second consecutive session sub-trigger. $108 ADD trigger 5.1% below close. DECISION-AT-HAND status confirmed. No fresh DG-specific catalyst beyond Apr 21 Evercore PT cut. Vanguard Schedule 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section B/C",
+            "news-intel.md Agent A C/DG"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -3833,9 +4205,9 @@ const GRAPH_DATA = {
           "type": "macro_sensitivity",
           "context": "Per Section 5 earnings exchange with Robby Ohmes (BofA) and Bear Point 5 (probability 70%): DG has LOW direct COGS exposure \u2014 most consumables are domestically sourced, LIFO tariff embedding is modest ($45M Q4, 32bps headwind). The material exposure is INDIRECT \u2014 tariffs function as regressive tax on DG's core customer base. Yale Budget Lab estimates $900-1,100 per low-income household burden. Fed estimates tariffs increased consumer prices 0.4% short-run. Combined with SNAP cuts, creates compound hit to DG's core customer purchasing power. Non-consumables recovery (the high-margin growth vector) is most at risk as discretionary spending compresses.",
           "directness": 2,
-          "last_activated": null,
-          "activation_count": 0,
-          "weight": 1.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 1.0,
+          "weight": 1.5,
           "source": "deep_research_reports/DG_Q4_FY2025_opus_v2.md"
         },
         {
@@ -4236,7 +4608,7 @@ const GRAPH_DATA = {
       "sector": "consumer_staples",
       "industry": "discount_stores",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Pure-play discount retailer post-Family Dollar sale (July 2025 for $1B, acquired at $8.5B \u2014 capitulation and liberation). HOLD 5/10 conviction (post-critical-review, down from DR HOLD 6/10). Multi-price transformation working (16% of sales, +6.3% ticket, 5.0% Q4 comps), aggressive buyback ($1.55B at ~$91 avg), 8% share reduction FY25. CRITICAL REVIEW (2026-04-26) finding: DR's central thesis killer (125% China tariff at 40% probability material impact) was authored under stale macro \u2014 May 2025 US-China deal cut rate to 10%, Oct 2025 Busan extended to Nov 10 2026, SCOTUS Feb 20 2026 ruled IEEPA tariffs unlawful (Learning Resources v. Trump). Effective US tariff on China ~34% avg, not 125%. DLTR pursuing refund litigation per 10-K. BUT: forward PE is actually 15.65x (not DR's 13.5x), bear-camp PT BMO $95 / BoA $89 BELOW current $103.75, Walmart 72% grocery penetration record + Aldi 180 stores 2026 + Five Below +24.3% rev growth = competitive intensification confirmed. Net: tariff bear de-risked but valuation re-rating partially complete + competition heating up. Survives Tier 1 \u22655 floor by one notch.",
       "thesis": {
         "verdict": "HOLD",
@@ -4264,12 +4636,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 98.27,
-        "delta_1d": 0.28,
-        "delta_1w": -5.35,
-        "delta_1m": -8.16,
+        "price": 95.7,
+        "delta_1d": -2.57,
+        "delta_1w": -6.15,
+        "delta_1m": -9.49,
         "pe_forward": 13.5,
-        "market_cap_B": 19.8
+        "market_cap_B": 19.8,
+        "pct_from_52w_high": -32.23,
+        "pct_from_52w_low": 0.0,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -4393,6 +4768,16 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -2.57% to $95.70 = 52-WEEK LOW PRINTED (pct_from_52w_low = 0%); alpha vs XLP -2.38pp (heaviest T1 sector-relative underperformance with WMT/MKC/GIS). $99.55 STARTER trigger CLOSED 3.87% BELOW IT \u2014 second consecutive session sub-trigger fully fired. $88 ADD trigger 8.0% below close. STARTER-INITIATE-NOW-OR-REVISE-THESIS \u2014 definitive 'no until yes' inflection point per skill discipline. Discount-retail derate continuation + oil-cost squeeze; no fresh company catalyst. Vanguard Schedule 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section B/C"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -4411,9 +4796,9 @@ const GRAPH_DATA = {
           "type": "macro_sensitivity",
           "context": "Per Bear Point 1 (THESIS KILLER, probability 40% material impact): Direct imports constitute 41-43% of Dollar Tree's retail value purchases, with China supplying the majority. At 125% tariff rate, monthly cost impact is $35-40M before mitigation. Management claims 90%+ mitigation on Round 1 tariffs, but escalating tariff levels compress the runway for workarounds. DLTR explicitly warned Q2 FY2026 profits could be cut in half if full tariffs hit. CFO called FY2026 a 'transitional year.' If tariffs persist at 125% for 12+ months without resolution, margin compression of 200-300bps plausible, reducing EPS to $5.50-$6.00 instead of $6.50-$6.90. Stock would trade to $75-$85. This is DIRECT COGS exposure (directness 1) \u2014 materially different from DG's INDIRECT customer-income-channel exposure (directness 2). DLTR's tariff exposure is the most acute in the Tier 1 cohort.",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 2.0,
-          "weight": 6.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 3.0,
+          "weight": 9.0,
           "source": "deep_research_reports/DLTR_Q4_FY2025_opus.md"
         },
         {
@@ -4655,8 +5040,42 @@ const GRAPH_DATA = {
       "sector": "Financial Services",
       "industry": "Insurance - Title (Specialty)",
       "created": "2026-04-25",
-      "last_updated": "2026-04-26",
-      "signals": [],
+      "last_updated": "2026-04-30",
+      "signals": [
+        {
+          "date": "2026-04-30",
+          "content": "Executive Chairman Dennis J. Gilmore voluntary RSU/PRSU cancellation 8-K filed 2026-04-29 (accession 0001193125-26-191548; Items 5.02 + 9.01; Exhibit 10.1 = Form of RSU and PRSU Cancellation Agreement). Board and Gilmore mutually agreed to cancellation in full of all outstanding/unvested RSUs and PRSUs from 2025-06-20 grant. Voluntary by Gilmore; NOT in exchange for any other equity or cash-based compensation. Coverpage Rule 14a-12 (soliciting material) box CHECKED \u2014 ties Item 5.02 to proxy solicitation timeline. Most plausible read per prosecutor lens: pre-departure preparation OR role-restructure to non-executive Chair (the 'no replacement' representation is binding under Rule 10b-5; absent a follow-on proxy supplement adding new Gilmore equity, hidden re-grant is unlikely). Both Agent A and Agent C independently flagged with concurrent two-read interpretation. MONITOR-FOR-REPEAT: re-elevate if (a) FAF DEF 14A introduces new Gilmore grant within 30 days, (b) follow-up Item 5.02 names new Executive Chairman within 60 days, or (c) Gilmore exits Board entirely at 2026 annual meeting.",
+          "sources": [
+            "sec-intel.md Agent C Section A + F1",
+            "news-intel.md Agent A C/FAF",
+            "SEC 8-K accession 0001193125-26-191548"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "First American Title Insurance launched AgentNet Assist: Title Intelligence AI feature on 2026-04-29 \u2014 extends AI-driven tools to AgentNet, the title-agent-facing platform. Aligned with Q1 commercial-strength narrative; not financial-material on its own.",
+          "sources": [
+            "news-intel.md Agent A C/FAF",
+            "GuruFocus / Yahoo Finance"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Vanguard quarter-end disaggregated 13G filings on 2026-04-29 \u2014 Vanguard Capital Management LLC (accession 0002100119-26-000519) + Vanguard Portfolio Management LLC (accession 0002100121-26-000255). Routine institutional ownership disaggregation; not investment-thesis material. NOTE: FAF NOT in market-data.json universe \u2014 current.* fields not refreshed today; flagged as universe-coverage gap by Agent B; recommend market-data.py config audit.",
+          "sources": [
+            "sec-intel.md Agent C Section A/FAF"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
+        }
+      ],
       "edges": [
         {
           "target": "fed_rates",
@@ -4805,7 +5224,7 @@ const GRAPH_DATA = {
       "sector": "energy",
       "industry": "oil_and_gas_e_and_p",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member (portfolio) \u2014 screened, not deep-researched. Permian Basin pure-play E&P; direct crude oil price sensitivity.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -4817,10 +5236,13 @@ const GRAPH_DATA = {
         "revenue_growth": -9.4
       },
       "current": {
-        "price": 200.995,
-        "delta_1d": 2.33,
-        "delta_1w": 5.9,
-        "delta_1m": -0.42
+        "price": 205.32,
+        "delta_1d": 2.63,
+        "delta_1w": 5.91,
+        "delta_1m": 3.36,
+        "pct_from_52w_high": 0.0,
+        "pct_from_52w_low": 51.48,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -4872,6 +5294,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +2.63% to $205.32 = 52-WEEK HIGH PRINTED (pct_from_52w_high 0.00%); alpha vs XLE +0.34pp. Sector beta on oil rally (UAE-exits-OPEC + Iran-Hormuz day 62). Vanguard 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section B",
+            "sec-intel.md Agent C Section A/FANG"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -4880,9 +5313,9 @@ const GRAPH_DATA = {
           "type": "commodity_exposure",
           "context": "Diamondback is a Permian-focused crude oil and natural gas producer. Revenue and free cash flow correlate directly with WTI realized prices \u2014 producer leverage means crude price movements flow largely to the bottom line net of breakeven and hedging. Hormuz-driven Brent spikes support WTI by proxy via the US export arbitrage.",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 2.0,
-          "weight": 6.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 3.0,
+          "weight": 9.0,
           "source": "tier2_sector_classification"
         }
       ],
@@ -4897,7 +5330,7 @@ const GRAPH_DATA = {
       "sector": "industrials",
       "industry": "integrated_freight_and_logistics",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Cyclical industrial logistics transformer priced for successful DRIVE + Network 2.0 + Freight-spinoff execution. POST-CRITICAL-REVIEW HOLD at 5/10 conviction (down from 6/10 raw DR). Q3 FY26 beat (adj EPS $5.25) inflated by $0.41 Brazil one-time tax benefit; real beat 18% not 28%. April 8 pilot tentative agreement adds 40% wage hike + retro pay (~$500-750M cash through FY27). Buyback de-acceleration confirmed (post-FY26 dilution-offset only) cuts total shareholder return 5%\u21922.5%. Amazon volume gap accelerating: AMZN 6.7B packages 2025 (+10%) vs FDX 3.6B (-3.4%). Offsets: Network 2.0 pace genuinely accelerated (25%\u219235%); Freight spinoff valuation range widened upward to $20-30B (vs DR's $13-15B); IEEPA tariffs struck down Feb 24, 2026 reduces tariff volume risk; capex tightened $4.5B\u2192$4.1B. Tier 1 maintained (HOLD \u2227 conviction \u22655) but at conviction floor. Position sizing 2-3% (down from 3-4%); implicit stop $310. Single key risk: FY27 stub-FedEx EPS at Q4 print (late June) coming in below $16 floor.",
       "thesis": {
         "verdict": "HOLD",
@@ -4925,12 +5358,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 386.335,
-        "delta_1d": -0.4,
-        "delta_1w": -2.09,
-        "delta_1m": 12.32,
+        "price": 388.59,
+        "delta_1d": -0.42,
+        "delta_1w": 0.68,
+        "delta_1m": 13.7,
         "pe_forward": 17.6,
-        "market_cap_B": 94.2
+        "market_cap_B": 94.2,
+        "pct_from_52w_high": -1.52,
+        "pct_from_52w_low": 57.54,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -5086,6 +5522,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -0.42% to $388.59; alpha vs IYT +0.69pp (mild outperformance vs transports \u2014 FDX continues to defy ground-transport weakness, ODFL -5.6%; air/express premium pricing intact). Stock at 52w-high vicinity (-1.52%). UPS Q1 print 2026-04-28 ($21.2B revenue, 9.6% adj op margin, $3B FY26 cost saves on track) widens margin-comp argument vs FDX Freight 12% target \u2014 bullish for spinoff thesis. Vanguard Schedule 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section C",
+            "news-intel.md Agent A F/UPS"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -5371,12 +5818,120 @@ const GRAPH_DATA = {
       "legacy_pre_v1_3_note": "Backfill critical review COMPLETED 2026-04-26. Pre-CR: HOLD 6/10 (DR raw, $374.08 base). Post-CR: HOLD 5/10 (stress-tested at $387.98 close). Tier 1 maintained (HOLD \u2227 conviction >=5) at conviction floor. One-notch demotion driven by: Brazil $0.41 one-time tax benefit deflating Q3 beat to 18% real, April 8 pilot tentative agreement +40% wages (~$500-750M cash through FY27), buyback de-acceleration cutting total shareholder return ~5%\u21922.5%, Amazon volume gap accelerating (AMZN 6.7B/+10% vs FDX 3.6B/-3.4%). Offsets: Network 2.0 25%\u219235% pace, Freight spin valuation $20-30B (vs DR $13-15B), IEEPA tariff strike-down Feb 24, capex tightened. Position 2-3% (down from 3-4%); stop $310 (was null). Single key risk: FY27 stub-FedEx EPS at Q4 print (late June) <$16 floor.",
       "_display_label": "FDX"
     },
+    "fed_independence_regime": {
+      "id": "fed_independence_regime",
+      "name": "US Fed Institutional Independence Regime (2026 Powell-Warsh transition)",
+      "type": "institution",
+      "created": "2026-04-29",
+      "last_updated": "2026-04-30",
+      "summary": "Institution node tracking the political-independence regime around the US Federal Reserve during the 2026 Powell-Warsh transition. The thesis: institutional independence affects monetary policy outcomes \u2014 a less-independent Fed under direct executive pressure may cut rates faster than data warrants, may telegraph dovishness to stay aligned with administration positioning, and may face credibility-driven term-premium widening on the long end. Three observations through 2026-04-28: (1) DOJ-Powell-probe dismissal April 25 \u2014 institutional retaliation channel resolved; (2) Warsh confirmation hearings as Powell successor candidate; (3) Powell's 'swan song' FOMC framing 2026-04-28-29 + Warsh confirmation Wed = third cross-reference in 7 days per /update-graph 2026-04-28 changelog. NODE TYPE = `institution` (per ARCHITECTURE \u00a76 node types: stock, sector, macro, commodity, institution, index). VERIFIED EDGES \u2014 primary cascade: fed_independence_regime \u2192 fed_rates (directness=1, institutional \u2192 policy parameter sensitivity); secondary cascade: fed_independence_regime \u2192 ai_disruption (directness=2, via Fed-pivot-affects-AI-capex-narrative chain). NO direct stock edges authored \u2014 per macro-node-authoring discipline, none of PAYX, ADBE, MU DRs contain Fed-independence-specific language (they discuss Fed rates generically). Stock-side cascades fan via the two macro edges through existing fed_rates \u2192 PAYX and ai_disruption \u2192 MU/ADBE/PAYX/BBY/WMT edges already in the graph. This is the FIRST macro-to-macro edge pattern in the graph; previously all macro/sector/commodity nodes edged only to stocks. AUTO_ORGANIC_CREATED per /update-graph Step 9 v1.5.2 organic-creation rules: \u00a76 Rule 1 (\u22652 signals) \u2713 (3 appearances 2026-04-21/04-25/04-28); Rule 2 (\u22657-day span) \u2713 (7-day span exact); Rule 3 (\u22652 connected nodes) \u2713 (fed_rates + ai_disruption); Rule 4 (persistent entity \u2014 institutional regime, not event) \u2713.",
+      "current": {
+        "powell_term_status": "Sitting Fed Chair through May 2026 expiration; 'swan song' framing per April 2026 financial press coverage of FOMC April 28-29 meeting",
+        "warsh_status": "Confirmation hearings as Powell successor candidate; institutional positioning per news-intel coverage 2026-04-21 onwards",
+        "doj_probe_status": "Powell DOJ probe dismissed April 25, 2026 (per news-intel coverage of that date); institutional retaliation channel resolved",
+        "fomc_meeting_april_28_29_2026": "Powell's likely-final press conference; market pricing 2 cuts in 2026 per fed_rates current state",
+        "term_premium_status_april_2026": "10Y +2bp on FOMC eve per market-data.json 2026-04-28; minimal repricing \u2014 independence concerns not yet driving long-end stress",
+        "regime_observation": "3 cross-references in 7 days through 2026-04-28 (per /update-graph organic-creation log); explicit pattern recognition by brief writer in 2026-04-28 changelog",
+        "rate_decision_freedom_concern": "Less-independent Fed may cut faster than data warrants \u2192 looser financial conditions \u2192 asset-multiple expansion (positive for SaaS/duration sensitive); but credibility-driven term-premium widening on long end (negative for duration positioning)",
+        "source_date": "2026-04-29",
+        "verification_note": "Values drawn from news-intel coverage 2026-04-21 (Warsh hearings), 2026-04-25 (DOJ-Powell-probe dismissal), 2026-04-28 (FOMC swan-song framing + Warsh confirmation Wednesday positioning). Re-verify after FOMC presser 2026-04-29 PM and Warsh confirmation outcome. The 'rate decision freedom' field is the load-bearing current-state field \u2014 flips from concern \u2192 manifest if a rate cut occurs that diverges from data dependency."
+      },
+      "signals": [
+        {
+          "date": "2026-04-30",
+          "content": "Powell announced at 'last press conference as chair' that he will REMAIN ON BOARD OF GOVERNORS past his chair term, citing 'unprecedented' legal attacks by Trump administration. FIRST TIME A FED CHAIR HAS STAYED ON AS GOVERNOR SINCE 1948. This denies Trump a Board vacancy to fill. Powell explicitly framing as defense of central-bank independence \u2014 'they left me no choice.' Converts what had been an institutional question into an active Trump-vs-Fed political contest. Macro node activates on this datapoint with conviction. Concurrent: Senate Banking Committee advanced Kevin Warsh as next Fed chair on party-line vote \u2014 Warsh has promised 'regime change' at Fed; CNBC survey: only 50% think Warsh will conduct policy 'mostly or very independently.' Cross-asset transmission today: gold +2.0% / DXY -0.24% / 10Y +7bps \u2014 gold defied 'real-rates-up = gold-down' textbook, Agent B [F-3] DAY-1 NEW correlation breakdown flagged as political-credibility-decouple-from-real-rates regime. VVIX/MOVE up vs VIX down [F-4] confirms uncertainty repricing into vol surfaces.",
+          "sources": [
+            "news-intel.md Agent A B1",
+            "Powell press conference 2026-04-29",
+            "Washington Post; Axios; Fortune",
+            "market-action.md Agent B Section F-3 + F-4"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
+        }
+      ],
+      "edges": [
+        {
+          "to": "fed_rates",
+          "type": "institutional_policy_sensitivity",
+          "context": "PRIMARY MACRO-TO-MACRO EDGE. Fed institutional independence directly modulates fed_rates outcomes through three channels: (1) RATE-DECISION FREEDOM \u2014 a less-independent Fed under direct executive pressure may cut faster than the data warrants, telegraphing dovishness to stay aligned with administration positioning. The April 2026 evidence: market pricing 2 cuts in 2026 (per fed_rates current state) with FOMC April 28-29 + Warsh Wed creating 'asymmetric dovish risk' framing in financial press. (2) TERM-PREMIUM CHANNEL \u2014 credibility erosion at the institutional level can drive long-end term-premium widening even if the short rate is cut. The April 2026 observation: 10Y +2bp on FOMC eve (per market-data.json 2026-04-28), minimal repricing so far \u2014 but historically (2018-2019 Fed-pressure episodes), term premium widens 20-40bp over 6-12 months when independence is publicly questioned. (3) FORWARD-GUIDANCE CHANNEL \u2014 a Fed Chair transition mid-cycle (Powell exit May 2026, Warsh likely successor) creates discontinuity in 'dot plot' framing; markets price the SUCCESSOR's reaction function, not the outgoing Chair's. This is a directness=1 edge because the institutional \u2192 policy mechanism is direct (not chained through other entities). Source: news-intel coverage 2026-04-21 / 04-25 / 04-28 + fed_rates.json current state. NO STOCK-DR SOURCE because this is macro-to-macro (no individual stock DR discusses Fed independence specifically \u2014 they discuss Fed rates generically, which is the downstream node).",
+          "directness": 1,
+          "last_activated": "2026-04-29",
+          "activation_count": 0.0,
+          "weight": 0.0,
+          "source": "news-intel coverage 2026-04-21 + 2026-04-25 + 2026-04-28; fed_rates.json"
+        },
+        {
+          "to": "ai_disruption",
+          "type": "monetary_narrative_amplification",
+          "context": "SECONDARY MACRO-TO-MACRO EDGE (directness=2 \u2014 chained through fed_rates). Fed independence regime affects AI-disruption narrative via the Fed-pivot-affects-AI-capex-narrative channel. Mechanism: a dovish-leaning Fed under independence pressure cuts rates faster \u2192 cost of capital declines \u2192 hyperscaler AI capex narrative is sustained longer (cheaper to fund $100B+ AI infrastructure programs) \u2192 AI-disruption thesis is strengthened on the supply side. Conversely: if Fed independence is restored and rates stay higher-for-longer, AI capex narrative compresses (per OpenAI WSJ revenue miss 2026-04-28 \u2014 the demand side already weakened, making the cost-of-capital cushion more important). The April 2026 evidence: FOMC-eve positioning into Powell's likely-final presser hit BOTH fed_rates positioning (10Y +2bp) AND AI-hardware (SMH -4.20%, MU -6.04% on the OpenAI shock that landed simultaneously). The cross-cutting positioning ties the two macros together at the institutional layer. Per /update-graph 2026-04-28 changelog explicit observation: 'Connectivity now plausibly extends to fed_rates + ai_disruption (FOMC-eve-positioning hits both).' Directness=2 because the causal chain is fed_independence_regime \u2192 fed_rates (cost of capital) \u2192 ai_disruption (narrative durability), not a one-hop institutional-to-narrative effect. Source: news-intel + market-action 2026-04-28 cross-reference.",
+          "directness": 2,
+          "last_activated": "2026-04-29",
+          "activation_count": 0.0,
+          "weight": 0.0,
+          "source": "news-intel.md + market-action.md 2026-04-28; ai_disruption.json"
+        }
+      ],
+      "trigger_points": [
+        {
+          "condition": "Fed cuts rates at a meeting where Powell-Warsh transition is mid-flight (Warsh confirmed but not yet seated) AND the cut diverges from prior dot plot (>25bp surprise OR cut in face of stable inflation print)",
+          "cascade": [
+            "fed_rates"
+          ],
+          "mechanism": "fed_rates: rate-decision-freedom channel manifests \u2014 independence concerns shift from theoretical to observable. Term premium widening would follow per channel (2). Triggers cascade through existing fed_rates \u2192 payx (PAYX float income $200-210M annually exposure per PAYX DR) + fed_rates \u2192 ai_disruption (chained) downstream effects. /update-graph cascade engine will fan based on existing fed_rates edge weights.",
+          "status": "watching",
+          "last_evaluated": "2026-04-29"
+        },
+        {
+          "condition": "10Y term premium widens >20bp over 30-day window with no corresponding inflation surprise (Treasury auction 2-and-10 tail >2bp on multiple consecutive auctions)",
+          "cascade": [
+            "fed_rates"
+          ],
+          "mechanism": "Manifest evidence of credibility-driven term-premium widening per channel (2) above. Historical comp: 2018-2019 Fed-pressure episodes saw 20-40bp term-premium widening over 6-12 months. Signals the regime has shifted from concern \u2192 market-pricing.",
+          "status": "watching",
+          "last_evaluated": "2026-04-29"
+        }
+      ],
+      "extraction_gaps": [
+        {
+          "rejected_edge_to": "payx",
+          "rejection_reason": "Direct edge rejected per macro-node-authoring discipline. PAYX Q3 FY2026 DR has detailed Fed-rates-sensitivity content (Bear Point 2: float income $200-210M annual, $70-90M pre-tax hit under 250bps cut scenario) but ZERO mention of 'Fed independence' / 'Powell' / 'Warsh' / 'monetary independence' / 'Fed Chair' as a thesis driver. The PAYX edge to fed_rates is already authored in fed_rates.json (verified per PAYX DR). fed_independence_regime cascades to PAYX via the chain fed_independence_regime \u2192 fed_rates \u2192 payx, captured by the cascade engine through directness composition. Direct edge would violate source-discipline."
+        },
+        {
+          "rejected_edge_to": "adbe",
+          "rejection_reason": "Direct edge rejected per macro-node-authoring discipline. ADBE Q1 FY2026 DR (and critical review) discusses AI-disruption competitive thesis extensively but does not contain Fed-independence-specific language. SaaS valuation-multiple sensitivity to rates exists in general financial knowledge but is not in the source. Cascade routes via ai_disruption \u2192 adbe (existing competitive_threat edge) and via fed_rates duration sensitivity (general SaaS pattern, not authored as direct edge in fed_rates yet)."
+        },
+        {
+          "rejected_edge_to": "mu",
+          "rejection_reason": "Direct edge rejected per macro-node-authoring discipline. MU Q2 FY2026 DR discusses memory cycle dynamics and AI-hardware demand extensively; zero Fed-independence content. Cascade routes via ai_disruption \u2192 mu (existing supply_chain edge) \u2014 that's the load-bearing channel for MU's exposure to monetary regime through AI capex narrative."
+        }
+      ],
+      "creation_provenance": {
+        "method": "AUTO_ORGANIC_CREATED",
+        "skill": "/update-graph Step 9 v1.5.2 organic-creation rules per ARCHITECTURE.md \u00a76",
+        "rule_evaluation": {
+          "rule_1_signals_count": 3,
+          "rule_2_span_days": 7,
+          "rule_3_connected_nodes_count": 2,
+          "rule_4_persistent_entity": true,
+          "all_rules_met_strict": true,
+          "intent_justification": "All four \u00a76 rules met under strict interpretation. 3 cross-references over 7-day span (2026-04-21 Warsh confirmation hearings \u2192 2026-04-28 FOMC swan-song framing). Causal connections to fed_rates (directness=1) and ai_disruption (directness=2). Persistent regime (institutional condition, not event). Per /update-graph 2026-04-28 changelog: 'Re-evaluate Wed-Thurs after FOMC presser; if explicit signals appear in 2 of next 3 sessions, organic creation rules met' \u2014 the rules are met as of seed-state evaluation 2026-04-29."
+        },
+        "first_seen_date": "2026-04-21",
+        "auto_created_date": "2026-04-29",
+        "state_file_entry": "hive-mind/state/pending-macro-node-candidates.json \u2014 fed_independence_regime",
+        "companion_authoring_report": "hive-mind/graph/nodes/extraction_reports/fed_independence_regime_authoring_report.md",
+        "novel_pattern_introduced": "First macro-to-macro edge pattern in the graph. Previous macro/sector/commodity nodes edged only to stocks. Per ARCHITECTURE \u00a76 node types and \u00a75 edge schema, macro-to-macro is allowed; this node exercises that allowance. fed_independence_regime \u2192 fed_rates (institutional \u2192 policy) and fed_independence_regime \u2192 ai_disruption (institutional \u2192 narrative via fed_rates chain). Stock-side cascades fan via existing edges from those downstream macros."
+      },
+      "_display_label": "Fed Independence"
+    },
     "fed_rates": {
       "id": "fed_rates",
       "name": "Federal Reserve Interest Rate Policy",
       "type": "macro",
       "created": "2026-04-21",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Fed funds rate at 4.25-4.50%. Market pricing 2 cuts in 2026. Within the current Tier 1 cohort, the only rate exposure explicitly documented in source research is PAYX float income ($200-210M annually, dropping to $120-140M under a 250bps cut per PAYX Q3 FY2026 research). SaaS-multiple rate sensitivity is widely discussed in the market generally but is NOT articulated as a driver in the ADBE Q1 FY2026 report \u2014 edge deferred pending documented mechanism.",
       "current": {
         "fed_funds_rate": "4.25-4.50%",
@@ -5479,6 +6034,18 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "FOMC voted 8-4 on 2026-04-29 to maintain federal funds target range at 3.50-3.75% (held interest on reserve balances at 3.65% effective 2026-04-30). Stephen Miran dissented for 25bp cut; Hammack, Kashkari, Logan dissented against inclusion of an easing bias. THE FOUR DISSENTS ARE THE MOST SINCE OCTOBER 1992. Treasury curve sold off across the belly: 5Y +2.06% to 4.065% (~+8bps), 10Y +1.47% to 4.418% (~+7bps, fresh 1-month high), 30Y +0.87% to 4.987% (touched 52-week high). The Powell-era 'consensus communications' model has formally broken down one meeting before the chair-handover. For rate-sensitive Tier 1 names (DG/DLTR/ROST/TJX cohort cost-of-capital; FAF mortgage purchase activity), this creates wider uncertainty bands on the path forward, not directional clarity. KRE -1.90% / KBE -1.55% / XHB -2.69% / ITB -2.87% / TLT -0.78% confirm rate-rise sensitivity transmission. Q1 2026 GDP advance estimate releases 2026-04-30 8:30 AM ET (Atlanta GDPNow 1.2% vs Polymarket 2.5-3.0% consensus = widest spread into a print since Q4 2024); core PCE simultaneously.",
+          "sources": [
+            "news-intel.md Agent A B1/B4",
+            "Federal Reserve press release 2026-04-29",
+            "market-action.md Agent B Section A + Sector ETFs"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [
@@ -5537,7 +6104,7 @@ const GRAPH_DATA = {
       "sector": "industrials",
       "industry": "aerospace_and_defense",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Prime defense contractor (combat systems, marine, Gulfstream); Hormuz-relevant defense-spending cycle.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -5549,10 +6116,13 @@ const GRAPH_DATA = {
         "revenue_growth": 7.8
       },
       "current": {
-        "price": 308.47,
-        "delta_1d": -1.3,
-        "delta_1w": -5.24,
-        "delta_1m": -10.63
+        "price": 338.73,
+        "delta_1d": 7.99,
+        "delta_1w": 5.61,
+        "delta_1m": -0.14,
+        "pct_from_52w_high": -7.37,
+        "pct_from_52w_low": 8.38,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -5575,6 +6145,30 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Q1 2026 EARNINGS PRINT (10-Q + 8-K Item 2.02 filed 2026-04-29; accessions 0000040533-26-000012 + 0000040533-26-000010): Revenue $13.481B (+10.3% YoY vs $12.223B); Operating earnings $1.420B (+12.0% YoY); Net earnings $1.125B (+13.2%); GAAP diluted EPS $4.10 (+12.0% YoY vs $3.66, +11.1% beat vs $3.69 cons); operating margin 10.5%. OCF $2.2B (192% of net earnings); capex $203M; dividends paid $405M; ending cash $3.7B. Orders $26.6B; consolidated book-to-bill 2.0x (defense 2.2x; aerospace 1.2x). Backlog $130.8B + estimated potential contract value $57.6B = $188.4B total. Segments: Aerospace $3,279M (+8.4%, 15.0% margin); Marine Systems $4,343M (+21.0%, 7.3% margin \u2014 Submarine-build mix); Combat Systems $2,283M (+4.9%, 13.6% margin); Technologies $3,576M (+4.2%, 9.5% margin). Stock +7.99% to $338.73 on the print; stock-specific alpha vs ITA +9.41pp = LARGEST SINGLE-STOCK ALPHA OF DAY across all tracked names. Prosecutor-lens scan on 10-Q (189,823 chars): no flag-phrase hits ('refined / harmonized / updated assumptions / for comparability / enhanced timing / did not have a material impact'); 3 'reclassified' hits all in standard AOCI/pension footnote. Stored to sec_financial_snapshots Q1 2026, extraction_confidence 0.92. Cohort context: 3-of-3 reporting Q1 2026 defense primes (RTX 4/21, NOC 4/21, GD 4/29) all beat with strong order flow \u2014 cohort tape de-rate inconsistent with order-flow data (defense disconnect day-6 regime). DR CANDIDATE auto-queued priority 7.",
+          "sources": [
+            "sec-intel.md Agent C Section A/GD + C",
+            "market-action.md Agent B Section B + G + F-5",
+            "news-intel.md Agent A D/GD",
+            "SEC 8-K + 10-Q",
+            "Motley Fool transcript"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Vanguard Schedule 13G filed 2026-04-29 (accession 0002100119-26-000531; passive). Routine.",
+          "sources": [
+            "sec-intel.md Agent C Section A/GD"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
         }
       ],
       "edges": [],
@@ -5589,7 +6183,7 @@ const GRAPH_DATA = {
       "sector": "consumer_defensive",
       "industry": "packaged_foods",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Deep-value dividend aristocrat at 15-year low ($35.59) facing structural GLP-1 demand destruction, private-label competition, and management credibility erosion (guidance cut twice in 6 months; $4.6B buybacks executed at ~$69 avg while stock now ~$35). PASS at 3/10 conviction. Probability-weighted 1.2x/5Y (~3.8% IRR) below risk-free rate. Apparent cheapness (6.6x EV/EBITDA, 11.9% FCF yield, 6.86% dividend) is distorted by one-time yogurt divestiture gain and actively declining FCF toward $1.8B. Watching Q4 FY2026 (June 2026) + FY2027 guidance as next inflection; BUY-reassessment only if stock reaches $25-28 AND organic growth inflects positive.",
       "thesis": {
         "verdict": "PASS",
@@ -5620,12 +6214,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 34.825,
-        "delta_1d": 0.3,
-        "delta_1w": -0.64,
-        "delta_1m": -2.85,
+        "price": 34.47,
+        "delta_1d": -0.81,
+        "delta_1w": -2.05,
+        "delta_1m": -5.55,
         "pe_forward": 10.7,
-        "market_cap_B": 18.7
+        "market_cap_B": 18.7,
+        "pct_from_52w_high": -28.48,
+        "pct_from_52w_low": 0.0,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -5749,6 +6346,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -0.81% to $34.47 (-5.55% 1m). Same cohort weakness as MKC (packaged foods + consumer defensive in soft-XLP tape). Vanguard 13G x2 routine.",
+          "sources": [
+            "market-action.md Agent B Rotation Summary",
+            "sec-intel.md Agent C Section A/GIS"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -6163,7 +6771,7 @@ const GRAPH_DATA = {
       "sector": "Energy",
       "industry": "Oil & Gas Equipment & Services",
       "created": "2026-04-25",
-      "last_updated": "2026-04-25",
+      "last_updated": "2026-04-30",
       "source_note": "Created from broad-scan PARTIAL PASS on 2026-04-25 \u2014 gate 3 exception: deep_value_commodity (FCF>10%). Per /update-graph v1.5 Step 9.5 routing rule (PARTIAL PASS -> Tier 2 node, NOT auto_dr_queued).",
       "current": {
         "price": null,
@@ -6173,7 +6781,18 @@ const GRAPH_DATA = {
         "track": "E"
       },
       "thesis": null,
-      "signals": [],
+      "signals": [
+        {
+          "date": "2026-04-30",
+          "content": "All-stock merger with Hornbeck Offshore (~$75M synergy target, closes H2 2026; ticker becomes HOS) carry-over from 2026-04-23. No new filings today. NOTE: HLX NOT in market-data.json universe.",
+          "sources": [
+            "news-intel.md Agent A D/HLX"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
+        }
+      ],
       "edges": [],
       "management_promises": [],
       "trigger_points": [],
@@ -6196,17 +6815,20 @@ const GRAPH_DATA = {
       "sector": "Industrials",
       "industry": "Conglomerates",
       "created": "2026-04-24",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "source_note": "Created from broad-scan PARTIAL PASS on 2026-04-24 \u2014 gate 3 exception: dividend_aristocrat (Div>2%, ROE>15%, OPM>15%)",
       "current": {
-        "price": 212.035,
+        "price": 210.3,
         "market_cap_B": 135.817207808,
         "pe_forward": 18.688997,
         "pe_trailing": 30.884726,
         "track": "A",
-        "delta_1d": -0.01,
-        "delta_1w": -4.58,
-        "delta_1m": -4.97
+        "delta_1d": -1.24,
+        "delta_1w": -4.4,
+        "delta_1m": -5.9,
+        "pct_from_52w_high": -15.22,
+        "pct_from_52w_low": 12.33,
+        "last_close_date": "2026-04-29"
       },
       "thesis": null,
       "signals": [
@@ -6243,7 +6865,7 @@ const GRAPH_DATA = {
       "sector": "Healthcare",
       "industry": "Biotechnology",
       "created": "2026-04-25",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "signals": [
         {
           "date": "2026-04-26",
@@ -6262,6 +6884,19 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "FDA accepts sBLA for Ziihera (zanidatamab-hrii) for 1L HER2+ gastric/GEJ cancer; PRIORITY REVIEW; PDUFA 2026-08-25. Announced 2026-04-27 per Jazz Pharmaceuticals press release; surfaced today in Agent A scan. Significant update vs JAZZ DR (HOLD 6/10 from 2026-04-25): the JAZZ DR's BUY catalyst was 'Zanidatamab GEA PDUFA Q3-Q4 2026' \u2014 the FDA acceptance pulls PDUFA forward to 2026-08-25 (~late Q3). This is a positive thesis update worth incorporating at next DR refresh. Pre-stages Q1 2026 print on 2026-05-05: management will frame Ziihera label-expansion narrative against the at-risk Xywav guide. Post-FDA-acceptance pullback (TipRanks notes traders locking in gains) is technical, not fundamental. NOTE: JAZZ NOT in market-data.json universe \u2014 current.* fields not refreshed today.",
+          "sources": [
+            "news-intel.md Agent A C/JAZZ",
+            "sec-intel.md Agent C D + Reconciliation",
+            "Jazz Pharmaceuticals press release 2026-04-27",
+            "Investing.com"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [
@@ -6297,7 +6932,8 @@ const GRAPH_DATA = {
           "source": "FY25 earnings release",
           "check_date": "2026-05-05",
           "status": "at_risk",
-          "at_risk_reason": "Critical review (2026-04-26) found Amneal high-sodium oxybate AG launched Jan 2026 + Hikma AG since 2023 may force payer step-therapy in H2 2026, throttling Xywav new starts. Mgmt acknowledged 'competitive dynamics to evolve in H2 2026'. Promise downgraded from tracking to at_risk pending Q1 26 print."
+          "at_risk_reason": "Critical review (2026-04-26) found Amneal high-sodium oxybate AG launched Jan 2026 + Hikma AG since 2023 may force payer step-therapy in H2 2026, throttling Xywav new starts. Mgmt acknowledged 'competitive dynamics to evolve in H2 2026'. Promise downgraded from tracking to at_risk pending Q1 26 print.",
+          "interim_note": " [2026-04-30 update] Ziihera FDA Priority Review acceptance for 1L HER2+ gastric/GEJ cancer (PDUFA 2026-08-25) pulls forward the BUY catalyst from JAZZ DR's 'Q3-Q4 2026' assumption. Pre-stages Q1 2026 print on 2026-05-05 for label-expansion narrative against the at_risk Xywav guide. Status remains at_risk; PDUFA pull-forward is positive offset but does not change Xywav competitive dynamic from Amneal+Hikma AGs."
         },
         {
           "promise": "Zanidatamab sBLA submitted Q1 2026 under RTOR; potential 1L HER2+ GEA launch 2H 2026",
@@ -6414,7 +7050,7 @@ const GRAPH_DATA = {
       "sector": "energy",
       "industry": "oil_and_gas_midstream",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member (portfolio) \u2014 screened, not deep-researched. Largest US LNG exporter; Hormuz-relevance via global LNG/gas pricing channel and US LNG export infrastructure build-out.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -6426,10 +7062,13 @@ const GRAPH_DATA = {
         "revenue_growth": 12.3
       },
       "current": {
-        "price": 264.77,
-        "delta_1d": 2.07,
-        "delta_1w": 2.71,
-        "delta_1m": -10.82
+        "price": 272.23,
+        "delta_1d": 2.74,
+        "delta_1w": 5.73,
+        "delta_1m": -7.29,
+        "pct_from_52w_high": -8.31,
+        "pct_from_52w_low": 44.55,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -6481,6 +7120,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +2.74% to $272.23; alpha vs XLE +0.45pp (sector beta + marginal LNG-specific lift). Q2 dividend ex-date ~2026-05-08 (record 2026-05-11; payable 2026-05-19; $0.555/share per 8-K 2026-04-28 Item 7.01) within 14 days. No new filings today.",
+          "sources": [
+            "market-action.md Agent B Section B",
+            "sec-intel.md Agent C Section D/LNG"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -6489,9 +7139,9 @@ const GRAPH_DATA = {
           "type": "commodity_exposure",
           "context": "Cheniere is the largest US LNG exporter (Sabine Pass, Corpus Christi). Global LNG contract pricing is partially oil-indexed (Brent-linked long-term offtake contracts), and spot LNG correlates with crude during supply shocks. Hormuz disruptions that spike Brent typically cascade into elevated global LNG pricing, supporting Cheniere's spot-market netbacks above contracted floors.",
           "directness": 2,
-          "last_activated": "2026-04-28",
-          "activation_count": 1.0,
-          "weight": 1.5,
+          "last_activated": "2026-04-30",
+          "activation_count": 2.0,
+          "weight": 3.0,
           "source": "tier2_sector_classification"
         }
       ],
@@ -6507,7 +7157,7 @@ const GRAPH_DATA = {
       "industry": "Diagnostics & Research (CRO)",
       "market_cap": "$11.7B (2026-04-25)",
       "created": "2026-04-25",
-      "last_updated": "2026-04-25",
+      "last_updated": "2026-04-30",
       "thesis": {
         "verdict": "PASS",
         "conviction": 4,
@@ -6612,6 +7262,16 @@ const GRAPH_DATA = {
           "significance": "high",
           "summary": "Seed DR triggered by broad-scan FULL PASS 2026-04-24. Verdict PASS conv 4. Major thesis tension: 0.88x Q1 book-to-bill vs raised FY26 guidance, with active securities fraud lawsuit alleging earlier guidance overstatement.",
           "source": "deep_research_reports/MEDP_Q1_2026_opus.md"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Securities class-action lawsuit filings continue (REPORTED \u2014 Levi & Korsinsky; Glancy Prongay deadline alerts 2026-04-25 to 2026-04-29). Plaintiff allegations focus on Q4 2025 book-to-bill of 1.04x vs guided 1.15x; alleged concealment of cancellation velocity, therapeutic-area concentration, and pre-backlog fragility. Stock down ~20% over 7 days into late April. Backlog deterioration thesis is now litigation-supported, not just analyst-flagged. NOTE: MEDP DR completed 2026-04-25 with PASS verdict (4/10 conviction) citing this exact lawsuit (S.D. Ohio, lead-plaintiff deadline 2026-06-08) + 0.88x net book-to-bill Q1 2026; thesis confirmed by today's continuing filings. NOTE: MEDP NOT in market-data.json universe.",
+          "sources": [
+            "news-intel.md Agent A B6/MEDP"
+          ],
+          "significance": "medium",
+          "verification": "REPORTED",
+          "source_agent": "A"
         }
       ],
       "edges": [
@@ -6661,7 +7321,7 @@ const GRAPH_DATA = {
       "sector": "consumer_defensive",
       "industry": "packaged_foods",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "136-year-old spice franchise (42% global share, 40-year Dividend Aristocrat) mid-transformation via $44.8B Unilever Foods Reverse Morris Trust merger that dilutes holders to 35% of a $20B-revenue combined entity at 4.3x pro-forma leverage. PASS at 8/10 conviction \u2014 'UNINVESTABLE PENDING MERGER RESOLUTION' per DR Section 10. Standalone fairly valued ($56-62); combined entity unmodelable for 18+ months; probability-weighted 5Y return of 1.24x (4.4% IRR) below risk-free Treasury. Watching Q2 FY2026 (late June 2026) + S-4 proxy filing as next inflection.",
       "thesis": {
         "verdict": "PASS",
@@ -6692,12 +7352,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 51.34,
-        "delta_1d": 1.87,
-        "delta_1w": -1.23,
-        "delta_1m": -2.4,
+        "price": 50.54,
+        "delta_1d": -1.17,
+        "delta_1w": -1.81,
+        "delta_1m": -5.08,
         "pe_forward": 15.5,
-        "market_cap_B": 14.0
+        "market_cap_B": 14.0,
+        "pct_from_52w_high": -28.83,
+        "pct_from_52w_low": 5.4,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -6850,6 +7513,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -1.17% to $50.54 (-5.08% 1m). Packaged-foods/consumer-defensive weakness continues (XLP -0.19% but DLTR/DG/MKC/GIS all -1 to -2.6% \u2014 discount-retail and defensive-food cohort under pressure). Vanguard Schedule 13G filed 2026-04-29 routine.",
+          "sources": [
+            "market-action.md Agent B Section B + Rotation Summary",
+            "sec-intel.md Agent C Section A/MKC"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -7158,7 +7832,7 @@ const GRAPH_DATA = {
       "sector": "basic_materials",
       "industry": "agricultural_inputs",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Large phosphate and potash producer; fertilizer watchlist with cyclical pricing exposure.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -7170,10 +7844,13 @@ const GRAPH_DATA = {
         "revenue_growth": 5.6
       },
       "current": {
-        "price": 22.98,
-        "delta_1d": -1.03,
-        "delta_1w": -5.04,
-        "delta_1m": -8.08
+        "price": 23.03,
+        "delta_1d": -0.69,
+        "delta_1w": -6.08,
+        "delta_1m": -7.88,
+        "pct_from_52w_high": -26.56,
+        "pct_from_52w_low": 0.0,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -7199,7 +7876,7 @@ const GRAPH_DATA = {
       "sector": "technology",
       "industry": "semiconductors",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Peak-cycle memory/HBM story: 540% rally from 52-week low, forward PE 4.3x on cyclical peak earnings. Q2 FY2026 revealed unprecedented results (revenue $23.9B +196% YoY, GM 75%, EPS $12.07) that inverted v1's peak-cycle-trap framework. v2 HOLD with constructive bias (6/10, up from v1's HOLD/TRIM 5/10). Non-HBM margins now EXCEED HBM margins \u2014 entire franchise re-rated by structural supply shortage (customer allocation 50-67%, +90-95% QoQ DRAM ASPs). Probability-weighted 5Y return 0.95x (~-1% IRR) at $420; compelling entry at $300 (1.33x pwr). Wait for pullback for new money; HOLD for existing holders.",
       "thesis": {
         "verdict": "HOLD",
@@ -7227,12 +7904,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 492.9,
-        "delta_1d": -6.04,
-        "delta_1w": 9.68,
-        "delta_1m": 38.04,
+        "price": 518.46,
+        "delta_1d": 2.81,
+        "delta_1w": 6.36,
+        "delta_1m": 61.11,
         "pe_forward": 4.3,
-        "market_cap_B": 474.3
+        "market_cap_B": 474.3,
+        "pct_from_52w_high": -1.16,
+        "pct_from_52w_low": 157.68,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -7390,6 +8070,45 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +2.81% to $518.46 (NEW context: 52w-high $524.56; pct_from_52w_high -1.16%); alpha vs SMH +1.11pp. **$500 TRIM ZONE ACTIVE FOR SECOND CONSECUTIVE SESSION** (close $518.46 = +3.7% above $500 threshold). Modest stock-specific lift on top of sector rally; storage/memory complex moved as a unit (STX +11.10%, WDC +5.57%, SNDK +6.17%, SK Hynix Q1 in last week's tape). Trim execution decision at-hand for existing holders. Trim execution remains the open question from the 2026-04-28 brief.",
+          "sources": [
+            "market-action.md Agent B Section B/C",
+            "news-intel.md Agent A A + C/MU",
+            "market-data.json week_52_high field"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Mag-7 capex confirmation cluster post-close 2026-04-29 (CONFIRMED \u2014 Meta/Alphabet/Microsoft IR; CNBC): META Q1 revenue $56.31B (+33%); FY26 capex raised to $125-145B (stock -6% AH on the print). GOOGL Q1 revenue $109.9B; Cloud +63% YoY ($20.03B); FY26 capex raised to $180-190B. MSFT FY26 Q3 EPS $4.27 / revenue $82.89B; AI run-rate $37B (+123% YoY); Azure +40%; commercial bookings +112%. Mechanical implication for memory: hyperscaler capex up = HBM/DRAM demand pull supports MU's near-term backlog. CONTRADICTING SIGNAL: META -6% AH means market is NOW penalizing AI capex-up at the largest names \u2014 second confirming datapoint (after OpenAI WSJ 2026-04-28) of consensus turning on the 'AI-capex-up = good' trade. Two-narrative tension: SK Hynix structural-bull supply story vs. AI-economics demand-question. Live at-risk for thesis if meta-narrative shifts further.",
+          "sources": [
+            "news-intel.md Agent A B8 + D/MU",
+            "Meta IR",
+            "Alphabet IR",
+            "Microsoft IR",
+            "CNBC"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Microsoft-OpenAI revenue-share cap restructured 2026-04-27 (Bloomberg / CNBC). MSFT and OpenAI restructured the partnership, capping revenue-share payments. AI-economics being formally re-papered in real time \u2014 follow-on to WSJ OpenAI revenue-miss story from 2026-04-28. Material for MU's ai_disruption edge thesis: confirms the demand-pull premise is being structurally re-priced. MU also added participation in J.P. Morgan Global TMT Conference, Boston, 2026-05-20 6:40 AM MT (routine).",
+          "sources": [
+            "news-intel.md Agent A B8 + D + C/MU",
+            "Bloomberg",
+            "CNBC 2026-04-27",
+            "GlobeNewswire 2026-04-29"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [
@@ -7398,9 +8117,9 @@ const GRAPH_DATA = {
           "type": "sector_membership",
           "context": "Micron is one of three major DRAM manufacturers globally (Samsung Memory, SK Hynix, Micron) and the only US-headquartered leading-edge DRAM producer. FY2026E revenue ~$76-80B, DRAM share ~23%, NAND share ~13%, HBM share ~24% (per TrendForce 2026 estimates). Core exposure to the 2026 global memory shortage: DRAM contract prices +90-95% QoQ in Q1 2026, NAND prices +55-60%. Memory TAM 2026E: DRAM $190-200B, NAND $100B, HBM $50-55B. Micron is the fastest-margin-expanding memory maker (75% GM Q2 FY26 vs Samsung/SK Hynix peak 55-60%). Tier 1 cohort peers in the sector: none currently; Micron is the only Tier 1 semiconductor stock.",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 4.0,
-          "weight": 10.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 5.0,
+          "weight": 10,
           "source": "deep_research_reports/MU_Q2_FY2026_opus_v2.md"
         },
         {
@@ -7408,9 +8127,9 @@ const GRAPH_DATA = {
           "type": "macro_sensitivity",
           "context": "Micron is a BENEFICIARY of AI disruption \u2014 inverse of the ADBE/ai_disruption competitive_threat framing. Per CEO Mehrotra (transcript): 'Memory is at the heart of AI \u2014 enabling longer context windows, deeper reasoning chains, and multi-agent orchestration. AI has fundamentally recast memory as a defining strategic asset in the AI era.' Mechanism: HBM content per AI accelerator growing faster than unit volumes (H100 80GB \u2192 H200 141GB \u2192 Blackwell 192GB \u2192 Vera Rubin 288GB); DRAM requirement in advanced AI accelerators doubled YoY. Enterprise AI inference <5% penetrated. Per management (transcript): 'AI demand is driving DRAM and NAND data center bits TAM to exceed 50% of the industry TAM for the first time in calendar 2026.' 40% CAGR HBM TAM growth to $100B by 2028 (from $35B in 2025). This is the structural demand side of the thesis \u2014 separate from the supply-constraint side (cannibalization, greenfield limits).",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 4.0,
-          "weight": 10.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 5.0,
+          "weight": 10,
           "source": "earnings_transcripts/MU_Q2_FY2026_transcript.txt"
         },
         {
@@ -7540,6 +8259,12 @@ const GRAPH_DATA = {
               "from": "elevated",
               "to": "active",
               "note": "Monday 2026-04-28 intraday cross CONFIRMED: 52w-high $524.56 (set Monday) > $500 threshold per market-data.json week_52_high field; verified via Agent A intraday data $497.96-$531.33 range. Closed today $492.90 = back below threshold but the condition WAS crossed (within-session fire-and-fade). Per skill \u00a77: thesis_event condition crossed + CONFIRMED data \u2192 status active."
+            },
+            {
+              "date": "2026-04-30",
+              "from": "active",
+              "to": "active",
+              "note": "Close $518.46 = +3.7% above $500 threshold (2nd consecutive session). 52w-high $524.56. TRIM ZONE ACTIVE for second consecutive session."
             }
           ]
         },
@@ -7649,7 +8374,7 @@ const GRAPH_DATA = {
       "sector": "basic_materials",
       "industry": "gold",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member (portfolio) \u2014 screened, not deep-researched. Largest pure-play gold miner; portfolio hedge against macro/geopolitical stress.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -7661,10 +8386,13 @@ const GRAPH_DATA = {
         "revenue_growth": 20.6
       },
       "current": {
-        "price": 109.57,
-        "delta_1d": -5.61,
-        "delta_1w": 0.25,
-        "delta_1m": 7.32
+        "price": 107.61,
+        "delta_1d": -2.08,
+        "delta_1w": -3.79,
+        "delta_1m": 4.35,
+        "pct_from_52w_high": -18.28,
+        "pct_from_52w_low": 37.06,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -7767,6 +8495,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -2.08% to $107.61; alpha ~-1pp vs gold-miner cluster. Gold spot +2.0% but mining equity beta did not follow \u2014 concerning for the gold-mining-equity-vs-spot decoupling. NEM doesn't have AEM's earnings excuse (NEM Q1 already reported 2026-04-23) so FOMC-day real-rates noise + structural gold-equity-beta-weakening dominate. Vanguard 13G routine. NOTE: Agent C F2 flagged tier hygiene gap \u2014 dr_completed[NEM] still records 'tier_outcome: promoted_T2_to_T1 (verdict BUY 7/10 per v1.2 rule)' from 2026-04-25 DR; this was subsequently demoted via critical review on 2026-04-25 to HOLD 4/10 (Tier 2 correct per v1.3 rule). Node tier=2 is correct; dr_completed historical record intentionally preserved per FactSet/Palantir forward-only discipline.",
+          "sources": [
+            "market-action.md Agent B Section B + E + F",
+            "sec-intel.md Agent C Section A/NEM + F2"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [],
@@ -7961,7 +8700,7 @@ const GRAPH_DATA = {
       "sector": "industrials",
       "industry": "aerospace_and_defense",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Defense prime (B-21 stealth bomber, Sentinel ICBM, space systems); Hormuz-relevant defense-spending cycle.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -7973,10 +8712,13 @@ const GRAPH_DATA = {
         "revenue_growth": 4.4
       },
       "current": {
-        "price": 573.715,
-        "delta_1d": -0.27,
-        "delta_1w": -6.12,
-        "delta_1m": -15.51
+        "price": 572.41,
+        "delta_1d": -0.94,
+        "delta_1w": -2.92,
+        "delta_1m": -14.77,
+        "pct_from_52w_high": -25.47,
+        "pct_from_52w_low": 5.27,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -8030,6 +8772,28 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -0.94% to $572.41; alpha vs ITA +0.48pp (mild outperformance \u2014 defense ETF was negative; NOC less negative). Confirming Apr 28 \u00a7F-5 'Defense disconnect from geopolitics \u2014 confirmed regime' DAY-6 hardening. GD broke from cluster on idiosyncratic operational excellence (+7.99% on +12% EPS / 2.0x book-to-bill); RTX -1.65%, NOC -0.94% did not follow. POSITIVE FORENSIC F3 (Agent C): three-of-three reporting Q1 2026 defense primes (RTX 4/21, NOC 4/21, GD 4/29) printed above consensus with strong order flow and backlog growth \u2014 cohort tape de-rate INCONSISTENT with order-flow data. Vanguard Schedule 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section C/E + F-5",
+            "sec-intel.md Agent C F3"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Catch-up scan completed (90-day retroactive SEC review per Agent C; closes operational gap from 2026-04-28 F2 hygiene flag). 31 material filings cataloged in 2026-01-30 -> 2026-04-30 window. Material non-Q1 governance event: 8-K Item 5.02 filed 2026-02-13 (accession 0001628280-26-008140) \u2014 Board elected Admiral Christopher W. Grady (retired 12th Vice Chairman of the Joint Chiefs of Staff, retired October 2025) to the Board effective 2026-02-12. Appointed to Audit & Risk Committee + Policy Committee. $145K cash + $15K committee + $182.5K deferred-stock-unit equity grant. Board size 12 -> 13. Lead Independent Director succession: James S. Turley designated effective 2026-05-20 (annual meeting), succeeding Madeleine A. Kleiner (mandatory retirement). 26 x Form 4 RSU-cycle filings clustered around mid-Feb annual NEO LTI grant + tax-withhold dates. NO discretionary insider purchase patterns surfaced. Investor-lens: VCJCS joining NOC board signals access continuity into DOD/JCS principals layer \u2014 consistent with B-21 + Sentinel franchise deepening; NOT a thesis-changing event but governance-positioning signal for procurement-cycle ahead. Operational gap closed.",
+          "sources": [
+            "sec-intel.md Agent C E + Catch-up scan",
+            "SEC 8-K accession 0001628280-26-008140"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
         }
       ],
       "edges": [],
@@ -8194,7 +8958,7 @@ const GRAPH_DATA = {
       "sector": "basic_materials",
       "industry": "agricultural_inputs",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. World's largest potash producer plus nitrogen and retail ag-services; diversified fertilizer watchlist.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -8206,10 +8970,13 @@ const GRAPH_DATA = {
         "revenue_growth": 5.7
       },
       "current": {
-        "price": 73.19,
-        "delta_1d": 1.13,
-        "delta_1w": 0.72,
-        "delta_1m": -2.55
+        "price": 74.13,
+        "delta_1d": 1.67,
+        "delta_1w": 3.61,
+        "delta_1m": -2.46,
+        "pct_from_52w_high": -11.05,
+        "pct_from_52w_low": 39.2,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -8221,6 +8988,16 @@ const GRAPH_DATA = {
           "significance": "medium",
           "verification": "CONFIRMED",
           "source_agent": "A"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +1.67% to $74.13. Sympathetic to CF +3.65% on nitrogen-fertilizer commodity pass-through bid + grain rally. No new filings.",
+          "sources": [
+            "market-action.md Agent B Section B"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [],
@@ -8232,7 +9009,7 @@ const GRAPH_DATA = {
       "name": "Global Crude Oil Prices (Brent / WTI)",
       "type": "commodity",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "_phase_1f_note": "Tier 2 reciprocal commodity_exposure edges added for XOM, CVX, COP, FANG, PBR (d=1) and LNG (d=2) on 2026-04-22. Tier 1 edges (CCL, DAL, FDX) retain original DR-sourced wording and higher provenance weight.",
       "summary": "Post-Iran/Hormuz-spike oil regime \u2014 Brent ~$93-95, WTI ~$88-90 as of April 22 following the US-Iran ceasefire (April 7) that cut Brent 16% in a single day from the $113/bbl crisis peak. Three Tier 1 stocks have source-verified commodity_exposure edges spanning three structurally distinct channels: CCL is PURE DIRECT (zero fuel hedging, $160M bottom-line per 10% fuel move), DAL is DIRECT-WITH-ASYMMETRIC-COUNTER-HEDGE (jet fuel exposed via COGS but Monroe refinery ~200,000 bbl/day delivered $300M Q2 crisis benefit as crack spreads tripled), and FDX is ATTENUATED via a weekly-updated fuel surcharge index (surcharge lag creates short-term margin shifts but across-cycle pass-through with small positive spread at Freight). Hormuz geopolitical crisis tracking lives in the separate Iran-US Crisis HiveMind; this node references it via the economic transmission channel per macro-authoring-prompt \u00a7Cross-system crises.",
       "current": {
@@ -8337,6 +9114,18 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Brent crude $118.03 close 2026-04-29 (intraday peak above $120; up 7%+ on session; HIGHEST LEVEL SINCE JUNE 2022). Drivers: Trump's blockade-until-nuclear-deal posture; UAE SHOCK-EXIT FROM OPEC announcement (CONFIRMED \u2014 SunSirs, CNN Business; structural supply-side regime shift \u2014 UAE was producing well above quota, exit frees them entirely; cartel structurally weaker); Iran-Hormuz dual blockade DAY 62 (US Navy blockading Iran's coast in effect since 2026-04-13 with ~38 vessels turned around; Iran blockading the Strait; Hormuz traffic at ~5% of pre-war average; just 154 vessels crossed entire month of March; Iran ties Hormuz reopening to lifting US blockade). Iranian rial hit record low. Three US aircraft carriers in Middle East since USS George H.W. Bush arrived 2026-04-24 (first time since 2003). The supply premium is structural \u2014 Brent at $118 with ~20% of global oil shipments diverted is not a 'spike' anymore, it's a regime. CCL fuel mismatch deepens; energy cohort (XOM/CVX/FANG/COP/PBR) gets sustained tailwind compounding weekly. WTI -0.05% at $106.83. NOTE: yfinance BZ=F screen-print -12.28% to $103.54 = futures contract roll artifact (May->June front-month roll on Apr 30); NOT real underlying move (XLE +2.29% / XOP +3.54% / energy equities ALL bid the move).",
+          "sources": [
+            "news-intel.md Agent A B5/B7",
+            "market-action.md Agent B Section A + Commodities + F-2",
+            "CNBC; Fortune; Trading Economics; Al Jazeera; CNN; CBS News"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [
@@ -8661,7 +9450,7 @@ const GRAPH_DATA = {
       "sector": "technology",
       "industry": "software_application",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Payroll/HCM utility masquerading as growth stock post-$4.1B Paycor acquisition. 20% headline revenue growth is acquisition-driven; organic is ~5% (accelerating to 6% back-half FY26). Stock -47% from 52-week high ($161\u2192$85); 5.05% dividend yield (highest in PAYX history). HOLD at 6/10: business quality genuinely high (44% adj op margin, 83% retention, #1 401(k) recordkeeper) but 14.5x forward PE is appropriate for 5% organic grower with $5B debt. 1.69x probability-weighted 5Y return (11% IRR) at $85; compelling BUY at $70-75. Primary macro sensitivity: float income (~$200-210M annually, $0.40-0.45/share) on Fed rate path \u2014 inverse exposure: rate cuts erode float income.",
       "thesis": {
         "verdict": "HOLD",
@@ -8689,12 +9478,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 91.16,
-        "delta_1d": 1.37,
-        "delta_1w": -2.69,
-        "delta_1m": -0.57,
+        "price": 94.05,
+        "delta_1d": 3.36,
+        "delta_1w": 0.66,
+        "delta_1m": 1.0,
         "pe_forward": 14.5,
-        "market_cap_B": 30.7
+        "market_cap_B": 30.7,
+        "pct_from_52w_high": -18.57,
+        "pct_from_52w_low": 9.91,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -8798,6 +9590,28 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "[Agent B attribution] Stock +3.36% to $94.05; alpha vs XLK +2.56pp (second-largest positive Tier-1 alpha). Driver per Agent B: ADP Q3 read-through (revenue $5.94B beat by 1.43%, raised FY26 adj EPS guide to 10-11%, AI-productivity gains cited; ADP +7.98%) \u2014 PAYX pulled in sector-peer beat sympathy as cleaner pure-play. Hypothesis-only attribution per skill discipline.",
+          "sources": [
+            "market-action.md Agent B Section B/C",
+            "Agent B Step 9 reconciliation"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "[Agent A attribution] No material PAYX-specific news identified today (search returned no April 30 announcements; most recent was Q3 FY26 earnings 2026-03-25 + 2026-04-01 Tapcheck on-demand-pay agreement). Agent A discipline: 'cause not established' is valid output. Per RECONCILIATION FLAG \u2014 Agent B's ADP-read-through is a hypothesis, not a confirmed news catalyst. Direction of move concurs across agents; primary-driver attribution differs. Both attributions preserved (FactSet rule: when uncertain about deduplication, preserve both with flag). If PAYX continues to outperform XLK on subsequent sessions absent fresh news, the structural-bid hypothesis strengthens (positioning rotation into payroll/HCM names).",
+          "sources": [
+            "news-intel.md Agent A C/PAYX",
+            "intel-summary.md RECONCILIATION FLAG PAYX"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [
@@ -9018,7 +9832,7 @@ const GRAPH_DATA = {
       "sector": "energy",
       "industry": "oil_and_gas_integrated",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Brazilian state-controlled integrated oil major; deepwater pre-salt production plus refining. EM-crude exposure with policy-risk overlay.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -9030,10 +9844,13 @@ const GRAPH_DATA = {
         "revenue_growth": 5.0
       },
       "current": {
-        "price": 21.35,
-        "delta_1d": 1.86,
-        "delta_1w": 1.54,
-        "delta_1m": 3.4
+        "price": 21.85,
+        "delta_1d": 2.92,
+        "delta_1w": 3.77,
+        "delta_1m": 5.61,
+        "pct_from_52w_high": 0.0,
+        "pct_from_52w_low": 90.45,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -9094,6 +9911,27 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +2.92% to $21.85 = 52-WEEK HIGH PRINTED (pct_from_52w_high 0.00%); alpha vs XLE +0.63pp. Oil rally + BRL weakness (USD/BRL +0.35% = positive for PBR's USD-revenue/BRL-cost equation). PBR in heavy capital-deployment phase (Argonauta acquisition closed terms disclosed 2026-04-28 6-K; Jubarte Reservoir consolidation to 98.11%).",
+          "sources": [
+            "market-action.md Agent B Section B"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Form 3 filed 2026-04-29 (accession 0001292814-26-002685): Mello Guilherme Santos becomes new Director (isDirector=1, isOfficer=0). Form 3 is the initial statement of beneficial ownership \u2014 required within 10 days of becoming a director. Status-change filing with no transaction data; pattern context: new director appointments at Brazilian state-influenced majors are political/governance signals typically reflecting Federal Government's slate of designees on the PBR board. MEDIUM-LOW signal until follow-up Form 4 transaction reveals director-level conviction. Not stored to sec_financial_snapshots.",
+          "sources": [
+            "sec-intel.md Agent C Section A + B/PBR",
+            "SEC Form 3 accession 0001292814-26-002685"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
         }
       ],
       "edges": [
@@ -9102,9 +9940,9 @@ const GRAPH_DATA = {
           "type": "commodity_exposure",
           "context": "Petrobras is a Brazilian integrated oil major; upstream (pre-salt) revenue correlates directly with Brent realized prices. Domestic fuel pricing policy in Brazil creates periodic political interference with pass-through, introducing a policy-risk wedge around the core crude exposure \u2014 a channel not present in US majors. Hormuz-driven Brent spikes support upstream realized pricing but may be partially offset by government-mandated domestic price caps.",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 1.0,
-          "weight": 3.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 2.0,
+          "weight": 6.0,
           "source": "tier2_sector_classification"
         }
       ],
@@ -9254,7 +10092,7 @@ const GRAPH_DATA = {
       "ticker": "ROL",
       "cik": "0000084839",
       "created": "2026-04-25",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "thesis": {
         "verdict": "PASS",
         "conviction": 3,
@@ -9302,7 +10140,18 @@ const GRAPH_DATA = {
         "52w_low": 52.32,
         "as_of": "2026-04-25"
       },
-      "signals": [],
+      "signals": [
+        {
+          "date": "2026-04-30",
+          "content": "S-3ASR filed 2026-04-29 (accession 0001628280-26-028359) \u2014 Automatic shelf registration statement (WKSI). Rollins registers an unspecified amount of debt and equity securities for sale 'from time to time' under SEC Rule 415. Routine WKSI shelf renewal \u2014 Rollins' last shelf was filed in 2023 and would expire 2026 under the 3-year auto-expire rule. NOT a M&A war chest signal absent a follow-on 424B with M&A use-of-proceeds language. Stock -0.74% to $55.33. Log on rol.json as shelf_registration_renewal_2026_04_29. NOTE: ROL DR completed 2026-04-25 with PASS verdict (4/10 conviction; 52x TTM PE / 33x EV/EBITDA Gate-1 fail; Wilson-family-not-buying-drawdown kill signal).",
+          "sources": [
+            "sec-intel.md Agent C Section A/ROL"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
+        }
+      ],
       "edges": [],
       "management_promises": [
         {
@@ -9421,10 +10270,13 @@ const GRAPH_DATA = {
         }
       ],
       "current": {
-        "price": 55.51,
-        "delta_1d": -0.82,
-        "delta_1w": 1.46,
-        "delta_1m": 5.81
+        "price": 55.33,
+        "delta_1d": -0.74,
+        "delta_1w": 0.02,
+        "delta_1m": 4.32,
+        "pct_from_52w_high": -15.4,
+        "pct_from_52w_low": 5.47,
+        "last_close_date": "2026-04-29"
       },
       "_display_label": "ROL"
     },
@@ -9436,7 +10288,7 @@ const GRAPH_DATA = {
       "sector": "consumer_cyclical",
       "industry": "apparel_retail",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Excellent off-price retailer at premium multiple: FY2025 delivered 5% full-year comps (9% Q4), record $22.8B revenue, 11.9% op margin, new CEO James Conroy's first full year produced record results. HOLD at 5/10 conviction \u2014 high conviction in business quality (8/10) but low conviction in entry point at 33.5x trailing / 27.3x forward PE. Probability-weighted 5Y return 1.07x (~1.5% IRR) \u2014 essentially flat. 0% new money at $221; starter 2% on pullback to $175, add at $155, full at $130. Watching Q1 FY2026 comp (7-8% guide) as next inflection.",
       "thesis": {
         "verdict": "HOLD",
@@ -9464,12 +10316,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 225.4884,
-        "delta_1d": -0.3,
-        "delta_1w": -0.05,
-        "delta_1m": 6.52,
+        "price": 225.08,
+        "delta_1d": -0.2,
+        "delta_1w": -0.56,
+        "delta_1m": 7.8,
         "pe_forward": 27.9,
-        "market_cap_B": 73.0
+        "market_cap_B": 73.0,
+        "pct_from_52w_high": -1.39,
+        "pct_from_52w_low": 43.02,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -9585,6 +10440,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -0.20% to $225.08; alpha vs XLY -0.05pp = pure sector beta. **52-week HIGH proximity 1.39%** (52w high $228.25). $175 STARTER trigger 28.6% below; $240 trim watch zone 6.6% above. Off-price retail outperforming broader retail tape (XRT -0.82%); ROST + TJX continuing leadership pattern. NOTE: Guggenheim raised PT to $290 (Mizuho/MarketScreener; CLAIMED single-analyst \u2014 not recorded as signal per skill \u00a77 LOW-significance filter; logged here for context). At >43x guide-mid the $290 PT compounds the trim case if rally extends.",
+          "sources": [
+            "market-action.md Agent B Section C",
+            "news-intel.md Agent A C/ROST"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -9603,9 +10469,9 @@ const GRAPH_DATA = {
           "type": "macro_sensitivity",
           "context": "Per DR Bear Point 2 (probability 40%) + transcript Sheehan/Kogan exchange: Approximately 50% of Ross's merchandise originates from China. FY2025 tariff-related costs impacted EPS by ~$0.16/share; FY2026 guidance assumes a $0.22-$0.25/share headwind. Management stated 'We will not be the leader in raising prices' \u2014 admirable for customer retention but potentially margin-destructive if tariffs intensify. 50-100bps margin risk on escalation. Unique off-price complicating factor: the model theoretically BENEFITS from tariff chaos (more closeouts available from stressed full-price retailers), but NET effect depends on whether supply benefit outweighs cost headwind. Per Sheehan on FY26 merchandise margin: 'mainly driven by the better buying... some benefit from recapturing some of the tariff pressure' \u2014 confirming tariff is current-period cost, not one-time anomaly. Directness 1 (direct COGS channel) \u2014 similar to DLTR's 41-43% direct China imports at d=1 and WMT's 1/3-of-COGS at d=1. Sixth variation of tariff_regime in cohort (WMT/DLTR d=1 direct COGS; DG d=2 customer income; MU d=2 political; CTAS d=2 slow-amortized inventory).",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 2.0,
-          "weight": 6.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 3.0,
+          "weight": 9.0,
           "source": "deep_research_reports/ROST_Q4_FY2026_opus.md"
         },
         {
@@ -9874,7 +10740,7 @@ const GRAPH_DATA = {
       "sector": "industrials",
       "industry": "aerospace_and_defense",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Defense/aerospace prime (Collins Aerospace, Pratt & Whitney, Raytheon missiles & defense); Hormuz-relevant munitions and air defense systems.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -9886,10 +10752,13 @@ const GRAPH_DATA = {
         "revenue_growth": 8.7
       },
       "current": {
-        "price": 173.32,
-        "delta_1d": -0.03,
-        "delta_1w": -7.4,
-        "delta_1m": -8.64
+        "price": 172.79,
+        "delta_1d": -1.65,
+        "delta_1w": -4.49,
+        "delta_1m": -7.67,
+        "pct_from_52w_high": -18.56,
+        "pct_from_52w_low": 3.18,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -9942,6 +10811,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -1.65% to $172.79 (-7.67% 1m); alpha vs ITA mild positive but cohort weakness dominates. Defense disconnect day-6 regime persists: GD +7.99% on idiosyncratic operational excellence, RTX -1.65%/NOC -0.94% did not follow. POSITIVE FORENSIC F3 (Agent C): RTX (4/21 print) + NOC (4/21) + GD (4/29) = 3-of-3 reporting Q1 2026 primes printed above consensus with strong order flow (RTX +21% YoY adj EPS / record $271B backlog; NOC clean Q1 with $95.6B backlog; GD +12% EPS / 2.0x book-to-bill / +48% backlog YoY). Cohort tape de-rate inconsistent with order-flow data.",
+          "sources": [
+            "market-action.md Agent B Section C/E + F-5",
+            "sec-intel.md Agent C F3"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [],
@@ -9953,7 +10833,7 @@ const GRAPH_DATA = {
       "name": "Semiconductor Sector (Memory Sub-Industry Focus)",
       "type": "sector",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Semiconductor sector node anchored by the memory sub-industry (DRAM/NAND/HBM) where the 2026 cohort has its only verified member. Structural supply shortage: DRAM contract prices +90-95% QoQ in Q1 2026 and +58-63% QoQ in Q2 2026; NAND +55-60% and +70-75% respectively (per MU Q2 FY2026 DR citing TrendForce). Customer allocation at 50-67% fulfillment per MU management. No new greenfield fab output until mid-2027 (MU Idaho) with the bulk of new capacity arriving 2028-2029. HBM TAM $35B (2025) growing to $100B (2028) at ~40% CAGR. VERIFIED EDGES: MU (sector_membership, d=1) \u2014 the sole Tier 1 member and only US-headquartered leading-edge DRAM producer; BBY (supply_chain, d=2) \u2014 downstream memory cost pass-through to PC ASPs, INVERSE polarity to MU (sector pricing power = BBY demand headwind per Gartner +17% PC cost projection). OPERATIONAL WEAKNESS \u2014 1.5 cohort edges: cascades fire narrowly. Complement to ai_disruption (which captures AI-driven memory DEMAND side with MU as beneficiary); this node captures memory SUPPLY dynamics and sector-level pricing.",
       "current": {
         "dram_contract_price_change_q1_2026_qoq": "+90-95%",
@@ -10029,6 +10909,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "SMH +1.70% with heavy concentrated leadership: NXPI +25.55% (Q1 EPS $3.05 vs $2.95 cons; Q2 guide $3.35-3.55B vs $3.28B cons +5-12% sequential / +14-21% YoY = AUTO/INDUSTRIAL DEMAND CONFIRMATION), INTC +12.10% (foundry-revival narrative crystallizing \u2014 TrendForce flagged Apple eyeing Intel 18A-P node, Google evaluating EMIB advanced packaging), MCHP +7.01%, STX +11.10% (Q3 fiscal 2026 record: revenue +44% YoY $3.1B, EPS $4.10 vs $3.53 cons; adj GM +10pp to 47%, op margin +14pp to 37.5%; AI-storage demand outpacing supply; capacity sold-out), MU +2.81% (52w high $524.56), ON +5.96% (B. Riley upgrade $115 PT). AUTO/INDUSTRIAL-CYCLE RECOVERY semis (NXPI, MCHP, ON) outperformed ACCELERATOR-PURE (NVDA only +0.X%) \u2014 three-session pattern of NVDA lagging the sector; 'rotation-AWAY' thesis would crystallize if pattern continues into May. Storage cluster moved as a unit: STX/WDC/SNDK/MU all sympathetic. Hyperscaler capex datapoints (GOOGL Cloud +63% / MSFT AI run-rate $37B / AMZN AWS +28%) confirm continued memory/HBM demand pull.",
+          "sources": [
+            "market-action.md Agent B Section B + D + E + F",
+            "news-intel.md Agent A B8 + D + F"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -10295,7 +11186,7 @@ const GRAPH_DATA = {
       "industry": "Credit Services",
       "ticker": "SLM",
       "created": "2026-04-25",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "thesis": {
         "verdict": "HOLD",
         "conviction": 4,
@@ -10373,6 +11264,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Whistleblower lawsuit filed 2026-04-29 (CONFIRMED \u2014 Morningstar via PR Newswire). Scholly founder filed whistleblower suit alleging SLM uses a shell company to sell student data and retaliated against the executive who reported it. Sallie Mae acquired Scholly in June 2023. Data-privacy litigation is a NEW vector for SLM \u2014 not yet financial-material but adds reputational/regulatory tail risk. NOTE: SLM DR completed 2026-04-25 already flagged Zappia v. SLM securities-fraud class action (Gate 2 fail). Vanguard 13G routine. NOTE: SLM NOT in market-data.json universe \u2014 current.* fields not refreshed.",
+          "sources": [
+            "news-intel.md Agent A B6/SLM",
+            "sec-intel.md Agent C Section A/SLM"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "A"
         }
       ],
       "edges": [
@@ -10512,7 +11414,7 @@ const GRAPH_DATA = {
       "name": "US Tariff Regime (Trump-era Section 301 + IEEPA)",
       "type": "macro",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Active US tariff regime dominated by 125-145% effective rates on Chinese imports (Section 301 + IEEPA-based executive action), layered 10% tariffs on Vietnam/India/South Korea/Taiwan, and targeted levies on Mexico/Canada. Eleven Tier 1 stocks have source-verified tariff mechanisms spanning five distinct channels: direct COGS (WMT, DLTR, MKC, ROST, BBY), indirect customer-income channel (DG), political/export-controls (MU), travel/cross-border demand (DAL, FDX), input COGS (GIS), and \u2014 uniquely \u2014 vendor-distress BENEFICIARY (TJX). Late-cycle development: both TJX and BBY Q4 FY2026 earnings calls (early 2026) reference a recent Supreme Court ruling that materially lowered effective tariff rates; this development was NOT captured in either DR report and is logged as a recurring extraction gap.",
       "current": {
         "china_effective_rate": "125-145% (cited by DLTR and WMT reports; BBY transcript notes 'lower effective rate' post-SCOTUS ruling, magnitude undisclosed)",
@@ -10584,6 +11486,18 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "GEHC -13.16% on Q1 mixed + FY guide CUT from $4.95-5.15 to $4.80-5.00, citing 'sudden inflation in memory chips, oil, and freight costs, plus tariff impact (~$0.16 of EPS)' \u2014 THIS IS THE CANONICAL MACRO CROSS-CURRENT QUOTE OF THE DAY confirming supply-chain/tariff stress is real and quantified. CBP CAPE refund portal continues processing IEEPA refunds (CONFIRMED \u2014 CBP, Flexport): as of 2026-04-09, 56,497 importers and notify parties registered for electronic refunds; ~$166B owed across 330,000+ importers / 53M shipments per SCOTUS Learning Resources, Inc. v. Trump 2026-02-20 ruling. CBP now able to deliver electronic refunds for ~82% of all entries with IEEPA duty payments \u2014 executing catalyst, not new news, but the cohort working-capital benefit (ROST/TJX/BBY/DLTR/DG; AAPL on China import) compounds day by day. No new tariff escalations or sanctions in 24-hour window. IR -4.59% Q1 GAAP miss + $40M Middle East long-cycle project orders delayed (1/3 already recovered in April) = additional industrial-cycle softening signal.",
+          "sources": [
+            "market-action.md Agent B Section B + Notes for brief writer",
+            "news-intel.md Agent A B3",
+            "GEHC Q1 release"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -10788,7 +11702,7 @@ const GRAPH_DATA = {
       "sector": "consumer_cyclical",
       "industry": "apparel_retail",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Highest-quality off-price retailer priced for perfection at 33x trailing PE / 22.1x EV/EBITDA / 2.2% FCF yield. HOLD 5/10 \u2014 business is exceptional (FY26 revenue $60.4B +7%, comps +5% every division, ROIC 30.6%, $4.3B returned) but at $159 current, 5Y probability-weighted return is 1.07x (flat). Watching Q1 FY2027 comps (May 2026) as key catalyst \u2014 whether 2-3% guide is sandbag or genuine deceleration. Entry triggers: $130-135 starter, $120-125 core, $110-115 aggressive.",
       "thesis": {
         "verdict": "HOLD",
@@ -10816,12 +11730,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 157.68,
-        "delta_1d": 0.13,
-        "delta_1w": -0.99,
-        "delta_1m": 1.65,
+        "price": 156.07,
+        "delta_1d": -0.72,
+        "delta_1w": -1.51,
+        "delta_1m": 0.18,
         "pe_forward": 28.1,
-        "market_cap_B": 176.8
+        "market_cap_B": 176.8,
+        "pct_from_52w_high": -5.41,
+        "pct_from_52w_low": 12.0,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -10936,6 +11853,17 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock -0.72% to $156.07; alpha vs XLY -0.57pp (mild under-performance \u2014 TJX paid back some recent leadership). $132 STARTER trigger 18.2% below close. Off-price cohort holding up vs broader retail (XRT -0.82%). Marshalls launching seven new stores April-May (routine expansion).",
+          "sources": [
+            "market-action.md Agent B Section C",
+            "news-intel.md Agent A C/TJX"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -10954,9 +11882,9 @@ const GRAPH_DATA = {
           "type": "macro_sensitivity",
           "context": "Per DR Section 3 Critical Insight and transcript Ernie/Klinger: 'TJX does NOT import the vast majority of its merchandise directly. It buys ~90% from third-party vendors who have already handled customs and duties. This means tariffs hit TJX's suppliers, not TJX. When tariffs squeeze suppliers, they become MORE willing to liquidate excess inventory to TJX at deeper discounts \u2014 tariffs are a net positive for TJX's buying power.' Channel is INDIRECT (vendor-liquidation channel, d=2) \u2014 materially different from WMT direct-COGS (d=1) and DLTR 41-43% direct imports (d=1), but also opposite direction from DG d=2 customer-income channel: for DG tariffs HURT via customer income pressure; for TJX tariffs BENEFIT via vendor distress-driven inventory availability. Q3 FY26 GM EXPANDED to 32.6% during peak tariff uncertainty (DR Bull Point 1). Transcript CFO Klinger explicit: 'our full year guidance assumes that we will be able to offset the tariff pressure on our business this year' \u2014 FY27 guide assumes mitigation, no upside from tariff chaos embedded. Also per Klinger: 'we are evaluating the potential impact of last Friday's ruling on tariffs and monitoring the changing tariff environment' (referring to late-Feb 2026 court ruling). Ernie: 'our buyers are very good at navigating through that. And usually, we figure out a way to benefit in terms of our merchandise margin situation when there is confusion out there.'",
           "directness": 2,
-          "last_activated": null,
-          "activation_count": 0,
-          "weight": 1.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 1.0,
+          "weight": 1.5,
           "source": "deep_research_reports/TJX_Q4_FY2026_opus.md"
         },
         {
@@ -11211,7 +12139,7 @@ const GRAPH_DATA = {
       "sector": "consumer_staples",
       "industry": "discount_stores",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Excellent business at egregious 46x trailing PE. PASS at 3/10 conviction. 1.02x probability-weighted 5Y return (0.4% IRR) \u2014 worse than Treasury bonds. Watching for entry at $95-98 (35x PE). Tariff uncertainty + advertising-growth deceleration risk compound valuation fragility.",
       "thesis": {
         "verdict": "PASS",
@@ -11242,12 +12170,15 @@ const GRAPH_DATA = {
         }
       },
       "current": {
-        "price": 128.49,
-        "delta_1d": 0.71,
-        "delta_1w": -0.86,
-        "delta_1m": 4.56,
+        "price": 128.01,
+        "delta_1d": 0.33,
+        "delta_1w": -1.52,
+        "delta_1m": 3.65,
         "pe_forward": 38.6,
-        "market_cap_B": 1010.7
+        "market_cap_B": 1010.7,
+        "pct_from_52w_high": -4.2,
+        "pct_from_52w_low": 27.75,
+        "last_close_date": "2026-04-29"
       },
       "price_snapshots": [
         {
@@ -11445,6 +12376,16 @@ const GRAPH_DATA = {
           ],
           "significance": "medium",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +0.33% to $128.01 (mild positive; +13.76% YTD). $4.25B 5-tranche debt issuance from 2026-04-28 already settled; no follow-on filing.",
+          "sources": [
+            "sec-intel.md Agent C Section A/WMT"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "C"
         }
       ],
       "edges": [
@@ -11463,9 +12404,9 @@ const GRAPH_DATA = {
           "type": "macro_sensitivity",
           "context": "Per Bear Point 3 (probability MODERATE-HIGH): Walmart sources approximately one-third of US products from international markets, with China and Mexico as the largest contributors. In FY2025, tariff impacts were visible \u2014 China-sourced paper folders up 46%, Vietnam swai fish up 34%, Chinese measuring spoons up 19%. Current China tariff regime at 145% is unprecedented. At 3.1% net margin, a 50bps margin hit from tariffs would reduce earnings by ~16%. Management explicitly refused to include tariff assumptions in FY2027 guidance \u2014 signaling genuine uncertainty and reserving a free option to miss numbers and cite macro. CFO Rainey described consumer backdrop as 'somewhat unstable.'",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 3.0,
-          "weight": 9.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 4.0,
+          "weight": 10,
           "source": "deep_research_reports/WMT_Q4_FY2026_opus.md"
         },
         {
@@ -11645,7 +12586,7 @@ const GRAPH_DATA = {
       "sector": "energy",
       "industry": "oil_and_gas_integrated",
       "created": "2026-04-22",
-      "last_updated": "2026-04-28",
+      "last_updated": "2026-04-30",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Integrated oil major (upstream + refining + chemicals); core energy watchlist with Hormuz-relevance and global oil exposure.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -11657,10 +12598,13 @@ const GRAPH_DATA = {
         "revenue_growth": -1.3
       },
       "current": {
-        "price": 152.0151,
-        "delta_1d": 2.58,
-        "delta_1w": 2.46,
-        "delta_1m": -11.1
+        "price": 154.67,
+        "delta_1d": 2.73,
+        "delta_1w": 3.46,
+        "delta_1m": -9.8,
+        "pct_from_52w_high": -9.8,
+        "pct_from_52w_low": 38.16,
+        "last_close_date": "2026-04-29"
       },
       "signals": [
         {
@@ -11693,6 +12637,17 @@ const GRAPH_DATA = {
           ],
           "significance": "high",
           "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-30",
+          "content": "Stock +2.73% to $154.67; alpha vs XLE +0.44pp (pure sector beta; oil-rally beneficiary). Vanguard 13G routine.",
+          "sources": [
+            "market-action.md Agent B Section B",
+            "sec-intel.md Agent C Section A/XOM"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "source_agent": "B"
         }
       ],
       "edges": [
@@ -11701,9 +12656,9 @@ const GRAPH_DATA = {
           "type": "commodity_exposure",
           "context": "Exxon is an integrated oil and gas major; revenue and upstream earnings are directly correlated with Brent/WTI realized prices. Downstream refining provides a partial counter-hedge when crack spreads widen during crude spikes (analogous to DAL's Monroe refinery mechanism but at far larger scale). Net exposure is direct-positive to sustained crude price increases.",
           "directness": 1,
-          "last_activated": "2026-04-28",
-          "activation_count": 2.0,
-          "weight": 6.0,
+          "last_activated": "2026-04-30",
+          "activation_count": 3.0,
+          "weight": 9.0,
           "source": "tier2_sector_classification"
         }
       ],
@@ -11718,9 +12673,9 @@ const GRAPH_DATA = {
       "type": "competitive_threat",
       "context": "ADBE has DUAL exposure to ai_disruption \u2014 critical review framing makes threat channel primary. THREAT (primary, per critical review): Firefly cannibalizing Adobe Stock at ~$70M/qtr (~$280M annualized on $450M/yr book) per Narayen's explicit admission 'the stock business is about a $450 million book of business' and Wadhwani's 'This shift is playing out more quickly than we had planned for.' Agent 2 finding: Firefly is net-negative \u2014 $200-400M/yr incremental GPU inference costs vs. $250M ARR = loss leader; cost of subscription revenue growing 13% vs 11% revenue growth confirms margin compression has begun; blended GM could breach 85% by FY28-29 as Firefly scales. External threats: Midjourney ($500M rev / 107 employees = 30x better capital efficiency than Firefly), Canva (95% F500 penetration, $4B ARR growing 35%), OpenAI/Sora, Apple $12.99 Creator Studio. BENEFICIARY (secondary, preserved per Tradecraft rule 1 'never average'): Firefly sub+credit-pack ARR grew 75% QoQ, Enterprise new customer acquisition +50% YoY, generative credit consumption +45% QoQ; Acrobat AI Assistant MAU doubled, ARR tripled YoY; Narayen (transcript): AI is 'additive to the opportunity' like iOS/Android/browser before it. Tension: whether Firefly revenue growth outruns Creative Cloud legacy erosion is 'the defining dynamic of the next 3 years' per Section 11 Achilles heel. Critical review made threat channel thesis-central (WEAKENED 4/10 downgrade directly references AI cannibalization + Firefly unit economics).",
       "directness": 1,
-      "weight": 10.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 4.0,
+      "weight": 10,
+      "last_activated": "2026-04-30",
+      "activation_count": 5.0,
       "source": "deep_research_reports/ADBE_Q1_FY2026_opus_v2.md"
     },
     {
@@ -11795,9 +12750,9 @@ const GRAPH_DATA = {
       "type": "macro_sensitivity",
       "context": "Per DR Section 2 (headwinds) and Section 5 Exchange 1 (CEO Corie Barry verbatim): 'China accounts for 30-35% of merchandise (down from ~55% previous years), ~25% from US/Mexico (no tariff impact), ~40% from other countries subject to 10% tariffs.' DR Section 11 Kill Sheet: '75% of Best Buy's merchandise is imported. A 20%+ tariff on Chinese goods is a direct margin hit. Best Buy can't raise prices without losing volume to Amazon (who absorbs tariffs at scale). They can't absorb costs without destroying their 5% operating margin. It's a lose-lose.' DR explicitly names tariffs as the 'detonator' in fatal combination (tariff margin compression + AI PC delay + Amazon share gains = $35 stock). Channel is DIRECT COGS (d=1) \u2014 BBY imports merchandise directly or through vendors with costs passed through; tariffs compress GM on 5% operating margin. CEO called price hikes 'the very last resort' \u2014 confirms BBY cannot pass through without volume loss. Directional-negative exposure (tariffs HURT BBY), same direction as WMT d=1 and DLTR d=1 direct import channels. Transcript UPDATE (Mar 3, 2026 call): CEO Barry per Nagel Q&A said 'Recent Supreme Court ruling led to lower effective tariff rate for our products at this point. And at this point, we have not modeled major impacts to our year based on that' \u2014 meaningful mitigation vs. DR framing, but structural exposure remains material per DR Section 2. DR vs transcript tension surfaces in extraction report.",
       "directness": 1,
-      "weight": 6.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 2.0,
+      "weight": 9.0,
+      "last_activated": "2026-04-30",
+      "activation_count": 3.0,
       "source": "deep_research_reports/BBY_Q4_FY2026_opus.md"
     },
     {
@@ -11872,9 +12827,9 @@ const GRAPH_DATA = {
       "type": "commodity_exposure",
       "context": "Per CCL Q1 FY2026 DR Section 1 and Bear 2 (Zero Fuel Hedging = Unfiltered Commodity Exposure, 70% probability): fuel is the single largest variable cost for the cruise fleet. $500M fuel headwind embedded in FY2026 guidance ($0.38/share EPS hit) drove entire 10.9% guidance cut from $2.48 to $2.21 EPS. Per Bernstein (transcript, prepared remarks): '10% change in fuel cost impacts bottom line by $160 million or $0.11 per share' -- this is CCL's direct fuel sensitivity, more than 2x RCL's $57M exposure. Per DR: 'Carnival is the ONLY major cruise line that does not hedge fuel.' Per Weinstein (transcript, response to Conor Cunningham, Melius Research): 'The price of fuel is somewhat irrelevant... We price as much as the market can bear... If they were willing to pay $10 more because of fuel, they should just be willing to pay $10 more... No disadvantage to unhedged position. Focus remains use less.' Management framing is that cruise pricing absorbs fuel over the medium term, but CFO's assumed fuel curve ($90/bbl Apr-May, $85 Q3, $80 Q4) is a DECLINING path from Hormuz-elevated levels -- Brent recently above $100 means downside risk. Unlike DAL, CCL has no refinery counter-exposure; d=1 is pure direct-COGS. Second cohort stock to author commodity_exposure to oil_prices (after DAL first-source).",
       "directness": 1,
-      "weight": 9.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 3.0,
+      "weight": 10,
+      "last_activated": "2026-04-30",
+      "activation_count": 4.0,
       "source": "deep_research_reports/CCL_Q1_FY2026_opus.md"
     },
     {
@@ -11949,9 +12904,9 @@ const GRAPH_DATA = {
       "type": "commodity_exposure",
       "context": "ConocoPhillips is a pure-play upstream E&P (no refining); revenue and free cash flow correlate directly with Brent/WTI realized prices. Unhedged producer leverage means crude price movements flow near-directly to bottom line net of breakeven. Hormuz-driven Brent spikes support both international realized pricing and WTI via the US export arbitrage.",
       "directness": 1,
-      "weight": 6.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 2.0,
+      "weight": 9.0,
+      "last_activated": "2026-04-30",
+      "activation_count": 3.0,
       "source": "tier2_sector_classification"
     },
     {
@@ -11960,9 +12915,9 @@ const GRAPH_DATA = {
       "type": "commodity_exposure",
       "context": "Chevron is an integrated oil and gas major; upstream segment earnings track Brent/WTI realized prices directly. Downstream refining provides partial counter-hedge during crude spikes via widened crack spreads. Global upstream footprint (Permian, Gulf of Mexico, Kazakhstan, Australia LNG) means Hormuz-driven Brent moves flow through realized pricing across the portfolio.",
       "directness": 1,
-      "weight": 6.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 2.0,
+      "weight": 9.0,
+      "last_activated": "2026-04-30",
+      "activation_count": 3.0,
       "source": "tier2_sector_classification"
     },
     {
@@ -11971,9 +12926,9 @@ const GRAPH_DATA = {
       "type": "commodity_exposure",
       "context": "Per DAL Q1 2026 DR Section 2 (Industry) and Bear 1 (Fuel Crisis Reveals Fundamental Fragility, 40% probability): fuel is the single largest variable cost for Delta. Q1 2026 adjusted fuel $2.62/gal (+7% YoY); Q2 2026 guidance $4.30/gal (NEARLY DOUBLE YoY) based on forward curve April 2, 2026 after Iran/Hormuz crisis spiked Brent above $113/bbl and jet fuel peaked near $4.60/gallon. Quantified impact: $2B+ additional quarterly fuel cost. Monroe refinery (~200,000 bbl/day) provides structural 4-11 cents/gallon advantage vs. peers and is estimated to deliver $300M Q2 benefit as crack spreads tripled \u2014 Delta is the ONLY US airline with owned refinery, making its oil_prices exposure ASYMMETRIC (partially hedged via refinery upside when crude spikes, exposed via direct COGS through fuel purchases). Per Bastian (transcript, response to John Godden, Citigroup): 'The best type of fuel recapture is not to purchase the fuel in the first place if it's not going to be profitable' \u2014 Q2 capacity being cut with downward bias in response to fuel prices (flat capacity for Q2 vs. earlier growth plan). Per Esposito (transcript): fuel recapture historically lags 60-90 days but is accelerating under this shock; 40-50% recapture expected Q2, higher in summer if fuel holds. US-Iran ceasefire April 7 dropped Brent 16% in a day (largest since 1991), jet fuel from $4.60 to under $3.00 \u2014 but ceasefire is 2 weeks old, fragile, and management still guides to $4.30 forward curve.",
       "directness": 1,
-      "weight": 9.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 3.0,
+      "weight": 10,
+      "last_activated": "2026-04-30",
+      "activation_count": 4.0,
       "source": "deep_research_reports/DAL_Q1_2026_opus_v2.md"
     },
     {
@@ -12010,6 +12965,39 @@ const GRAPH_DATA = {
       "source": "deep_research_reports/CCL_Q1_FY2026_opus.md"
     },
     {
+      "from": "defense_aerospace_sector",
+      "to": "noc",
+      "type": "sector_membership",
+      "context": "NOC is the sole Tier 1 anchor of the defense_aerospace_sector cohort. Per NOC Q1 2026 DR Section 5 (Earnings Call): CEO Warden's framing is 'defense spending could reach Cold War-era levels' (Benzinga 2026-04 transcript citation, NOC DR Section 5) \u2014 explicitly positions NOC as 'a multi-decade beneficiary, not a war-spike trade.' Three new data points in Q1 2026 call: (i) finalized B-21 production rate increase agreement (+25%), (ii) '20+ new facilities and >2 million sq ft of manufacturing space added in past 24 months,' (iii) 'weapons business is nearing 10% of total company sales and is positioned to grow at a pace well above the company average.' NOC's revenue base is ~98% US DoD with international growing in Mission Systems and Defense Systems segments per NOC DR Section 2. The structural baseline per NOC DR \u00a711 Munger Inversion bull scenario is '$900B+ FY27 defense spending' supported by 'Iran/Russia/China geopolitical environment.' The bear scenario per NOC DR \u00a711 'Geopolitics supportive (sustained d\u00e9tente; defense cuts begin 2027)' carries -15 to -25% multiple compression \u2014 symmetric with the cohort's current peace-dividend-decoupling pattern. NOC DR Section 11 explicitly notes 'No oil_prices direct edge \u2014 defense spending is correlated with geopolitics not directly with oil' which is the source rationale for this sector node not carrying an oil_prices edge.",
+      "directness": 1,
+      "weight": 0.0,
+      "last_activated": "2026-04-29",
+      "activation_count": 0.0,
+      "source": "deep_research_reports/NOC_Q1_2026_opus.md"
+    },
+    {
+      "from": "defense_aerospace_sector",
+      "to": "rtx",
+      "type": "sector_membership",
+      "context": "RTX is a T2 member; the Iran-war-munitions-supercycle thesis is the sector instantiation here. Per RTX Q1 2026 DR Bull Point 2 (Iran War Munitions Supercycle, conviction 6/10): the sector backlog is at record $271B, munitions division is the load-bearing segment. RTX DR Gate 1 (FAIL marginal): 'Math works only if (a) Iran-conflict munitions cycle persists through 2030 AND (b) multiple compresses only modestly. That is not current-data math \u2014 it is narrative math.' This is the cleanest articulation of the war-premium fragility that drives the peace-dividend decoupling pattern. Per RTX DR \u00a7Industry Snapshot: 'Global defense spending 2026: $2.75T (Business Research Insights), up from $2.63T in 2025, projected to cross $3T by end-2026' (IISS Military Balance 2026). Per RTX DR Section 5 (Earnings Call) Bernstein analyst exchange: 'Iran tensions supply chain risk' was a major Q&A topic. The January 7, 2026 Trump EO threatening capital-return restrictions on 'major defense contractors' is the regulatory channel that compounds the regime risk per RTX DR Section 2 \u2014 RTX is named in the EO scope per press coverage. RTX trades at ~3% EV/EBITDA premium to LMT \u2014 premium is 'driven by Iran-war narrative premium attached to Raytheon's munitions portfolio' per RTX DR Section 2.",
+      "directness": 1,
+      "weight": 0.0,
+      "last_activated": "2026-04-29",
+      "activation_count": 0.0,
+      "source": "deep_research_reports/RTX_Q1_2026_opus.md"
+    },
+    {
+      "from": "defense_aerospace_sector",
+      "to": "gd",
+      "type": "sector_membership",
+      "context": "GD is a T2 member; the most explicit articulation of the peace-dividend decoupling pattern in the sector cohort is in GD's DR Section 1: 'Strait of Hormuz crisis (beginning February 28, 2026) triggered a defense stock rally, but the premium is now unwinding.' GD DR Section 1 continues: 'Bernstein sees defense stocks giving back gains as diplomatic breakthroughs threaten the war premium' \u2014 this is the most-cited analyst framing for the decoupling thesis. Critically, per GD DR Section 1: 'The key lasting impact is not the premium itself but the munitions restocking urgency \u2014 heavy usage of US tactical weapons has created structural demand regardless of conflict resolution' \u2014 captures the structural-vs-cyclical distinction that defines the sector. GD's Marine Systems benefits from $27.2B Navy shipbuilding allocation in FY2026 (one Columbia-class sub, two Virginia-class subs) per GD DR Section 2. Combat Systems received $19B+ in orders in 2025 with European Land Systems at 4:1 book-to-bill (NATO 3.5% GDP commitment by 2030 \u2192 hundreds of billions incremental European defense spending per GD DR Section 2). GD DR explicitly notes the dual-channel exposure: 'If the Iranian conflict resolves AND the economy weakens simultaneously, GD could see both its war premium and Gulfstream earnings decline in the same period' \u2014 a structural risk distinct from pure-play defense names like NOC/RTX.",
+      "directness": 1,
+      "weight": 0.0,
+      "last_activated": "2026-04-29",
+      "activation_count": 0.0,
+      "source": "deep_research_reports/GD_Q4_2025_opus.md"
+    },
+    {
       "from": "dg",
       "to": "discount_retail_sector",
       "type": "sector_membership",
@@ -12026,9 +13014,9 @@ const GRAPH_DATA = {
       "type": "macro_sensitivity",
       "context": "Per Section 5 earnings exchange with Robby Ohmes (BofA) and Bear Point 5 (probability 70%): DG has LOW direct COGS exposure \u2014 most consumables are domestically sourced, LIFO tariff embedding is modest ($45M Q4, 32bps headwind). The material exposure is INDIRECT \u2014 tariffs function as regressive tax on DG's core customer base. Yale Budget Lab estimates $900-1,100 per low-income household burden. Fed estimates tariffs increased consumer prices 0.4% short-run. Combined with SNAP cuts, creates compound hit to DG's core customer purchasing power. Non-consumables recovery (the high-margin growth vector) is most at risk as discretionary spending compresses.",
       "directness": 2,
-      "weight": 1.0,
-      "last_activated": null,
-      "activation_count": 0,
+      "weight": 1.5,
+      "last_activated": "2026-04-30",
+      "activation_count": 1.0,
       "source": "deep_research_reports/DG_Q4_FY2025_opus_v2.md"
     },
     {
@@ -12114,9 +13102,9 @@ const GRAPH_DATA = {
       "type": "macro_sensitivity",
       "context": "Per Bear Point 1 (THESIS KILLER, probability 40% material impact): Direct imports constitute 41-43% of Dollar Tree's retail value purchases, with China supplying the majority. At 125% tariff rate, monthly cost impact is $35-40M before mitigation. Management claims 90%+ mitigation on Round 1 tariffs, but escalating tariff levels compress the runway for workarounds. DLTR explicitly warned Q2 FY2026 profits could be cut in half if full tariffs hit. CFO called FY2026 a 'transitional year.' If tariffs persist at 125% for 12+ months without resolution, margin compression of 200-300bps plausible, reducing EPS to $5.50-$6.00 instead of $6.50-$6.90. Stock would trade to $75-$85. This is DIRECT COGS exposure (directness 1) \u2014 materially different from DG's INDIRECT customer-income-channel exposure (directness 2). DLTR's tariff exposure is the most acute in the Tier 1 cohort.",
       "directness": 1,
-      "weight": 6.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 2.0,
+      "weight": 9.0,
+      "last_activated": "2026-04-30",
+      "activation_count": 3.0,
       "source": "deep_research_reports/DLTR_Q4_FY2025_opus.md"
     },
     {
@@ -12147,9 +13135,9 @@ const GRAPH_DATA = {
       "type": "commodity_exposure",
       "context": "Diamondback is a Permian-focused crude oil and natural gas producer. Revenue and free cash flow correlate directly with WTI realized prices \u2014 producer leverage means crude price movements flow largely to the bottom line net of breakeven and hedging. Hormuz-driven Brent spikes support WTI by proxy via the US export arbitrage.",
       "directness": 1,
-      "weight": 6.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 2.0,
+      "weight": 9.0,
+      "last_activated": "2026-04-30",
+      "activation_count": 3.0,
       "source": "tier2_sector_classification"
     },
     {
@@ -12173,6 +13161,28 @@ const GRAPH_DATA = {
       "last_activated": "2026-04-23",
       "activation_count": 1,
       "source": "deep_research_reports/FDX_Q3_FY2026_opus.md"
+    },
+    {
+      "from": "fed_independence_regime",
+      "to": "fed_rates",
+      "type": "institutional_policy_sensitivity",
+      "context": "PRIMARY MACRO-TO-MACRO EDGE. Fed institutional independence directly modulates fed_rates outcomes through three channels: (1) RATE-DECISION FREEDOM \u2014 a less-independent Fed under direct executive pressure may cut faster than the data warrants, telegraphing dovishness to stay aligned with administration positioning. The April 2026 evidence: market pricing 2 cuts in 2026 (per fed_rates current state) with FOMC April 28-29 + Warsh Wed creating 'asymmetric dovish risk' framing in financial press. (2) TERM-PREMIUM CHANNEL \u2014 credibility erosion at the institutional level can drive long-end term-premium widening even if the short rate is cut. The April 2026 observation: 10Y +2bp on FOMC eve (per market-data.json 2026-04-28), minimal repricing so far \u2014 but historically (2018-2019 Fed-pressure episodes), term premium widens 20-40bp over 6-12 months when independence is publicly questioned. (3) FORWARD-GUIDANCE CHANNEL \u2014 a Fed Chair transition mid-cycle (Powell exit May 2026, Warsh likely successor) creates discontinuity in 'dot plot' framing; markets price the SUCCESSOR's reaction function, not the outgoing Chair's. This is a directness=1 edge because the institutional \u2192 policy mechanism is direct (not chained through other entities). Source: news-intel coverage 2026-04-21 / 04-25 / 04-28 + fed_rates.json current state. NO STOCK-DR SOURCE because this is macro-to-macro (no individual stock DR discusses Fed independence specifically \u2014 they discuss Fed rates generically, which is the downstream node).",
+      "directness": 1,
+      "weight": 0.0,
+      "last_activated": "2026-04-29",
+      "activation_count": 0.0,
+      "source": "news-intel coverage 2026-04-21 + 2026-04-25 + 2026-04-28; fed_rates.json"
+    },
+    {
+      "from": "fed_independence_regime",
+      "to": "ai_disruption",
+      "type": "monetary_narrative_amplification",
+      "context": "SECONDARY MACRO-TO-MACRO EDGE (directness=2 \u2014 chained through fed_rates). Fed independence regime affects AI-disruption narrative via the Fed-pivot-affects-AI-capex-narrative channel. Mechanism: a dovish-leaning Fed under independence pressure cuts rates faster \u2192 cost of capital declines \u2192 hyperscaler AI capex narrative is sustained longer (cheaper to fund $100B+ AI infrastructure programs) \u2192 AI-disruption thesis is strengthened on the supply side. Conversely: if Fed independence is restored and rates stay higher-for-longer, AI capex narrative compresses (per OpenAI WSJ revenue miss 2026-04-28 \u2014 the demand side already weakened, making the cost-of-capital cushion more important). The April 2026 evidence: FOMC-eve positioning into Powell's likely-final presser hit BOTH fed_rates positioning (10Y +2bp) AND AI-hardware (SMH -4.20%, MU -6.04% on the OpenAI shock that landed simultaneously). The cross-cutting positioning ties the two macros together at the institutional layer. Per /update-graph 2026-04-28 changelog explicit observation: 'Connectivity now plausibly extends to fed_rates + ai_disruption (FOMC-eve-positioning hits both).' Directness=2 because the causal chain is fed_independence_regime \u2192 fed_rates (cost of capital) \u2192 ai_disruption (narrative durability), not a one-hop institutional-to-narrative effect. Source: news-intel + market-action 2026-04-28 cross-reference.",
+      "directness": 2,
+      "weight": 0.0,
+      "last_activated": "2026-04-29",
+      "activation_count": 0.0,
+      "source": "news-intel.md + market-action.md 2026-04-28; ai_disruption.json"
     },
     {
       "from": "fed_rates",
@@ -12257,9 +13267,9 @@ const GRAPH_DATA = {
       "type": "commodity_exposure",
       "context": "Cheniere is the largest US LNG exporter (Sabine Pass, Corpus Christi). Global LNG contract pricing is partially oil-indexed (Brent-linked long-term offtake contracts), and spot LNG correlates with crude during supply shocks. Hormuz disruptions that spike Brent typically cascade into elevated global LNG pricing, supporting Cheniere's spot-market netbacks above contracted floors.",
       "directness": 2,
-      "weight": 1.5,
-      "last_activated": "2026-04-28",
-      "activation_count": 1.0,
+      "weight": 3.0,
+      "last_activated": "2026-04-30",
+      "activation_count": 2.0,
       "source": "tier2_sector_classification"
     },
     {
@@ -12334,9 +13344,9 @@ const GRAPH_DATA = {
       "type": "sector_membership",
       "context": "Micron is one of three major DRAM manufacturers globally (Samsung Memory, SK Hynix, Micron) and the only US-headquartered leading-edge DRAM producer. FY2026E revenue ~$76-80B, DRAM share ~23%, NAND share ~13%, HBM share ~24% (per TrendForce 2026 estimates). Core exposure to the 2026 global memory shortage: DRAM contract prices +90-95% QoQ in Q1 2026, NAND prices +55-60%. Memory TAM 2026E: DRAM $190-200B, NAND $100B, HBM $50-55B. Micron is the fastest-margin-expanding memory maker (75% GM Q2 FY26 vs Samsung/SK Hynix peak 55-60%). Tier 1 cohort peers in the sector: none currently; Micron is the only Tier 1 semiconductor stock.",
       "directness": 1,
-      "weight": 10.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 4.0,
+      "weight": 10,
+      "last_activated": "2026-04-30",
+      "activation_count": 5.0,
       "source": "deep_research_reports/MU_Q2_FY2026_opus_v2.md"
     },
     {
@@ -12345,9 +13355,9 @@ const GRAPH_DATA = {
       "type": "macro_sensitivity",
       "context": "Micron is a BENEFICIARY of AI disruption \u2014 inverse of the ADBE/ai_disruption competitive_threat framing. Per CEO Mehrotra (transcript): 'Memory is at the heart of AI \u2014 enabling longer context windows, deeper reasoning chains, and multi-agent orchestration. AI has fundamentally recast memory as a defining strategic asset in the AI era.' Mechanism: HBM content per AI accelerator growing faster than unit volumes (H100 80GB \u2192 H200 141GB \u2192 Blackwell 192GB \u2192 Vera Rubin 288GB); DRAM requirement in advanced AI accelerators doubled YoY. Enterprise AI inference <5% penetrated. Per management (transcript): 'AI demand is driving DRAM and NAND data center bits TAM to exceed 50% of the industry TAM for the first time in calendar 2026.' 40% CAGR HBM TAM growth to $100B by 2028 (from $35B in 2025). This is the structural demand side of the thesis \u2014 separate from the supply-constraint side (cannibalization, greenfield limits).",
       "directness": 1,
-      "weight": 10.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 4.0,
+      "weight": 10,
+      "last_activated": "2026-04-30",
+      "activation_count": 5.0,
       "source": "earnings_transcripts/MU_Q2_FY2026_transcript.txt"
     },
     {
@@ -12510,9 +13520,9 @@ const GRAPH_DATA = {
       "type": "commodity_exposure",
       "context": "Petrobras is a Brazilian integrated oil major; upstream (pre-salt) revenue correlates directly with Brent realized prices. Domestic fuel pricing policy in Brazil creates periodic political interference with pass-through, introducing a policy-risk wedge around the core crude exposure \u2014 a channel not present in US majors. Hormuz-driven Brent spikes support upstream realized pricing but may be partially offset by government-mandated domestic price caps.",
       "directness": 1,
-      "weight": 3.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 1.0,
+      "weight": 6.0,
+      "last_activated": "2026-04-30",
+      "activation_count": 2.0,
       "source": "tier2_sector_classification"
     },
     {
@@ -12565,9 +13575,9 @@ const GRAPH_DATA = {
       "type": "macro_sensitivity",
       "context": "Per DR Bear Point 2 (probability 40%) + transcript Sheehan/Kogan exchange: Approximately 50% of Ross's merchandise originates from China. FY2025 tariff-related costs impacted EPS by ~$0.16/share; FY2026 guidance assumes a $0.22-$0.25/share headwind. Management stated 'We will not be the leader in raising prices' \u2014 admirable for customer retention but potentially margin-destructive if tariffs intensify. 50-100bps margin risk on escalation. Unique off-price complicating factor: the model theoretically BENEFITS from tariff chaos (more closeouts available from stressed full-price retailers), but NET effect depends on whether supply benefit outweighs cost headwind. Per Sheehan on FY26 merchandise margin: 'mainly driven by the better buying... some benefit from recapturing some of the tariff pressure' \u2014 confirming tariff is current-period cost, not one-time anomaly. Directness 1 (direct COGS channel) \u2014 similar to DLTR's 41-43% direct China imports at d=1 and WMT's 1/3-of-COGS at d=1. Sixth variation of tariff_regime in cohort (WMT/DLTR d=1 direct COGS; DG d=2 customer income; MU d=2 political; CTAS d=2 slow-amortized inventory).",
       "directness": 1,
-      "weight": 6.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 2.0,
+      "weight": 9.0,
+      "last_activated": "2026-04-30",
+      "activation_count": 3.0,
       "source": "deep_research_reports/ROST_Q4_FY2026_opus.md"
     },
     {
@@ -12752,9 +13762,9 @@ const GRAPH_DATA = {
       "type": "macro_sensitivity",
       "context": "Per DR Section 3 Critical Insight and transcript Ernie/Klinger: 'TJX does NOT import the vast majority of its merchandise directly. It buys ~90% from third-party vendors who have already handled customs and duties. This means tariffs hit TJX's suppliers, not TJX. When tariffs squeeze suppliers, they become MORE willing to liquidate excess inventory to TJX at deeper discounts \u2014 tariffs are a net positive for TJX's buying power.' Channel is INDIRECT (vendor-liquidation channel, d=2) \u2014 materially different from WMT direct-COGS (d=1) and DLTR 41-43% direct imports (d=1), but also opposite direction from DG d=2 customer-income channel: for DG tariffs HURT via customer income pressure; for TJX tariffs BENEFIT via vendor distress-driven inventory availability. Q3 FY26 GM EXPANDED to 32.6% during peak tariff uncertainty (DR Bull Point 1). Transcript CFO Klinger explicit: 'our full year guidance assumes that we will be able to offset the tariff pressure on our business this year' \u2014 FY27 guide assumes mitigation, no upside from tariff chaos embedded. Also per Klinger: 'we are evaluating the potential impact of last Friday's ruling on tariffs and monitoring the changing tariff environment' (referring to late-Feb 2026 court ruling). Ernie: 'our buyers are very good at navigating through that. And usually, we figure out a way to benefit in terms of our merchandise margin situation when there is confusion out there.'",
       "directness": 2,
-      "weight": 1.0,
-      "last_activated": null,
-      "activation_count": 0,
+      "weight": 1.5,
+      "last_activated": "2026-04-30",
+      "activation_count": 1.0,
       "source": "deep_research_reports/TJX_Q4_FY2026_opus.md"
     },
     {
@@ -12785,9 +13795,9 @@ const GRAPH_DATA = {
       "type": "macro_sensitivity",
       "context": "Per Bear Point 3 (probability MODERATE-HIGH): Walmart sources approximately one-third of US products from international markets, with China and Mexico as the largest contributors. In FY2025, tariff impacts were visible \u2014 China-sourced paper folders up 46%, Vietnam swai fish up 34%, Chinese measuring spoons up 19%. Current China tariff regime at 145% is unprecedented. At 3.1% net margin, a 50bps margin hit from tariffs would reduce earnings by ~16%. Management explicitly refused to include tariff assumptions in FY2027 guidance \u2014 signaling genuine uncertainty and reserving a free option to miss numbers and cite macro. CFO Rainey described consumer backdrop as 'somewhat unstable.'",
       "directness": 1,
-      "weight": 9.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 3.0,
+      "weight": 10,
+      "last_activated": "2026-04-30",
+      "activation_count": 4.0,
       "source": "deep_research_reports/WMT_Q4_FY2026_opus.md"
     },
     {
@@ -12818,35 +13828,37 @@ const GRAPH_DATA = {
       "type": "commodity_exposure",
       "context": "Exxon is an integrated oil and gas major; revenue and upstream earnings are directly correlated with Brent/WTI realized prices. Downstream refining provides a partial counter-hedge when crack spreads widen during crude spikes (analogous to DAL's Monroe refinery mechanism but at far larger scale). Net exposure is direct-positive to sustained crude price increases.",
       "directness": 1,
-      "weight": 6.0,
-      "last_activated": "2026-04-28",
-      "activation_count": 2.0,
+      "weight": 9.0,
+      "last_activated": "2026-04-30",
+      "activation_count": 3.0,
       "source": "tier2_sector_classification"
     }
   ],
   "meta": {
-    "last_updated": "2026-04-28",
-    "total_nodes": 50,
-    "total_edges": 101,
+    "last_updated": "2026-04-30",
+    "total_nodes": 53,
+    "total_edges": 106,
     "tier_counts": {
       "tier_1": 13,
-      "tier_2": 27,
+      "tier_2": 28,
       "macro": 5,
-      "sector": 4,
+      "sector": 5,
       "commodity": 1
     },
-    "updated_today": 43,
-    "updated_this_week": 50,
+    "updated_today": 46,
+    "updated_this_week": 53,
     "active_triggers": 6,
     "elevated_triggers": 2,
     "edge_types": {
       "competitive_threat": 4,
       "supply_chain": 10,
       "macro_sensitivity": 32,
-      "sector_membership": 20,
+      "sector_membership": 23,
       "competitive": 6,
       "commodity_exposure": 18,
       "correlation": 5,
+      "institutional_policy_sensitivity": 1,
+      "monetary_narrative_amplification": 1,
       "float_income_sensitivity": 2,
       "unknown": 3,
       "regulatory": 1

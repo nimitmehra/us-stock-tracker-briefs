@@ -1,10 +1,10 @@
 #!/bin/bash
 # US Stock Tracker — daily /market-brief orchestrator
 # Cron: 2:30 AM IST Tue-Sat = 5:00 PM ET EDT Mon-Fri (1 hr post-close)
-# Mirrors /Users/nimitmehra/Documents/Manus/hive-mind/scripts/run-brief.sh
+# Mirrors /Users/nimitmehra/Manus/hive-mind/scripts/run-brief.sh
 
 CLAUDE="/Users/nimitmehra/.local/bin/claude"
-DIR="/Users/nimitmehra/Documents/Manus/US-Stock-Tracker"
+DIR="/Users/nimitmehra/Manus/US-Stock-Tracker"
 FLAGS="--dangerously-skip-permissions"
 DATE=$(date +%Y-%m-%d)
 LOG="$DIR/logs/cron-market-brief-$DATE.log"

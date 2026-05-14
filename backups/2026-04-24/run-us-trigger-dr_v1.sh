@@ -4,7 +4,7 @@
 # Picks up anything market-brief queued and drains up to 10 full DRs (v1.3 caps)
 
 CLAUDE="/Users/nimitmehra/.local/bin/claude"
-DIR="/Users/nimitmehra/Documents/Manus/US-Stock-Tracker"
+DIR="/Users/nimitmehra/Manus/US-Stock-Tracker"
 FLAGS="--dangerously-skip-permissions"
 DATE=$(date +%Y-%m-%d)
 LOG="$DIR/logs/cron-trigger-dr-$DATE.log"

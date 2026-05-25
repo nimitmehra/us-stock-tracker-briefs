@@ -2259,7 +2259,7 @@ const GRAPH_DATA = {
       "sector": "consumer cyclical",
       "industry": null,
       "created": "2026-05-06",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "summary": "Amazon.com, Inc. \u2014 portfolio holding. Pending initial deep research; routes to growth prompt.",
       "thesis": {
         "verdict": null,
@@ -2278,8 +2278,8 @@ const GRAPH_DATA = {
         "pct_from_52w_low": 33.97,
         "last_close_date": "2026-05-22",
         "data_source": "yfinance_via_market-data.json",
-        "last_updated": "2026-05-24",
-        "pe_forward": 27.04,
+        "last_updated": "2026-05-25",
+        "pe_forward": 27.01,
         "market_cap_B": 2864.83
       },
       "price_snapshots": [],
@@ -2427,6 +2427,206 @@ const GRAPH_DATA = {
         "broker_source": "Vested"
       },
       "_display_label": "AMZN"
+    },
+    "anip": {
+      "id": "anip",
+      "name": "ANI Pharmaceuticals, Inc.",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - Specialty & Generic",
+      "sub_sector": "Commercial-Stage Specialty Pharma",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "thesis": {
+        "verdict": "BUY",
+        "conviction": 7,
+        "previous_verdict": null,
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/ANIP_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "key_bull": [
+          "ACTH category expansion is real and structural \u2014 both Cortrophin (+42%) and Acthar Gel (+30-35%) growing simultaneously confirms category-level demand, not zero-sum share theft",
+          "Forward PE 7.8x is anomalously cheap for 22%+ revenue growth; sector average 17x \u2014 multiple re-rate alone delivers 50-70% upside",
+          "$100M buyback + 19% short interest + tight 19.5M float = squeeze-prone technical setup layered on fundamental thesis",
+          "Alimera integration finally working: ILUVIEN $19.3M Q1 (+19.5% YoY) after 5 quarters of post-acquisition disappointment",
+          "Convertibles refi (2.25% due 2029, $74.11 strike) eliminated tail refinancing risk; Net Debt/EBITDA delevered to 1.0x"
+        ],
+        "key_bear": [
+          "Cortrophin growth may be sales-force-induced (180 reps added 2025-26); productivity normalization could decelerate growth to 20-25% by Q1 2027",
+          "Acthar SelfJect self-administration device (2025 launch) is a category convenience killer; management silence on competitive response is concerning",
+          "Gout TAM of 285K addressable may capture only 3-5% at $40K/course, falling short of management's narrative",
+          "Insider selling (not buying) ahead of gout sales force ramp \u2014 no open-market discretionary purchases by C-suite",
+          "ILUVIEN may cap at $100M franchise vs. $400M+ Alimera EV, locking in goodwill impairment risk"
+        ],
+        "probability_weighted_return": "1.90x in 5 years (~13.7% IRR); Bull 20% x 3.14x, Base 45% x 1.99x, Conservative 25% x 1.27x, Bear 10% x 0.60x",
+        "entry_prices": {
+          "starter": 82.72,
+          "add": 90.0,
+          "full": 100.0,
+          "stop_loss": 60.0
+        }
+      },
+      "signals": [],
+      "edges": [
+        {
+          "target": "ira_drug_pricing",
+          "weight": 1.5,
+          "context": "Cortrophin Gel is Medicare Part B physician-administered ACTH biologic, not on current Part D negotiation list; ACTH category structurally insulated from IRA for 5-7 year horizon. Low-but-not-zero exposure.",
+          "last_verified": "2026-05-24",
+          "source": "deep_research_reports/ANIP_Q1_2026_opus.md Section 2d"
+        },
+        {
+          "target": "fed_rates",
+          "weight": 2.0,
+          "context": "Convertible notes (2.25%, $316.25M, due Sept 2029) replaced SOFR+6% term loan in 2024; ANIP is now relatively insulated from short-term rate moves but exposed if 2029 refi market is stressed.",
+          "last_verified": "2026-05-24",
+          "source": "deep_research_reports/ANIP_Q1_2026_opus.md Section 6c"
+        }
+      ],
+      "management_promises": [
+        {
+          "promise": "FY2026 total revenue $1,080M-$1,140M",
+          "date_made": "2026-05-08",
+          "check_date": "2027-02-28",
+          "status": "tracking",
+          "source": "Q1 2026 earnings press release"
+        },
+        {
+          "promise": "FY2026 Cortrophin Gel revenue $540M-$575M (reaffirmed)",
+          "date_made": "2026-05-08",
+          "check_date": "2027-02-28",
+          "status": "tracking",
+          "source": "Q1 2026 earnings press release"
+        },
+        {
+          "promise": "FY2026 ILUVIEN revenue $78M-$83M",
+          "date_made": "2026-05-08",
+          "check_date": "2027-02-28",
+          "status": "tracking",
+          "source": "Q1 2026 earnings press release"
+        },
+        {
+          "promise": "FY2026 Adj. EBITDA $285M-$300M",
+          "date_made": "2026-05-08",
+          "check_date": "2027-02-28",
+          "status": "tracking",
+          "source": "Q1 2026 earnings press release"
+        },
+        {
+          "promise": "FY2026 Adj. Diluted EPS $9.19-$9.69",
+          "date_made": "2026-05-08",
+          "check_date": "2027-02-28",
+          "status": "tracking",
+          "source": "Q1 2026 earnings press release"
+        },
+        {
+          "promise": "Majority of ~90-person gout sales force deployed by end of Q2 2026",
+          "date_made": "2026-05-08",
+          "check_date": "2026-08-07",
+          "status": "tracking",
+          "source": "Q1 2026 earnings call"
+        },
+        {
+          "promise": "$100M share repurchase program authorized May 2026",
+          "date_made": "2026-05-08",
+          "check_date": "2027-05-31",
+          "status": "tracking",
+          "source": "Q1 2026 earnings press release"
+        }
+      ],
+      "trigger_points": [
+        {
+          "type": "entry",
+          "price": 82.72,
+          "size_pct": 3.0,
+          "rationale": "Starter position at current price; Phase 1 gates passed, all three; Cortrophin category-expansion thesis confirmed by Acthar growth",
+          "status": "active"
+        },
+        {
+          "type": "add",
+          "price": 90.0,
+          "size_pct": 4.0,
+          "rationale": "Add on Q2 2026 confirmation: Cortrophin Gel revenue >=$80M",
+          "status": "pending",
+          "trigger_event": "Q2 2026 earnings ~Aug 2026"
+        },
+        {
+          "type": "full",
+          "price": 100.0,
+          "size_pct": 5.0,
+          "rationale": "Full position on Q3 2026 print with Cortrophin >=$90M AND gout sales force productivity KPIs disclosed positively",
+          "status": "pending",
+          "trigger_event": "Q3 2026 earnings ~Nov 2026"
+        },
+        {
+          "type": "trim",
+          "price": null,
+          "size_pct": 50,
+          "rationale": "Trim 50% if Cortrophin Gel YoY growth decelerates below 30% in any quarter",
+          "status": "pending",
+          "trigger_event": "any quarterly earnings report"
+        },
+        {
+          "type": "exit",
+          "price": null,
+          "size_pct": 100,
+          "rationale": "Immediate full exit on FDA Warning Letter at Baudette MN manufacturing site (Cortrophin single-source)",
+          "status": "pending",
+          "trigger_event": "FDA enforcement action"
+        },
+        {
+          "type": "exit",
+          "price": null,
+          "size_pct": 50,
+          "rationale": "50% reduction if Cortrophin Gel YoY growth turns negative in any quarter",
+          "status": "pending",
+          "trigger_event": "any quarterly earnings report"
+        },
+        {
+          "type": "stop_loss",
+          "price": 60.0,
+          "size_pct": 100,
+          "rationale": "Below $60 = below convertible strike + indicates fundamental thesis failure",
+          "status": "pending"
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 82.72,
+          "trigger": "Deep research refresh Q1 2026 \u2014 seed DR",
+          "delta_context": "Stock +6% 1M, +10% 3M, but -16.9% off 52w high $99.50; post Q1 2026 beat (May 8) and $100M buyback authorization; 19% short interest provides squeeze setup"
+        }
+      ],
+      "extraction_gaps": [
+        "Q1 2026 verbatim earnings call transcript not retrieved (Motley Fool scraper HTTP 410)",
+        "Acthar SelfJect competitive impact data not available; monitor Q2/Q3 prints for new-patient capture trends",
+        "Gout sales force productivity KPIs (calls/day, HCP coverage) not yet disclosed",
+        "Cortrophin gross-to-net trajectory not separately reported",
+        "Baudette MN recent FDA inspection history not surfaced in web search",
+        "Harmony royalty agreement specifics (rate, ceiling, WAKIX patent expiry July 2030) not in publicly available detail"
+      ],
+      "current": {
+        "price": 82.72,
+        "delta_1d": -0.06,
+        "delta_1w": 6.04,
+        "delta_1m": 5.97,
+        "pct_from_52w_high": -3.56,
+        "pct_from_52w_low": 17.35,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 7.8,
+        "market_cap_B": 1.88,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "demotion_note": {
+        "from_tier": 1,
+        "reason": "v1.9 daily tier-audit: verdict=BUY conviction=7 critical_review_path=null -> provisional Tier 2 pending critical review; queued for /critical-review. Placed in T1 by /trigger-dr 2026-05-24 under outdated v1.3 rule.",
+        "date": "2026-05-25"
+      },
+      "pending_critical_review": true,
+      "_display_label": "ANIP"
     },
     "aos": {
       "id": "aos",
@@ -3590,6 +3790,199 @@ const GRAPH_DATA = {
         "broker_source": "Vested"
       },
       "_display_label": "BE"
+    },
+    "bhrb": {
+      "id": "bhrb",
+      "name": "Burke & Herbert Financial Services Corp.",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "ticker": "BHRB",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "thesis": {
+        "verdict": "HOLD",
+        "conviction": 6,
+        "previous_verdict": null,
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/BHRB_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "key_bull": [
+          "Cheapest P/TBV in cohort (1.21x) at above-average profitability \u2014 adjusted ROTCE 14.4% with sustainable franchise; if multiple drifts to cohort average 1.4x + book compounds at 7-8% = 25% annualized total return potential",
+          "Summit merger over-delivered (KBRA explicit: 'surpassed projections for capital generation, cost savings, ROA') \u2014 LINKBANK deal (closing May 1 2026) has identical structure and projects 18% EPS accretion in 2027 with 3.2-year TBV earn-back",
+          "Deposit franchise is genuinely durable \u2014 174-year DC-metro brand (founded 1852, oldest continuously-operating bank in VA), deposit cost 1.89% below peer average, 21.6% NIB, 32.5% uninsured (manageable), essentially zero brokered",
+          "Insider ownership 11.99% (exceptional for a regional bank \u2014 peer median 1-3%); Director McLaughlin bought 1,000 shares at $63.55 April 2026 (at-current-price purchase); 'more insider buying than selling' aggregate",
+          "Dividend 3.5% yield with 28.5% payout ratio (lowest in cohort except WTBA) \u2014 room for 10-15% dividend CAGR for 3 years even at modest earnings growth; 5-year cumulative dividends ~22% of current price"
+        ],
+        "key_bear": [
+          "Core NIM (ex-Summit accretion of $6.8M/quarter) is only ~3.60%, declining 6bps QoQ; reported 4.09% NIM is 49bps inflated by purchase accounting that runs off through 2027-2028 = mechanical $30-35M NII headwind = 15-22% EPS hit pre-LINK offset",
+          "CRE concentration at 318% of risk-based capital (pro forma 350% after LINK close) is above OCC/Fed supervisory 'elevated' threshold; office $490M = 50% of capital (KBRA acknowledged) in suburban segment that has bled hardest in 2024-2025",
+          "Crossing $10B asset threshold post-LINK (May 1, 2026 = $11B PF) triggers Durbin interchange caps + CFPB direct supervision + DFAST stress testing = $5-9M/yr cost creep = $0.30-0.50 EPS drag not fully in consensus",
+          "Pro forma CET1 drops 240bps to 11.4% \u2014 still well-capitalized but the cushion is consumed; in a 2008-magnitude stress event (300-400bps capital consumption) lands at 7-8.5% CET1 = at lower end of adequate with potential dividend pressure",
+          "Limited fee income diversification (84% of revenue is NII; non-interest income only $51.6M annualized); no capital-markets, no payments scale; in a low-rate environment BHRB has no fee engine offset (compare CHCO trust/wealth +14.3% YoY)"
+        ],
+        "probability_weighted_return": "1.66x over 5 years (~10.6% IRR) \u2014 bull (20%) 2.15x / 16.5% IRR; base (50%) 1.72x / 11.5% IRR; conservative (22%) 1.35x / 6.2% IRR; bear (8%) 0.94x / -1.2% IRR. Above 1.5x BUY threshold but lacks asymmetry for high conviction.",
+        "entry_prices": {
+          "starter": 55.0,
+          "add": 50.0,
+          "full": 46.0,
+          "stop_loss": 46.0
+        },
+        "core_tension": "Is BHRB a serial-acquirer franchise that has cracked the M&A integration code (Summit over-delivered, LINKBANK should follow) and deserves re-rating from 1.21x to 1.4-1.5x P/TBV as the second deal closes and earnings inflect 18% higher in 2027 \u2014 OR is the discount permanent because pro-forma CRE 350% of capital + suburban office + $10B threshold cost-creep means the market is correctly pricing structural rather than transitional risk?"
+      },
+      "signals": [
+        {
+          "date": "2026-05-24",
+          "type": "deep_research_seed",
+          "significance": "high",
+          "summary": "Seed DR Q1 2026: HOLD 6/10. Phase 1 all three gates pass. Q1 2026 print: EPS $1.79 (adj $1.87, missed $1.94 by $0.07); NIM 4.09% reported (core ~3.60% ex-$6.8M accretion); NPL 1.45%; NCO 0.6bps; ACL 1.3% of loans; CET1 13.8% (PF 11.4% post-LINK); TBV/sh $51.83; P/TBV 1.21x; ROTCE adj 14.44%; ROA adj 1.45%; deposits down $71.7M QoQ (brokered runoff). LINKBANK merger closed May 1 2026 \u2014 pro forma $11B assets, CET1 11.4%, CRE 350% of capital. Director McLaughlin bought 1,000 shares at $63.55 in April. KBRA BBB stable.",
+          "source": "deep_research_reports/BHRB_Q1_2026_opus.md",
+          "reconciled_in_report": true,
+          "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04-23",
+          "type": "earnings_print",
+          "significance": "high",
+          "summary": "Q1 2026 net income $27.1M, diluted EPS $1.79 (adj $1.87 non-GAAP); NIM 4.09% reported, core ~3.60% ex-accretion; total loans $5.4B (+$17M QoQ from $132M originations); deposits $6.3B (-$71.7M QoQ from brokered runoff); ACL $68M (1.3% of loans); NPL 1.45%; NPA 1.03%; provision $213K; NCO $81K (0.6bps annualized); CET1 13.8%; Total RBC 16.5%; TBV/sh $51.83; TCE/TA 9.93%; $1.1M merger-related charges. Q4 2025 EPS comparison $1.98 (declining trend). Dividend $0.55 declared payable June 1, 2026.",
+          "source": "8-K (Acc# 0001964333-26-000037) + GlobeNewswire April 23, 2026",
+          "reconciled_in_report": true,
+          "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-05-01",
+          "type": "merger_close",
+          "significance": "high",
+          "summary": "LINKBANCORP merger closed May 1, 2026 (regulatory approvals received April 13, 2026). $354.2M all-stock deal, 0.1350 BHRB shares per LNKB share. Pro forma: $11.0B assets, $8.0B loans, $9.1B deposits, 100+ locations across 6 states (now including Pennsylvania). Pro forma CET1 11.4% (down from 13.8% standalone). CRE concentration 350% of capital pro forma. Gross credit marks $36M (1.5% of LNKB loans); rate marks $38M accretable over 4 years. Projected 18% EPS accretion in 2027; 10% TBV dilution with 3.2yr earnback. Existing BHRB shareholders own ~75% of combined company.",
+          "source": "Multiple BHRB 8-Ks April 2026 + KBRA commentary",
+          "reconciled_in_report": true,
+          "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04",
+          "type": "insider_transaction",
+          "significance": "medium",
+          "summary": "Director Shawn Patrick McLaughlin bought 1,000 BHRB shares at $63.5479 weighted avg (essentially at-market-price purchase), raising direct holdings to 69,000 shares plus 1,000 indirect. Bullish at-current-price insider signal; consistent with 11.99% total insider ownership (exceptionally high for a public regional bank). MarketBeat aggregate: 'more insider buying than selling recently.'",
+          "source": "SEC Form 4 (BHRB stocktitan filing)",
+          "reconciled_in_report": true,
+          "verification": "CONFIRMED"
+        },
+        {
+          "date": "2026-04",
+          "type": "rating_agency",
+          "significance": "medium",
+          "summary": "KBRA affirmed BHRB ratings BBB (senior unsecured) / BBB- (subordinated) / K3 (short-term), Outlook Stable. Key concerns: CRE concentration 318% of capital, office $490M = 50% of capital. Key strengths: NCO <0.2% since 2008, conservative capital management (CET1 rebuilt +200bps post-Summit), deposit cost 1.89% below peer average, 1.45% ROAA, 'solid funding profile' with affluent DC-metro clients. Trigger for negative action: 'materially elevated credit losses.'",
+          "source": "KBRA publications kwxQJMQz + gbdbrfbC",
+          "reconciled_in_report": true,
+          "verification": "CONFIRMED"
+        }
+      ],
+      "edges": [
+        {
+          "target": "fed_rates",
+          "weight": 8,
+          "direction": "stock_to_macro",
+          "context": "BHRB NIM is highly rate-sensitive; core NIM ex-accretion ~3.60% will compress 30-50bps if Fed cuts 200bps (asset-sensitive bank in current configuration). Accretion runoff through 2027-2028 already removes ~49bps of reported NIM mechanically.",
+          "evidence_source": "deep_research_reports/BHRB_Q1_2026_opus.md Sections 2,6,8"
+        },
+        {
+          "target": "commercial_real_estate",
+          "weight": 8,
+          "direction": "stock_to_macro",
+          "context": "Investor CRE 55% of total loans = 318% of risk-based capital (pro forma 350% post-LINK); office $490M = 50% of risk-based capital, predominantly suburban Northern VA/DC metro. Above OCC/Fed 300% supervisory threshold. KBRA explicit negative-action trigger is 'materially elevated credit losses.'",
+          "evidence_source": "deep_research_reports/BHRB_Q1_2026_opus.md Sections 3,8,11; KBRA kwxQJMQz"
+        }
+      ],
+      "management_promises": [
+        {
+          "date_promised": "2025-12-18",
+          "promise": "LINKBANK integration to deliver 18% EPS accretion in 2027 with 10% TBV dilution and 3.2-year earnback",
+          "status": "tracking",
+          "check_dates": [
+            "2026-Q2 first combined print",
+            "2026-Q4 cost-save run rate",
+            "2027-Q1 EPS accretion materialization"
+          ],
+          "source": "December 2025 LINKBANK merger investor presentation"
+        },
+        {
+          "date_promised": "2026-04-23",
+          "promise": "Capital generation to rebuild CET1 ratios post-LINK close (Summit rebuild was +200bps in 12 months)",
+          "status": "tracking",
+          "check_dates": [
+            "2026-Q3 print",
+            "2026-Q4 print",
+            "2027-Q2 print"
+          ],
+          "source": "Q1 2026 earnings + KBRA commentary"
+        },
+        {
+          "date_promised": "2026-04-23",
+          "promise": "Core NIM (ex-accretion) stabilization as Summit accretion runs off through 2027-2028 with LINKBANK accretion partial offset",
+          "status": "at_risk",
+          "check_dates": [
+            "each quarterly print 2026-2028"
+          ],
+          "source": "Inferred from accretion mechanics in Q1 press release"
+        }
+      ],
+      "trigger_points": [
+        {
+          "level": "starter",
+          "price": 55.0,
+          "rationale": "12% drawdown from current; provides margin for integration noise in Q2-Q3 2026"
+        },
+        {
+          "level": "add",
+          "price": 50.0,
+          "rationale": "On any LINKBANK first-quarter print volatility"
+        },
+        {
+          "level": "full",
+          "price": 46.0,
+          "rationale": "~1.0x P/TBV at post-LINK-dilution TBV $47"
+        },
+        {
+          "level": "aggressive_add",
+          "price": 40.0,
+          "rationale": "Credit-event panic with CET1 still >10% \u2014 re-rate conviction to BUY 8-9"
+        },
+        {
+          "level": "stop_loss",
+          "price": 46.0,
+          "rationale": "If reached without other support, thesis re-evaluation required"
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 62.77,
+          "trigger": "Deep research seed Q1 2026",
+          "delta_context": "+5.8% YTD, -1.8% 1M, -11.5% off 52w high $70.90, P/TBV 1.21x, P/E TTM 8.1x, P/E forward 7.1x, div yield 3.5%"
+        }
+      ],
+      "extraction_gaps": [
+        "Q1 2026 earnings call transcript not accessed (Motley Fool 410) \u2014 should be manually fetched next DR",
+        "Loan composition detail by category from Q1 2026 10-Q (filed May 8, 2026) \u2014 not deeply parsed",
+        "Interest rate sensitivity disclosures from 10-K Item 7A \u2014 not independently modeled",
+        "LINKBANK Q1 2026 standalone credit metrics pre-close \u2014 not verified",
+        "First post-LINK combined print expected Q2 2026 \u2014 primary near-term coherence check"
+      ],
+      "current": {
+        "price": 62.77,
+        "delta_1d": -1.09,
+        "delta_1w": 2.11,
+        "delta_1m": -1.82,
+        "pct_from_52w_high": -8.89,
+        "pct_from_52w_low": 4.88,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 7.12,
+        "market_cap_B": 1.26,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "_display_label": "BHRB"
     },
     "bnzi": {
       "id": "bnzi",
@@ -4972,6 +5365,271 @@ const GRAPH_DATA = {
       "trigger_points": [],
       "_display_label": "CF"
     },
+    "cffi": {
+      "id": "cffi",
+      "name": "C&F Financial Corporation",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "sub_sector": "US Community Bank \u2014 Virginia (three-segment: community bank + mortgage banking + subprime auto)",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "thesis": {
+        "verdict": "HOLD",
+        "conviction": 5,
+        "previous_verdict": null,
+        "previous_conviction": null,
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/CFFI_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "key_bull": [
+          "Trades essentially AT tangible book ($72.17 vs TBV $73.70 = 0.98x P/TBV) for a 99-year-old VA community bank with NPL 0.07% and 8.2% deposit growth",
+          "Did NOT cut dividend through 2008-2009 crisis (held $0.31/Q through Q3 2008 EPS of $0.10); just raised dividend 4% in Q1 2026; payout ratio 23% leaves massive cushion",
+          "Marine/RV consumer finance runoff is active de-risking; auto book flat at $405M (not growing into late-cycle stress); ACL 4.80% coverage adequate at current 2.98% NCO",
+          "SW Virginia commercial banking expansion (Roanoke/Lynchburg/Danville/Martinsville/Blacksburg) is asymmetric optionality \u2014 2-3 year payoff for $200-300M potential loan growth"
+        ],
+        "key_bear": [
+          "Subprime auto credit at 32-year high (Fitch: 6.90% 60+ DPD Jan 2026); CFFI's consumer finance NCO went 2.59% (FY25) -> 2.98% (Q1 26) \u2014 first stair step of acceleration, not the last; could hit 4-5% by 2027",
+          "Q1 2026 EPS over-earning: mortgage banking +58% YoY origination spike is rate-cycle gift, not structural; normalized EPS ~$7 (not $8.71), making real forward P/E ~10x \u2014 not screaming cheap",
+          "Micro-cap illiquidity: $235M cap, $1.5M ADV, no Russell inclusion above microcap, no buy-side coverage; structural multiple discount that doesn't close even on fundamental improvement; position sizing capped at 1.5-2%",
+          "AFS securities portfolio AOCI unrealized losses not disclosed in earnings release \u2014 true economic Tier 1 may be 8-9% instead of reported 10.1% leverage",
+          "ROTCE 11.3% justifies P/TBV only ~1.0x at 11% cost of equity (or 0.90x at 12% COE warranted by consumer finance risk) \u2014 limited multiple expansion ceiling; cost-of-equity arithmetic doesn't support a meaningful re-rating",
+          "No insider open-market buying near tangible book \u2014 only small Form 144 sales and compensation grants; if management thought consumer finance fear was overdone, they'd be buying at $72"
+        ],
+        "probability_weighted_return": "1.51x in 5 years (~8.6% IRR) \u2014 sits just at the BUY threshold; HOLD verdict reflects asymmetric downside skew (-21% Bear) + position-sizing constraint from micro-cap illiquidity",
+        "scenario_irrs": {
+          "bull": {
+            "prob": 0.2,
+            "total_return": 2.06,
+            "irr_pct": 15.5
+          },
+          "base": {
+            "prob": 0.45,
+            "total_return": 1.59,
+            "irr_pct": 9.7
+          },
+          "conservative": {
+            "prob": 0.25,
+            "total_return": 1.21,
+            "irr_pct": 3.8
+          },
+          "bear": {
+            "prob": 0.1,
+            "total_return": 0.79,
+            "irr_pct": -4.6
+          }
+        },
+        "entry_prices": {
+          "starter": 65.0,
+          "add": 58.0,
+          "full": 50.0,
+          "trim": 95.0,
+          "stop_loss": 48.0
+        },
+        "max_position_pct": 2.0,
+        "position_size_cap_reason": "Micro-cap liquidity ($1.5M ADV, $235M cap) caps deployable capital regardless of conviction"
+      },
+      "current_metrics": {
+        "as_of": "2026-05-24",
+        "price": 72.17,
+        "market_cap_m": 234.9,
+        "pe_ttm": 8.3,
+        "p_tbv": 0.98,
+        "p_b": 0.88,
+        "div_yield_pct": 2.66,
+        "roe_pct": 10.19,
+        "rotce_pct": 11.28,
+        "nim_pct": 4.27,
+        "cet1_or_tier1_pct": 12.1,
+        "total_rbc_pct": 15.1,
+        "tier1_leverage_pct": 10.1,
+        "community_bank_npl_pct": 0.07,
+        "consumer_finance_npl_pct": 0.2,
+        "consumer_finance_nco_annualized_pct": 2.98,
+        "consumer_finance_acl_pct_of_loans": 4.8,
+        "book_value_per_share": 81.73,
+        "tangible_book_value_per_share": 73.7,
+        "total_deposits_b": 2.4,
+        "total_loans_b": 2.08,
+        "total_assets_b": 2.81,
+        "insider_pct": 6.72,
+        "institutional_pct": 41.2,
+        "short_pct_float": 1.16,
+        "shares_outstanding_m": 3.25,
+        "float_m": 3.02,
+        "returns": {
+          "1m_pct": -3.24,
+          "3m_pct": -0.82,
+          "6m_pct": 7.2,
+          "ytd_pct": 7.2
+        },
+        "distance_from_52w_high_pct": -10.89
+      },
+      "segment_breakdown_q1_2026": {
+        "community_banking_net_income_m": 7.1,
+        "mortgage_banking_net_income_m": 0.91,
+        "consumer_finance_net_income_m": -0.081,
+        "consolidated_net_income_m": 6.8,
+        "consolidated_eps": 2.08,
+        "eps_yoy_growth_pct": 25,
+        "mortgage_originations_m": 179.6,
+        "mortgage_origination_yoy_pct": 57.9
+      },
+      "trigger_points": [
+        {
+          "type": "starter_entry",
+          "price": 65.0,
+          "rationale": "10% pullback to 0.88x P/TBV on consumer finance NCO scare without solvency change",
+          "status": "armed"
+        },
+        {
+          "type": "full_entry",
+          "price": 58.0,
+          "rationale": "20% pullback to 0.79x P/TBV; meaningful margin of safety; consumer finance fear panic",
+          "status": "armed"
+        },
+        {
+          "type": "aggressive_entry",
+          "price": 50.0,
+          "rationale": "30% pullback to 0.68x P/TBV in real consumer credit panic; back-up-the-truck level (still capped at 2% position by liquidity)",
+          "status": "armed"
+        },
+        {
+          "type": "stop_loss",
+          "price": 48.0,
+          "rationale": "Exit ONLY if triggered by deposit run / capital action / dividend cut \u2014 NOT just by NCO migration",
+          "status": "armed",
+          "conditional": true
+        },
+        {
+          "type": "trim",
+          "price": 95.0,
+          "rationale": "Sell into multiple expansion above 1.3x P/TBV without proportionate ROTCE improvement",
+          "status": "armed"
+        }
+      ],
+      "management_promises": [
+        {
+          "promise": "Continue marine/RV consumer finance portfolio runoff",
+          "made_on": "2026-04-23",
+          "source": "Q1 2026 8-K earnings release",
+          "status": "tracking",
+          "check_date": "2026-08-15",
+          "evidence_needed": "Auto-only % of consumer finance segment should rise quarter-over-quarter; marine/RV book should shrink"
+        },
+        {
+          "promise": "SW Virginia expansion (Roanoke/Lynchburg/Danville/Martinsville/Blacksburg) to drive commercial loan growth",
+          "made_on": "2025-08-15",
+          "source": "Q3 2025 announcement / Q1 2026 8-K",
+          "status": "tracking",
+          "check_date": "2026-11-15",
+          "evidence_needed": "Community bank loan growth attributable to new SW VA markets; meaningful $50M+ originations by YE 2026"
+        },
+        {
+          "promise": "Dividend growth continuation",
+          "made_on": "2026-04-23",
+          "source": "Q1 2026 4% dividend raise to $0.48/Q",
+          "status": "met",
+          "check_date": "2027-04-15",
+          "evidence_needed": "Annual dividend increase pattern continues; no cuts even if consumer finance worsens"
+        }
+      ],
+      "signals": [
+        {
+          "date": "2026-04-23",
+          "type": "earnings_release",
+          "significance": "high",
+          "headline": "Q1 2026 EPS $2.08 (+25% YoY) driven by community bank + mortgage; consumer finance segment posted net loss",
+          "interpretation": "Three-segment divergence becoming pronounced. Community bank firing on all cylinders. Mortgage cyclically tailwinded. Consumer finance entering credit cycle stress (NCO 2.59 -> 2.98% in one quarter).",
+          "action": "Established initial HOLD thesis with entry levels at $65 / $58 / $50"
+        },
+        {
+          "date": "2026-05-20",
+          "type": "8k_filing",
+          "significance": "low",
+          "headline": "Routine 8-K filing",
+          "interpretation": "Likely annual meeting results / governance",
+          "action": "None"
+        },
+        {
+          "date": "2026-05-13",
+          "type": "insider_sale",
+          "significance": "low",
+          "headline": "Elizabeth R. Kelley insider sale (small, left her with 4,022 shares)",
+          "interpretation": "Minor disposition, not directional",
+          "action": "None"
+        }
+      ],
+      "edges": [
+        {
+          "to": "consumer_credit_cycle",
+          "weight": 6,
+          "direction": "negative_exposure",
+          "context": "C&F Finance subprime indirect auto lending exposes ~19% of loan book ($405M of $2.08B) to consumer credit cycle. Subprime auto delinquencies at 32-year high per Fitch Jan 2026 (6.90% 60+ DPD). CFFI NCO trending up (2.59% FY25 -> 2.98% Q1 26).",
+          "source_dr": "CFFI_Q1_2026_opus.md Section 6, 8"
+        },
+        {
+          "to": "fed_rates",
+          "weight": 4,
+          "direction": "mixed",
+          "context": "Rate cuts (2026 environment) drive mortgage banking volume tailwind (+58% origination YoY in Q1 26) but compress NIM over time. Net positive in short term, neutral medium term.",
+          "source_dr": "CFFI_Q1_2026_opus.md Section 2, 3"
+        },
+        {
+          "to": "regional_banking_sector",
+          "weight": 3,
+          "direction": "positive",
+          "context": "Small community bank participant; benefits from sector deposit franchise validation; suffers from sector-wide AFS portfolio mark-to-market concerns periodically",
+          "source_dr": "CFFI_Q1_2026_opus.md Section 2"
+        },
+        {
+          "to": "us_housing",
+          "weight": 3,
+          "direction": "positive",
+          "context": "Mortgage banking segment (C&F Mortgage Corp) originates residential mortgages in VA/WV/MD/NC/SC; gain-on-sale model; volume tied to housing transaction activity",
+          "source_dr": "CFFI_Q1_2026_opus.md Section 3"
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 72.17,
+          "trigger": "Initial deep research (seed DR)",
+          "delta_context": "P/TBV 0.98x; -10.89% from 52w high $80.99; +26.4% from 52w low $57.09; +7.2% YTD; trailing P/E 8.3x"
+        }
+      ],
+      "extraction_gaps": [
+        "CRE office concentration not disclosed in earnings release \u2014 need 10-Q deep read on loan composition by collateral",
+        "AFS securities portfolio unrealized losses (AOCI hidden risk) \u2014 need 10-Q investment securities note",
+        "Consumer finance FICO band distribution \u2014 need 10-K risk factor section to determine how deep into subprime CFFI lends",
+        "Q1 2026 earnings call transcript unavailable (Motley Fool returned HTTP 410)",
+        "Net deposit beta and uninsured deposit % not disclosed in earnings release"
+      ],
+      "graph_metadata": {
+        "tier_rationale": "Conviction 5/10 + first-time DR + small position cap = Tier 1 per /update-graph v1.2 rule; monitoring frequency: quarterly",
+        "review_frequency": "quarterly_post_earnings",
+        "next_review_trigger": "Q2 2026 earnings (expected mid-July 2026)"
+      },
+      "current": {
+        "price": 72.17,
+        "delta_1d": -1.47,
+        "delta_1w": 0.08,
+        "delta_1m": -3.24,
+        "pct_from_52w_high": -10.29,
+        "pct_from_52w_low": 7.31,
+        "last_close_date": "2026-05-22",
+        "market_cap_B": 0.23,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "demotion_note": {
+        "from_tier": 1,
+        "reason": "v1.9 daily tier-audit: verdict=HOLD conviction=5 CR=null not_in_portfolio=True (HOLD no longer holds T1 unless owned). Placed in T1 by /trigger-dr 2026-05-24 under outdated v1.3 rule.",
+        "date": "2026-05-25"
+      },
+      "_display_label": "CFFI"
+    },
     "cfg": {
       "id": "cfg",
       "name": "Citizens Financial Group, Inc.",
@@ -5610,6 +6268,167 @@ const GRAPH_DATA = {
         "conviction_at_demotion": 5
       },
       "_display_label": "CFR"
+    },
+    "chco": {
+      "id": "chco",
+      "name": "City Holding Company",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "thesis": {
+        "verdict": "HOLD",
+        "conviction": 4,
+        "previous_verdict": "HOLD 5/10 (DR, pre-critical-review)",
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/CHCO_Q1_2026_opus.md",
+        "critical_review_path": "deep_research_reports/CHCO_Q1_2026_critical_review.md",
+        "key_bull": [
+          "Deposit franchise IS structural moat: 26.4% NIB + ~3.26% cumulative deposit beta (among LOWEST in entire US banking system) verified \u2014 fintech cannot replicate 100yr of WV branch density (caveat: Q1 2023 organic deposits declined $45.9M ex-acquisition during SVB stress, so 'grew through SVB' framing was overstated)",
+          "HTM-bomb risk is OFF the table: zero separate HTM portfolio; all $1.5B securities are AFS with $75.7M unrealized losses already in AOCI \u2014 structural advantage over Schwab/BAC/most peers, eliminates the single biggest tail risk that crushes regional banks",
+          "2020 COVID cycle discipline: grew NI, RAISED dividend, no PPP credit losses; deposits grew during SVB peak panic (2008 portion FALSIFIED \u2014 EPS actually declined 42% from Fannie/Freddie preferred impairment)"
+        ],
+        "key_bear": [
+          "2.76x P/TBV at top decile of 10-yr range + Lynch-STALWART misclassification: organic EPS CAGR is 3-4% (not headline 9.9%), PEG 3.04x; base-rate evidence shows <30% of community banks sustain 2.5x+ P/TBV for 5yr (TCBI -57% in 4mo from 2.0x; BOH 4+yr compressing from 2.80x); probability-weighted return 1.23x = 4.3% IRR \u2014 below 5% Treasury and 8% financials BUY floor",
+          "ACL under-reserved by $18-25M with STRUCTURAL incentive driver: 0.44% ACL vs peer median 0.85-1.0% vs CHCO's OWN 2008 peak 1.06%; CEO bonus 190-200% of target tied to ROATCE percentile with ZERO credit-quality metrics \u2014 buybacks at 2.76x P/TBV AND low provisioning BOTH mechanically inflate ROATCE; Munger 'show me the incentive' textbook case; forced rebuild = 3-5% TBV hit + 2 qtrs EPS (50-60% probability in 5yr)",
+          "Insider signal is NET NEGATIVE, not positive (DR INVERTED this): CEO Hageboeck sold $733K on April 28, 2026 \u2014 8 days after directors bought $58K combined ($13-17K per director, de minimis); CFO has multiple small sales; TTM net selling >$1.0M"
+        ],
+        "probability_weighted_return": "1.23x / ~4.3% IRR at $124.64; crosses 1.5x BUY threshold at $108 starter / $100 acceptable / $90 conviction",
+        "entry_prices": {
+          "starter": 108,
+          "add": 100,
+          "full": 90,
+          "stop_loss": null
+        }
+      },
+      "signals": [],
+      "edges": [],
+      "management_promises": [
+        {
+          "promise_date": "2026-04-23",
+          "source": "Q1 2026 8-K earnings release",
+          "promise_text": "Board authorized new share repurchase program for up to 1 million shares (~7% of outstanding)",
+          "status": "tracking",
+          "check_date": "2026-08-01",
+          "verification_metric": "buyback execution pace vs 1M-share authorization; >300K/qtr signals aggressive support, <150K signals management views shares overvalued"
+        },
+        {
+          "promise_date": "2026-04-23",
+          "source": "Q1 2026 8-K earnings release (implicit)",
+          "promise_text": "NIM expansion trajectory paused \u2014 swap maturities behind us; expect NIM stabilization not expansion",
+          "status": "tracking",
+          "check_date": "2026-08-01",
+          "verification_metric": "Q2 2026 NIM print: if >3.97% management is conservative-guiding; if <3.85% NIM thesis is breaking"
+        }
+      ],
+      "trigger_points": [
+        {
+          "type": "starter_buy",
+          "price": 108,
+          "ptbv_at_trigger": 2.3,
+          "rationale": "10-year mean P/TBV; probability-weighted return crosses 1.42x / 7.3% IRR",
+          "status": "open",
+          "size_pct": "2-3%"
+        },
+        {
+          "type": "acceptable_buy",
+          "price": 100,
+          "ptbv_at_trigger": 2.13,
+          "rationale": "Crosses 1.54x / 9.0% IRR \u2014 first BUY-grade entry",
+          "status": "open",
+          "size_pct": "3-4%"
+        },
+        {
+          "type": "conviction_buy",
+          "price": 90,
+          "ptbv_at_trigger": 1.95,
+          "rationale": "1-sigma below 10-yr mean; weighted return 1.71x / 11.3% IRR",
+          "status": "open",
+          "size_pct": "4-5%"
+        },
+        {
+          "type": "aggressive_add",
+          "price": 75,
+          "ptbv_at_trigger": 1.6,
+          "rationale": "Regional bank cohort panic scenario; weighted return 2.05x / 15.4% IRR",
+          "status": "open",
+          "size_pct": "5-6% max"
+        },
+        {
+          "type": "trim",
+          "price": 156,
+          "ptbv_at_trigger": 3.3,
+          "rationale": "Multiple stretched 1-sigma above mean; trim 50% of any held position",
+          "status": "open"
+        },
+        {
+          "type": "exit_credit",
+          "trigger": "NPL ratio > 1.0% OR ACL forced rebuild >$30M single quarter",
+          "rationale": "Credit cycle turn confirmed or auditor-driven reserve reset crystallizes under-reserved bear thesis",
+          "status": "open"
+        },
+        {
+          "type": "exit_capital",
+          "trigger": "CET1 < 11% OR dividend cut",
+          "rationale": "Capital cushion eroding or management lost confidence",
+          "status": "open"
+        },
+        {
+          "type": "exit_nim",
+          "trigger": "NIM < 3.50% for 2 consecutive quarters",
+          "rationale": "NIM thesis broken, deposit franchise pricing power eroding",
+          "status": "open"
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 124.64,
+          "trigger": "Deep research seed Q1 2026",
+          "delta_context": "First DR; no prior comparison. Cohort outlier on P/TBV (2.76x vs cohort 1.3-2.0x). 6.7% off 52w high $133.59; analyst median target $131.50."
+        }
+      ],
+      "valuation_snapshot": {
+        "date": "2026-05-24",
+        "market_cap_usd": 1758745216,
+        "pe_trailing": 13.74,
+        "pe_forward": 13.12,
+        "price_to_book": 2.21,
+        "price_to_tbv": 2.76,
+        "dividend_yield_pct": 2.73,
+        "roe_pct": 17.0,
+        "rotce_pct": 19.3,
+        "nim_pct": 3.97,
+        "cet1_pct": 14.35,
+        "efficiency_ratio_pct": 48.9,
+        "npl_ratio_pct": 0.27,
+        "acl_to_loans_pct": 0.44,
+        "tbv_per_share": 45.14,
+        "short_interest_pct_float": 8.96
+      },
+      "extraction_gaps": [
+        "Q1 2026 earnings transcript not available (Motley Fool HTTP 410); cannot capture management Q&A on NIM forward guidance, CRE specifics, M&A appetite",
+        "Office CRE subset of $772.8M Non-Residential Non-Owner Occupied bucket not disclosed; estimated 5-7% of loans but unverified",
+        "HTM vs AFS securities portfolio split: AFS detail confirmed ($1.44B with $109M unrealized losses already in AOCI), but HTM portion not retrieved",
+        "Granular deposit beta on the way DOWN \u2014 only 1 quarter of post-Fed-cut data available",
+        "M&A pipeline / appetite \u2014 silence in Q1 2026 disclosures but historical acquirer"
+      ],
+      "current": {
+        "price": 124.64,
+        "delta_1d": 0.18,
+        "delta_1w": 2.65,
+        "delta_1m": -1.59,
+        "pct_from_52w_high": -2.04,
+        "pct_from_52w_low": 7.61,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 13.12,
+        "market_cap_B": 1.76,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "_display_label": "CHCO"
     },
     "cna": {
       "id": "cna",
@@ -9104,9 +9923,21 @@ const GRAPH_DATA = {
       "sector": null,
       "industry": null,
       "created": "2026-05-24",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "source_note": "Created from promotion-candidate two-day confirmation on 2026-05-24 (first appearance 2026-05-12, today's second confirms). Source: Agent B Section G.",
-      "current": {},
+      "current": {
+        "price": 295.19,
+        "delta_1d": 16.77,
+        "delta_1w": 21.98,
+        "delta_1m": 39.15,
+        "pct_from_52w_high": 0.0,
+        "pct_from_52w_low": 166.59,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 19.75,
+        "market_cap_B": 191.75,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
       "thesis": null,
       "signals": [],
       "edges": [],
@@ -10626,6 +11457,188 @@ const GRAPH_DATA = {
         "appearances_count": 2
       },
       "_display_label": "DXCM"
+    },
+    "efc": {
+      "id": "efc",
+      "name": "Ellington Financial Inc.",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Real Estate",
+      "industry": "REIT - Mortgage",
+      "ticker": "EFC",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "thesis": {
+        "verdict": "HOLD",
+        "conviction": 6,
+        "previous_verdict": null,
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/EFC_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "key_bull": [
+          "Q1 2026 BV/share inflected POSITIVE to $13.56 (+3% net of dividends) from $13.16 \u2014 first quarter of net BV growth in years, ending the multi-year erosion from $19 (2019) to $13.16 (2025)",
+          "6 consecutive quarters of ADE > dividend coverage; Q1 2026 ADE $0.55 vs $0.39 dividend = 1.41x; forward guide raised to $0.45/qtr = 15% buffer. Genuinely economically-earned dividend (vs AGNC's return-of-capital pattern)",
+          "Three-engine diversified business model: 83% credit (non-QM securitization franchise with EFMT shelf has lowest prepay+delinq in JPM-tracked cohort), 13% Longbridge reverse-mortgage operating subsidiary (+52% YoY origination), 4% agency. Genuine moat vs single-engine pure-agency mREITs",
+          "Recourse D/E only 1.9x vs agency mREIT peers at 7-8x \u2014 lower leverage means less margin-call/forced-deleveraging risk in spread blowouts",
+          "Probability-weighted 5Y return 1.53x \u2248 8.9% IRR JUST clears the 1.5x BUY threshold; at $11-12.50 entry the math becomes a clear BUY"
+        ],
+        "key_bear": [
+          "13-year BV trajectory is unambiguously down: $19.06 (Jan 2019) \u2192 $13.56 (Mar 2026) = -29% nominal, ~-50% real. Q1 2026 inflection is one quarter; base case is mean-reversion to -2 to -3%/yr structural erosion",
+          "Q1 2026 ADE coverage flattered by $17M Longbridge litigation settlement (one-time, $0.14/share) + favorable spread-tightening marks. Underlying recurring ADE is ~$0.40-$0.45 = 1.0-1.15x coverage, much thinner than 1.41x headline",
+          "Dividend at REIT 96% payout floor; any single bad quarter forces a cut. EFC cut from $0.15\u2192$0.08 (-47%) in 2020 and stepped to $0.13 post-Arlington in 2023. Management used 'comfortable with dividend' language before both prior cuts",
+          "2020 stress-test drawdown was -75% peak-to-trough in 5 weeks with BV mark from $19\u2192~$5 and dividend cut 47%. Recovery never fully retraced \u2014 EFC remains 27% below 2019 peak BV today. Tail-risk scenario is severe and historically realized",
+          "Spread/credit shock concentration in non-QM + CRE bridge + CLO equity sits further down credit stack than agency MBS \u2014 2008/2020-style event hits EFC's asset side harder than pure-agency peers, even though lower leverage mitigates the funding side"
+        ],
+        "probability_weighted_return": "1.533x in 5 years (~8.9% IRR) \u2014 just clears the 1.5x BUY threshold; equivalent to ~3-4pp risk premium over Treasuries with 30-50% drawdown tail risk",
+        "entry_prices": {
+          "starter": null,
+          "add": 12.5,
+          "full": 11.0,
+          "stop_loss": null,
+          "tactical_re_entry_threshold": 10.0,
+          "tactical_re_entry_condition": "Below 0.75x P/B after credit-spread shock \u2014 BUY 7/10, size 5-6%"
+        },
+        "core_tension": "Is EFC's 11.56% dividend now genuinely covered by economic earnings from a diversified, well-hedged credit franchise PLUS a growing reverse-mortgage operating subsidiary \u2014 making it one of the few mREITs where the yield is a real return \u2014 or is the Q1 2026 print a one-quarter Longbridge surprise that will revert, leaving us with a 0.99x P/B vehicle whose 13-year BV trajectory is unmistakably down?"
+      },
+      "signals": [
+        {
+          "date": "2026-05-07",
+          "type": "earnings_print",
+          "significance": "high",
+          "content": "Q1 2026: BV/share $13.56 (+3% net of dividends from $13.16); annualized economic return 26%; GAAP EPS $0.78 ($95.5M net income); ADE $0.55/share vs $0.39 dividend (1.41x coverage \u2014 6th consecutive quarter of coverage); segment income: Credit $74.7M ($0.61/share), Agency $1.7M ($0.02/share), Longbridge $57.5M ($0.47/share, includes $17M one-time litigation settlement). Recourse D/E 1.9x unchanged; total D/E 9.0x; total portfolio $5.16B (credit 83%, Longbridge 13%, agency 4%); unencumbered assets $1.92B (+8% q/q). Longbridge originated $515M (+52% YoY). Non-QM securitizations averaging $508M each (doubled from prior year). Forward ADE guidance raised to $0.45/qtr.",
+          "sources": [
+            "Stocktitan EFC Q1 2026 8-K",
+            "Motley Fool Q1 2026 transcript",
+            "Investing.com Q1 2026 slides"
+          ],
+          "verification": "CONFIRMED",
+          "reconciled_in_report": true
+        },
+        {
+          "date": "2026-05-24",
+          "type": "deep_research_seed",
+          "significance": "high",
+          "content": "Seed DR completed via /trigger-dr. Phase 2 full research executed (Q1 2026 results materially better than AGNC-style yield-trap prior). HOLD 6/10 conviction. Probability-weighted 5yr return 1.53x \u2248 8.9% IRR \u2014 just clears 1.5x BUY threshold. No prior HiveMind state. Tier 2 placement (conviction below T1 threshold of 7+). Re-evaluate as BUY at $12.50 (4% size) or $11.00 (5-6% size). Watch for: BV growth Q2/Q3 2026, ADE coverage >1.20x sustained, Longbridge recurring contribution >$0.25/share/qtr.",
+          "sources": [
+            "deep_research_reports/EFC_Q1_2026_opus.md"
+          ],
+          "verification": "CONFIRMED",
+          "source_agent": "DR"
+        }
+      ],
+      "edges": [
+        {
+          "to": "fed_rates",
+          "weight": 6.0,
+          "direction": "bidirectional_moderate_sensitivity",
+          "context": "EFC's credit-heavy book (83% non-QM/CRE/CLO, 4% agency) makes it less directly Fed-rate-sensitive than pure-agency mREITs like AGNC (where edge weight is 8.0). However, repo funding costs, mortgage spread environment, and the steepness of the yield curve materially affect: (1) carry on the credit book (steeper curve = wider NIM on financed credit assets), (2) Longbridge HECM origination economics (rate-sensitive to senior decision-making and HMBS securitization spreads), (3) mark-to-market valuations across the book. Q1 2026 demonstrated EFC navigating Iran-volatility-driven spread widening with +3% BV growth net of dividends \u2014 hedge book is effective. Edge weight 6.0 reflects moderate (not primary) Fed sensitivity."
+        }
+      ],
+      "management_promises": [
+        {
+          "date": "2026-05-07",
+          "promise": "Forward quarterly ADE per share to remain in the $0.45 area (raised from prior guidance, well above $0.39 dividend run-rate)",
+          "source": "Q1 2026 earnings call (Herlihy, CFO)",
+          "status": "tracking",
+          "check_dates": [
+            "2026-08-15",
+            "2026-11-15",
+            "2027-02-15"
+          ],
+          "deployment_relevance": "If ADE falls below $0.39 for any quarter, dividend coverage thesis breaks; if it falls below $0.39 for 2 consecutive quarters, dividend cut probability spikes \u2014 exit trigger fires"
+        },
+        {
+          "date": "2026-05-07",
+          "promise": "Not thinking of lowering the dividend; dividend is at a good place; could even be a future raise",
+          "source": "Q1 2026 earnings call (Penn, CEO)",
+          "status": "tracking",
+          "check_dates": [
+            "2026-08-15",
+            "2026-11-15"
+          ],
+          "deployment_relevance": "Standard mREIT-CEO 'comfortable with dividend' language. Penn used near-identical phrasing in Q4 2019 before the 47% 2020 cut. Treat as 'no information' rather than positive signal. Watch for language change to 'evaluating' or 'balancing' as the leading-indicator warning."
+        },
+        {
+          "date": "2026-05-07",
+          "promise": "Longbridge proprietary reverse-mortgage product gaining traction; pull-through rates improving; April origination volume holding up post Q1 +52% YoY",
+          "source": "Q1 2026 earnings call (Penn + Herlihy)",
+          "status": "tracking",
+          "check_dates": [
+            "2026-08-15"
+          ],
+          "deployment_relevance": "If Longbridge recurring contribution (ex-litigation) falls below $0.25/share/qtr in Q2 or Q3 2026, the diversification bull point weakens materially and conviction should drop 1-2 points."
+        }
+      ],
+      "trigger_points": [
+        {
+          "type": "entry_starter",
+          "level": 12.5,
+          "condition": "Stock $12.50 (P/B 0.92x) on no-bad-news pullback \u2014 upgrade to BUY 6/10",
+          "purpose": "Modest discount to BV provides margin of safety for income-sleeve allocation",
+          "status": "armed_inactive",
+          "size_pct": 4
+        },
+        {
+          "type": "entry_full",
+          "level": 11.0,
+          "condition": "Stock $11.00 (near 52w low at $11.28, P/B ~0.81x) \u2014 upgrade to BUY 7/10",
+          "purpose": "Material discount to BV; would represent ~22% downside from current entry math, providing strong yield-on-cost (~14%)",
+          "status": "armed_inactive",
+          "size_pct": 5
+        },
+        {
+          "type": "tactical_re_entry",
+          "level": 10.0,
+          "condition": "Stock $10.00 (P/B 0.75x) AFTER a credit-spread shock has clearly started",
+          "purpose": "Post-stress tactical entry with mean-reversion + yield combined potential 40%+ over 18 months; verify context (not a structural break)",
+          "status": "armed_inactive",
+          "size_pct": 6
+        },
+        {
+          "type": "exit_signal",
+          "level": null,
+          "condition": "Dividend cut announced OR ADE coverage falls below 1.0x for 2 consecutive quarters OR BV/share declines below $12.50 for 2 consecutive quarters",
+          "purpose": "Confirms structural deterioration; exit position",
+          "status": "armed_active"
+        },
+        {
+          "type": "thesis_upgrade",
+          "level": null,
+          "condition": "BV growth confirmed in Q2 AND Q3 2026 (2 more consecutive positive net-of-dividend quarters) AND Longbridge recurring contribution > $0.25/share/qtr AND ADE coverage > 1.20x sustained",
+          "purpose": "Would confirm the inflection thesis is real, not one-quarter noise; upgrade to BUY 7/10 and raise to 5-6% position size",
+          "status": "monitoring"
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 13.49,
+          "trigger": "Deep research seed Q1 2026 (HOLD 6/10)",
+          "delta_context": "Stock up 1.2% 1w, 4.4% 1m, 12.17% 3m, 5.01% 6m. 52w range $11.28-$14.12. Trading at P/B 0.99x ($13.56 BV), forward PE 6.9x, dividend yield 11.56%. -4.46% from 52w high; +19.59% from 52w low. Analyst mean target $14.75 (8 analysts, 'buy' consensus)."
+        }
+      ],
+      "extraction_gaps": [
+        "Quarterly BV/share trajectory for Q1 2025 through Q3 2025 not directly verified \u2014 estimated from monthly mid-quarter releases; precise quarterly economic-return calculations need each 8-K from SEC EDGAR (currently 403-blocked via WebFetch)",
+        "CLO portfolio size/composition within EFC's credit segment not explicitly broken out in public disclosures; would need 10-Q Note on investments deep-dive",
+        "Detailed multi-year dividend cut chronology (exact dates and amounts 2020-present) only partially verified; full schedule with cuts and amounts would strengthen bear-case assessment",
+        "SEC 10-Q for Q1 2026 not directly accessed (EDGAR 403 errored on WebFetch); micro-level credit metrics (vintage analysis, geographic concentration of non-QM book, individual CRE bridge loan top-10) not verified at filing-source granularity \u2014 relied on 8-K + transcripts",
+        "5-year actual total return with dividends reinvested not verified to specific endpoint \u2014 essential comparison vs AGNC's 17.12% / 3.66% CAGR benchmark for empirical 'is the yield real' test",
+        "Q2 2026 print (mid-August 2026) will be first verification of: (a) whether Q1 BV inflection is durable or one-quarter noise, (b) recurring Longbridge contribution ex the $17M litigation settlement, (c) whether forward ADE $0.45 guide holds"
+      ],
+      "current": {
+        "price": 13.49,
+        "delta_1d": -0.59,
+        "delta_1w": 1.2,
+        "delta_1m": 4.4,
+        "pct_from_52w_high": -0.95,
+        "pct_from_52w_low": 21.92,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 6.92,
+        "market_cap_B": 1.69,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "_display_label": "EFC"
     },
     "expe": {
       "id": "expe",
@@ -12220,7 +13233,7 @@ const GRAPH_DATA = {
       "name": "US Fed Institutional Independence Regime (2026 Powell-Warsh transition)",
       "type": "institution",
       "created": "2026-04-29",
-      "last_updated": "2026-05-16",
+      "last_updated": "2026-05-25",
       "summary": "Institution node tracking the political-independence regime around the US Federal Reserve during the 2026 Powell-Warsh transition. The thesis: institutional independence affects monetary policy outcomes \u2014 a less-independent Fed under direct executive pressure may cut rates faster than data warrants, may telegraph dovishness to stay aligned with administration positioning, and may face credibility-driven term-premium widening on the long end. Three observations through 2026-04-28: (1) DOJ-Powell-probe dismissal April 25 \u2014 institutional retaliation channel resolved; (2) Warsh confirmation hearings as Powell successor candidate; (3) Powell's 'swan song' FOMC framing 2026-04-28-29 + Warsh confirmation Wed = third cross-reference in 7 days per /update-graph 2026-04-28 changelog. NODE TYPE = `institution` (per ARCHITECTURE \u00a76 node types: stock, sector, macro, commodity, institution, index). VERIFIED EDGES \u2014 primary cascade: fed_independence_regime \u2192 fed_rates (directness=1, institutional \u2192 policy parameter sensitivity); secondary cascade: fed_independence_regime \u2192 ai_disruption (directness=2, via Fed-pivot-affects-AI-capex-narrative chain). NO direct stock edges authored \u2014 per macro-node-authoring discipline, none of PAYX, ADBE, MU DRs contain Fed-independence-specific language (they discuss Fed rates generically). Stock-side cascades fan via the two macro edges through existing fed_rates \u2192 PAYX and ai_disruption \u2192 MU/ADBE/PAYX/BBY/WMT edges already in the graph. This is the FIRST macro-to-macro edge pattern in the graph; previously all macro/sector/commodity nodes edged only to stocks. AUTO_ORGANIC_CREATED per /update-graph Step 9 v1.5.2 organic-creation rules: \u00a76 Rule 1 (\u22652 signals) \u2713 (3 appearances 2026-04-21/04-25/04-28); Rule 2 (\u22657-day span) \u2713 (7-day span exact); Rule 3 (\u22652 connected nodes) \u2713 (fed_rates + ai_disruption); Rule 4 (persistent entity \u2014 institutional regime, not event) \u2713.",
       "current": {
         "powell_term_status": "Sitting Fed Chair through May 2026 expiration; 'swan song' framing per April 2026 financial press coverage of FOMC April 28-29 meeting",
@@ -12345,6 +13358,17 @@ const GRAPH_DATA = {
           "significance": "high",
           "verification": "CONFIRMED",
           "polarity": "negative"
+        },
+        {
+          "date": "2026-05-25",
+          "content": "Gap-fill (node last recorded 5/16 'incoming Chair'; 5/24 run did not capture this): Kevin Warsh SWORN IN as 17th Fed chair 2026-05-22, completing the Powell->Warsh transition. Trump publicly told him to 'be totally independent \u2014 don't look at me, just do your own thing.' Warsh has signaled 'regime change' intent: reform Fed communications, accelerate QT, overhaul forecasting models. No formal Warsh policy speech or rate signal in the holiday window; first FOMC under his chairmanship June 16\u201317. Live Fed-independence stress test: Warsh installed with an explicit Trump rate-cut mandate while the market prices HIKES (FedWatch ~40\u201350% 2026-hike odds) on the energy-inflation backdrop, U-Mich sentiment record-low 44.8. April PCE (Thu 5/28) is the pivot before the 6/16\u201317 FOMC.",
+          "sources": [
+            "news-intel.md Agent A \u00a7B1 + \u00a7E + brief-note 6",
+            "NBC/Newsweek/24-7 Wall St 2026-05-22"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "polarity": "ambiguous"
         }
       ],
       "edges": [
@@ -14547,7 +15571,7 @@ const GRAPH_DATA = {
       "sector": "communication services",
       "industry": null,
       "created": "2026-05-06",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "summary": "Alphabet Inc. \u2014 portfolio holding. Pending initial deep research; routes to growth prompt.",
       "thesis": {
         "verdict": null,
@@ -14566,8 +15590,8 @@ const GRAPH_DATA = {
         "pct_from_52w_low": 40.03,
         "last_close_date": "2026-05-22",
         "data_source": "yfinance_via_market-data.json",
-        "last_updated": "2026-05-24",
-        "pe_forward": 26.5,
+        "last_updated": "2026-05-25",
+        "pe_forward": 26.42,
         "market_cap_B": 4639.85
       },
       "price_snapshots": [],
@@ -15029,9 +16053,21 @@ const GRAPH_DATA = {
       "sector": null,
       "industry": null,
       "created": "2026-05-24",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "source_note": "Created from promotion-candidate two-day confirmation on 2026-05-24 (first appearance 2026-05-14, today's second confirms). Source: Agent B Section G.",
-      "current": {},
+      "current": {
+        "price": 37.58,
+        "delta_1d": 10.63,
+        "delta_1w": 13.53,
+        "delta_1m": 34.55,
+        "pct_from_52w_high": 0.0,
+        "pct_from_52w_low": 89.11,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 13.75,
+        "market_cap_B": 49.86,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
       "thesis": null,
       "signals": [],
       "edges": [],
@@ -17734,6 +18770,153 @@ const GRAPH_DATA = {
       },
       "_display_label": "MKC"
     },
+    "mnkd": {
+      "id": "mnkd",
+      "name": "MannKind Corporation",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Healthcare",
+      "industry": "Commercial-Stage Biotech",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "signals": [],
+      "edges": [],
+      "management_promises": [
+        {
+          "promise": "Furoscix FY26 revenue of $110-120M",
+          "date_made": "2026-05-06",
+          "check_date": "2027-02-28",
+          "status": "tracking"
+        },
+        {
+          "promise": "Owned-revenue mix shifts from 40% to 65%+ by YE26",
+          "date_made": "2026-05-06",
+          "check_date": "2027-02-28",
+          "status": "tracking"
+        },
+        {
+          "promise": "MNKD-201 Phase 1b topline in Q3 2026",
+          "date_made": "2026-05-06",
+          "check_date": "2026-09-30",
+          "status": "tracking"
+        },
+        {
+          "promise": "scPharma synergies exceed $20M annual target",
+          "date_made": "2026-05-06",
+          "check_date": "2026-12-31",
+          "status": "met"
+        },
+        {
+          "promise": "Ralinepag DPI advances to Phase 1 PK in 2026-2027",
+          "date_made": "2026-05-06",
+          "check_date": "2027-06-30",
+          "status": "tracking"
+        }
+      ],
+      "trigger_points": [
+        {
+          "type": "exit_50pct",
+          "trigger": "Afrezza pediatric PDUFA = CRL on May 29 2026",
+          "status": "pending"
+        },
+        {
+          "type": "trim_25pct",
+          "trigger": "Furoscix Autoinjector PDUFA = CRL on Jul 26 2026",
+          "status": "pending"
+        },
+        {
+          "type": "exit_full",
+          "trigger": "Tresmi pivotal data shows superior efficacy to Tyvaso DPI",
+          "status": "watching"
+        },
+        {
+          "type": "exit_full",
+          "trigger": "Blackstone covenant tripped",
+          "status": "watching"
+        },
+        {
+          "type": "trim_25pct",
+          "trigger": "Furoscix net price compression >10% YoY",
+          "status": "watching"
+        },
+        {
+          "type": "reduce_50pct",
+          "trigger": "Tyvaso DPI royalty quarterly YoY decline accelerates past -25%",
+          "status": "watching"
+        },
+        {
+          "type": "upgrade_conviction",
+          "trigger": "Furoscix annualized run-rate >$130M by YE26",
+          "status": "watching"
+        },
+        {
+          "type": "upgrade_conviction",
+          "trigger": "CEO Castagna open-market purchase >$1M",
+          "status": "watching"
+        },
+        {
+          "type": "add_position",
+          "trigger": "Stock <$2.50 on broad biotech selloff (not company news)",
+          "status": "watching"
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 3.38,
+          "trigger": "Deep research refresh Q1_2026",
+          "delta_context": "Seed DR \u2014 first DR on MNKD; -32% YTD on Feb 26 Tresmi reveal; +24.7% 1M bounce off lows; 2 PDUFAs in next 9 weeks"
+        }
+      ],
+      "thesis": {
+        "verdict": "HOLD",
+        "conviction": 6,
+        "previous_verdict": null,
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/MNKD_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "key_bull": [
+          "Furoscix inflection \u2014 64% YoY dose growth, $110-120M FY26 guide, Autoinjector PDUFA Jul 26 2026 accelerates ramp",
+          "Afrezza pediatric label expansion \u2014 sBLA PDUFA May 29 2026 (5 days away), opens $200M+ TAM as first needle-free pediatric insulin in 100+ years",
+          "Blackstone refinancing removes existential risk \u2014 $325M term loan to 2030, FCF positive $47M TTM, no near-term dilution pressure",
+          "Ralinepag DPI expanded UTHR collaboration \u2014 $5M upfront + $35M milestones + 10% royalty validates Technosphere platform durability",
+          "Sentiment reset \u2014 down 32% YTD on specific Tresmi event not fundamentals; asymmetric upside if 3 near-term catalysts land positive"
+        ],
+        "key_bear": [
+          "Tresmi (UTHR soft-mist treprostinil) launches 2027, will cannibalize Tyvaso DPI royalty (62% of Q1 revenue) \u2014 50-80% erosion likely by 2030",
+          "MNKD-101 Phase 3 futility (Nov 2025) reveals platform execution risk; pipeline thinner than market narrative suggests",
+          "62% revenue concentration with adversarial counterparty (UTHR is both largest payer AND now competitor) \u2014 structural vulnerability",
+          "Q1 2026 GAAP loss $16.6M vs Q1 2025 income $13.2M \u2014 $30M earnings swing; underlying organic ex-Furoscix revenue declined 5%",
+          "No CEO open-market purchases ahead of 2 imminent PDUFAs \u2014 notable absence of insider conviction signal"
+        ],
+        "probability_weighted_return": "1.51x in 5 years (8.6% IRR) \u2014 right at BUY threshold, no margin of safety",
+        "entry_prices": {
+          "starter": 3.4,
+          "add": 3.0,
+          "full": 2.5,
+          "stop_loss": 1.9
+        }
+      },
+      "current": {
+        "price": 3.38,
+        "delta_1d": 2.11,
+        "delta_1w": 9.39,
+        "delta_1m": 24.72,
+        "pct_from_52w_high": -45.57,
+        "pct_from_52w_low": 48.25,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 17.56,
+        "market_cap_B": 1.04,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "demotion_note": {
+        "from_tier": 1,
+        "reason": "v1.9 daily tier-audit: verdict=HOLD conviction=6 CR=null not_in_portfolio=True (HOLD no longer holds T1 unless owned). Placed in T1 by /trigger-dr 2026-05-24 under outdated v1.3 rule.",
+        "date": "2026-05-25"
+      },
+      "_display_label": "MNKD"
+    },
     "mos": {
       "id": "mos",
       "name": "The Mosaic Company",
@@ -18143,7 +19326,7 @@ const GRAPH_DATA = {
       "sector": "healthcare",
       "industry": null,
       "created": "2026-05-06",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "summary": "Moderna, Inc. \u2014 PASS verdict (Q1 2026 seed DR, Phase 1 failure on all three gates). Platform thesis structurally damaged by mRNA-1647 CMV Phase 3 failure (Oct 2025) + mResvia commercial flop. Re-rating catalyst (mRNA-4157 cancer vaccine) reads out 2029, outside 5yr deployment window.",
       "thesis": {
         "verdict": "PASS",
@@ -18354,6 +19537,17 @@ const GRAPH_DATA = {
             "SEC Form 4 accession 0001193125-26-237309"
           ],
           "origin": "sec-intel.md \u00a7A/MRNA Agent C"
+        },
+        {
+          "date": "2026-05-25",
+          "content": "Resolution of deferred 2026-05-22 Form 4 (acc 0001193125-26-237309): Noubar Afeyan (Director, Flagship Pioneering) cashless option exercise-and-sell \u2014 9,263 sh options exercised at $19.15 strike (M-code, fully vested per F5), sold at $46.84 (S-code), ~$434K. Held INDIRECTLY via Flagship Pioneering / Flagship Ventures Fund IV; proceeds remitted to Fund IV (F2\u2013F4); aff10b5One=false. Routine VC-fund-structure mechanics by a director \u2014 NOT a personal-conviction discretionary sale. Closes the 5/24 'detail deferred' manual-review item. Complementary to the standing mRNA-1010 regulatory thread (AdCom 6/18, PDUFA 8/5).",
+          "sources": [
+            "sec-intel.md Agent C \u00a7B",
+            "SEC Form 4 acc 0001193125-26-237309"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "polarity": "ambiguous"
         }
       ],
       "edges": [],
@@ -20952,7 +22146,7 @@ const GRAPH_DATA = {
       "sector": "technology",
       "industry": null,
       "created": "2026-05-06",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "summary": "NVIDIA Corporation - portfolio holding. Critical review (3-agent stress test) completed 2026-05-22 - DR HOLD 6/10 WEAKENED to HOLD 4/10 (below Tier 1 floor; demoted to Tier 2). Four quantitative facts the DR underweighted: (1) Owner's earnings yield 1.24% vs 10Y Treasury 4.62% = 338bps deficit at $5.32T MC; (2) Top-3 customer concentration 54% via ODMs (not 50% per DR); (3) Insider behavior - $2.9B+ Huang selling, $28M+ Kress, ZERO open-market buys at $219.51; (4) Joint probability of 5-pillar bull case 8-12% (Dalio-corrected), not DR's implicit 20% - pulls probability-weighted return from 1.83x to 1.55-1.65x. HOLD existing TRIMMED to 3-5% (was 6-10%); PASS new money at $219.51; first add tightened to $170-180 (was $180); aggressive add $145-160 (was $150). Single highest-leverage risk: any one of MSFT/META/GOOGL/AMZN guiding 2027 capex flat/down in Oct-Nov 2026 = conviction 2/10. Druckenmiller already exited NVDA 2024; Cathie Wood/ARK trimming.",
       "thesis": {
         "verdict": "HOLD",
@@ -21218,6 +22412,18 @@ const GRAPH_DATA = {
             "Secondary reporting"
           ],
           "origin": "news-intel.md \u00a7D/NVDA Agent A"
+        },
+        {
+          "date": "2026-05-25",
+          "content": "In-window (Memorial Day): Huawei presented its 'LogicFolding' chip roadmap in Shanghai 2026-05-25 \u2014 targeting Kirin smartphone chips this fall and claiming a path to 1.4nm-equivalent capability by 2031 (vs TSMC 2nm in volume now). Layers onto Huang's 5/21 'largely conceded China to Huawei' framing: Huawei's public process roadmap hardens the read that China AI compute is becoming a Huawei-local market. Long-dated competitive threat (not a near-term numbers event); Q2 $91B ex-China guide remains the base case. Only genuinely in-window NVDA datapoint this holiday window.",
+          "sources": [
+            "news-intel.md Agent A \u00a7A + \u00a7D/NVDA",
+            "CNBC 2026-05-25",
+            "multiple orgs 2026-05-25"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "polarity": "negative"
         }
       ],
       "edges": [],
@@ -21411,12 +22617,204 @@ const GRAPH_DATA = {
       },
       "_display_label": "NVDA"
     },
+    "obt": {
+      "id": "obt",
+      "name": "Orange County Bancorp, Inc.",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "signals": [],
+      "edges": [
+        {
+          "target": "fed_rates",
+          "weight": 7.0,
+          "direction": "inverse",
+          "mechanism": "NIM compression risk on Fed rate cuts. Q1 2026 4.40% NIM partly driven by funding cost decline on FHLB advances + time deposits. Continued aggressive cuts compress NIM faster than loan repricing benefit. Estimated -50 to -90bps NIM over 18-24 months.",
+          "context": "OBT Q1 2026 10-Q: total interest expense .5M vs .3M Q1 2025 on lower FHLB (K vs K) and lower time deposit rates.",
+          "last_updated": "2026-05-24"
+        },
+        {
+          "target": "ny_metro_cre",
+          "weight": 9.0,
+          "direction": "inverse",
+          "mechanism": "OBT has .481B CRE loans = 75.9% of total = 377% of risk-based capital, concentrated in 4 NY counties. NY metro CRE deterioration (office vacancies 19-20%; NYC rent-stabilized defaults 4.93%+) directly hits OBT credit quality. Q1 2026 NPL surge to .1M was CRE participation bankruptcy. Bear scenario 2-3% loss on CRE book = -45M = 50-80% of annual EPS.",
+          "context": "OBT 2025 10-K: .5B CRE = 75.9% of loans, 70% in 4 NY counties (Orange, Westchester, Rockland, Sullivan). KBRA Q2 2025: 21% multifamily of total loans, 6% NYC rent-regulated, 8% office.",
+          "last_updated": "2026-05-24"
+        },
+        {
+          "target": "community_bank_credit_cycle",
+          "weight": 6.0,
+          "direction": "inverse",
+          "mechanism": "Community bank credit cycle late-stage. OBT NPL +134% QoQ Q1 2026. Provision recovery (vs build) while NPLs explode is leading indicator of forced future provision. Reserves at .8M = 1.06x NPL coverage (down from 4.2x year ago).",
+          "context": "OBT Q1 2026 10-Q: provision recovery of K despite NPL jump from .1M to .1M.",
+          "last_updated": "2026-05-24"
+        }
+      ],
+      "management_promises": [
+        {
+          "promise": "No longer originating loan participations",
+          "source": "KBRA rating report 2025 + Q1 2026 disclosures",
+          "first_stated": "2024",
+          "status": "at_risk",
+          "check_dates": [
+            "2026-08-15",
+            "2026-11-15"
+          ],
+          "note": "Legacy participations still on book; Q1 2026 NPL surge driven by participation bankruptcy. Watch for further surfacing."
+        },
+        {
+          "promise": "Use June 2025 raise proceeds for organic growth and potential strategic acquisitions",
+          "source": "June 2025 prospectus + KBRA",
+          "first_stated": "2025-06-03",
+          "status": "tracking",
+          "check_dates": [
+            "2026-08-15",
+            "2026-11-15"
+          ],
+          "note": "Capital not yet deployed in named acquisition; monitor for M&A announcement and accretion math"
+        },
+        {
+          "promise": "Continue dividend payments (4-year streak of increases)",
+          "source": "Investor communications; latest May 22, 2026 declaration",
+          "first_stated": "multiple",
+          "status": "met",
+          "check_dates": [
+            "2026-08-22",
+            "2026-11-22"
+          ],
+          "note": "/bin/zsh.18/qtr declared May 2026; 19-year payment streak; safe at current 18.2% payout ratio"
+        }
+      ],
+      "trigger_points": [
+        {
+          "type": "entry_starter",
+          "price": 28.0,
+          "rationale": "1.32x TBV; -18% from current; pullback re-entry zone",
+          "status": "pending"
+        },
+        {
+          "type": "entry_add",
+          "price": 25.0,
+          "rationale": "1.17x TBV; -27% from current",
+          "status": "pending"
+        },
+        {
+          "type": "entry_aggressive",
+          "price": 22.5,
+          "rationale": "~1.05x TBV; post-secondary-offering level; requires NPL stabilization",
+          "status": "pending"
+        },
+        {
+          "type": "upgrade",
+          "metric": "NPL_ratio",
+          "threshold": "<1.0% for 2Q",
+          "rationale": "Credit anomaly confirmed isolated",
+          "status": "monitoring"
+        },
+        {
+          "type": "stop_loss",
+          "metric": "NPL_ratio",
+          "threshold": ">2.5%",
+          "rationale": "Credit deterioration beyond cyclical",
+          "status": "monitoring"
+        },
+        {
+          "type": "stop_loss",
+          "metric": "CET1",
+          "threshold": "<12%",
+          "rationale": "Capital pressure",
+          "status": "monitoring"
+        },
+        {
+          "type": "stop_loss",
+          "metric": "NIM",
+          "threshold": "<3.60% for 2Q",
+          "rationale": "Franchise compression",
+          "status": "monitoring"
+        },
+        {
+          "type": "sell_euphoria",
+          "price": 40.0,
+          "rationale": "~1.85x TBV; sell into peak-cycle multiple",
+          "status": "pending"
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 34.05,
+          "trigger": "Deep research refresh Q1 2026 (seed DR)",
+          "delta_context": "+35% in 6 months; -4.5% in 1 month; -10.4% from 52w high. Q1 NPLs tripled YoY. Pkg note: Q1 earnings day reaction -6.15% despite EPS beat."
+        }
+      ],
+      "thesis": {
+        "verdict": "HOLD",
+        "conviction": 5,
+        "previous_verdict": null,
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/OBT_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "key_bull": [
+          "Best-in-class deposit franchise: 30.9% NIB, 1.30% cost of funds, 93.1% core deposits",
+          "Capital fortress: CET1 17.66% (4x regulatory minimum) post June 2025 raise",
+          "Hudson Valley + wealth management (.6B AUM) differentiation",
+          "CEO open-market buy Nov 2025; 8.2% insider ownership; contract extended to 2029",
+          "FY2025 net income +49.3%; Q1 2026 NIM 4.40% (+45bps YoY)"
+        ],
+        "key_bear": [
+          "NPL ratio TRIPLED Q1 2026 from one CRE participation bankruptcy (0.30% to 1.34% YoY); third such event in 4 years",
+          "Investor CRE = 75.9% of loans, 377% of risk-based capital \u2014 regulatory danger zone",
+          "NIM at 4.40% is peak-cycle; normalized 3.8-4.0% over 24 months = -/bin/zsh.40-0.60 EPS",
+          "Provision RELEASE in Q1 2026 while NPLs exploded \u2014 front-running deterioration pattern",
+          "Geographic concentration: 70% of loans in 4 NY counties; NY metro CRE worst-in-class",
+          "Wealth management AUM down 13% QoQ (.84B to .6B) \u2014 possible client outflows",
+          "June 2025 dilution: 17% more shares at .25; current  buyers paying 46% premium to recent issuance",
+          "Stock dropped -6.15% on Q1 earnings day; short interest +51.8% in 3 months; at consensus PT"
+        ],
+        "probability_weighted_return": "1.24x over 5 years (~4.4% IRR) \u2014 BELOW 1.5x BUY threshold",
+        "entry_prices": {
+          "starter": 28.0,
+          "add": 25.0,
+          "full": 22.5,
+          "stop_loss": null
+        }
+      },
+      "extraction_gaps": [
+        "Q1 2026 verbatim earnings call Q&A \u2014 pressure on NPL trajectory, future provision guidance, watch list migration",
+        "Specific identity of bankrupt CRE participation \u2014 borrower, property type, LTV, expected recovery",
+        "Wealth AUM decline composition \u2014 market drawdown vs client outflows",
+        "Pre-IPO (2008/2009) credit history of Orange Bank & Trust subsidiary from FDIC Call Reports",
+        "Detailed CRE breakdown by sub-segment (Manhattan office vs Hudson Valley office; NYC rent-stabilized vs market-rate multifamily)"
+      ],
+      "current": {
+        "price": 34.05,
+        "delta_1d": 0.18,
+        "delta_1w": 4.06,
+        "delta_1m": -4.46,
+        "pct_from_52w_high": -6.12,
+        "pct_from_52w_low": 31.34,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 8.88,
+        "market_cap_B": 0.46,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "demotion_note": {
+        "from_tier": 1,
+        "reason": "v1.9 daily tier-audit: verdict=HOLD conviction=5 CR=null not_in_portfolio=True (HOLD no longer holds T1 unless owned). Placed in T1 by /trigger-dr 2026-05-24 under outdated v1.3 rule.",
+        "date": "2026-05-25"
+      },
+      "_display_label": "OBT"
+    },
     "oil_prices": {
       "id": "oil_prices",
       "name": "Global Crude Oil Prices (Brent / WTI)",
       "type": "commodity",
       "created": "2026-04-22",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "_phase_1f_note": "Tier 2 reciprocal commodity_exposure edges added for XOM, CVX, COP, FANG, PBR (d=1) and LNG (d=2) on 2026-04-22. Tier 1 edges (CCL, DAL, FDX) retain original DR-sourced wording and higher provenance weight.",
       "summary": "Post-Iran/Hormuz-spike oil regime \u2014 Brent ~$93-95, WTI ~$88-90 as of April 22 following the US-Iran ceasefire (April 7) that cut Brent 16% in a single day from the $113/bbl crisis peak. Three Tier 1 stocks have source-verified commodity_exposure edges spanning three structurally distinct channels: CCL is PURE DIRECT (zero fuel hedging, $160M bottom-line per 10% fuel move), DAL is DIRECT-WITH-ASYMMETRIC-COUNTER-HEDGE (jet fuel exposed via COGS but Monroe refinery ~200,000 bbl/day delivered $300M Q2 crisis benefit as crack spreads tripled), and FDX is ATTENUATED via a weekly-updated fuel surcharge index (surcharge lag creates short-term margin shifts but across-cycle pass-through with small positive spread at Freight). Hormuz geopolitical crisis tracking lives in the separate Iran-US Crisis HiveMind; this node references it via the economic transmission channel per macro-authoring-prompt \u00a7Cross-system crises.",
       "current": {
@@ -21754,6 +23152,18 @@ const GRAPH_DATA = {
             "market-action.md \u00a7F#5 Agent B 2026-05-24"
           ],
           "origin": "market-action.md \u00a7F#5 Agent B"
+        },
+        {
+          "date": "2026-05-25",
+          "content": "Trump\u2013Iran framework DISPUTED \u2014 materially softened from the 2026-05-24 '95% there' framing (forward-only append, does NOT rewrite it). Nothing signed as of Mon 5/25. US-side terms (CONFIRMED WaPo/Axios/CNN: 60-day ceasefire extension, Hormuz reopened toll-free, mines cleared, ~30-day return to pre-war shipping, sanctions waivers) are CONTRADICTED by Iranian state media: Fars says the latest proposal keeps the Strait UNDER IRANIAN CONTROL; ISNA quotes a senior diplomat that NO nuclear/HEU commitment exists; Tasnim warns the deal 'may be canceled.' Trump dialed back Sunday ('Time is on our side'). The crude-relevant term \u2014 Hormuz control \u2014 is the live disagreement, yet Brent traded as if the deal is done (\u221210.6% on the week to sub-$100). Asymmetric HIGH reversal risk: an Iranian-state contradiction sticking could violently re-price the premium back in. ADNOC: full Hormuz flows may not recover before 2027. NOTE: single-day Brent \u22123.22% is a thin holiday print (WTI flat); the \u221210.6% weekly move was already attributed 5/24 and is NOT re-emitted here.",
+          "sources": [
+            "news-intel.md Agent A \u00a7A + \u00a7B5 + \u00a7B7 + \u00a7E",
+            "WaPo/Axios/CNN 2026-05-24",
+            "Fars/ISNA/Tasnim (Iranian state media) 2026-05-24/25"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "polarity": "ambiguous"
         }
       ],
       "edges": [
@@ -23109,6 +24519,118 @@ const GRAPH_DATA = {
       },
       "_display_label": "PGR"
     },
+    "plbc": {
+      "id": "plbc",
+      "name": "Plumas Bancorp",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "signals": [],
+      "edges": [],
+      "management_promises": [
+        {
+          "promise": "$25M share repurchase program through Q4 2026",
+          "date_made": "2026-02-02",
+          "source": "8-K dated 2026-01-30",
+          "status": "tracking",
+          "check_date": "2026-08-15",
+          "metric": "percent_of_authorization_executed"
+        },
+        {
+          "promise": "Cornerstone integration synergies and disciplined CRE underwriting",
+          "date_made": "2025-07-01",
+          "source": "Acquisition completion press release",
+          "status": "tracking",
+          "check_date": "2026-08-15",
+          "metric": "efficiency_ratio_and_acquired_loan_NPL"
+        }
+      ],
+      "trigger_points": [
+        {
+          "level": 48.0,
+          "type": "starter_entry",
+          "note": "P/TBV ~1.45x"
+        },
+        {
+          "level": 42.0,
+          "type": "add_entry",
+          "note": "P/TBV ~1.27x"
+        },
+        {
+          "level": 36.0,
+          "type": "aggressive_add",
+          "note": "P/TBV ~1.09x, max 1.5% position (was 2.5%, reduced per critical review)"
+        },
+        {
+          "level": 92.0,
+          "type": "trim",
+          "note": "P/TBV ~1.85-1.95x \u2014 trim into euphoria (was $105, lowered per critical review on cyclical-at-peak risk)"
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 52.66,
+          "trigger": "Deep research refresh Q1 2026 (seed DR)",
+          "delta_context": "+27.9% YTD, near 52w high; P/TBV 1.59x, P/B 1.38x"
+        }
+      ],
+      "thesis": {
+        "verdict": "HOLD",
+        "conviction": 5,
+        "previous_verdict": "HOLD 6/10 (DR, pre-critical-review)",
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/PLBC_Q1_2026_opus.md",
+        "critical_review_path": "deep_research_reports/PLBC_Q1_2026_critical_review.md",
+        "key_bull": [
+          "Capital return capacity real and meaningful: CET1 15.5%, $25M buyback (6.8% of mcap) + 2.51% div = ~9.3% potential total yield; sub-$10B = no CCAR constraint; arithmetically sound, the floor that holds thesis above PASS",
+          "ROA-based compensation structure (NEW from critical review): 49.6% CEO / 58.8% EVP tied to ROA percentile + explicit asset quality benchmark constraint; directly disincentivizes reserve-release-for-EPS engineering; mitigates 'credit reaching' concern",
+          "Deposit franchise genuinely premium even after erosion: NIB 46.6% with ~35-40% structural floor still beats JPM 28% and peer 25-35%; IB cost 1.52% vs peer 2.5%+; real moat in rural CA (Chase isn't opening in Quincy)"
+        ],
+        "key_bear": [
+          "NIM at cycle peak + 80% variable-rate book + NIM compression NOT priced in consensus: $5.70/$6.00 estimates require NIM at 4.85%+; bear scenario (200bps Fed cuts) puts FY27 EPS at $4.00-4.30 = 28-33% miss; asymmetric beta confirmed (asset side reprices fast, deposit beta on way down also low ~30%); ~70% probability over 24 months",
+          "389% CRE concentration in CA wildfire markets during STRUCTURAL insurance withdrawal: Jan 1, 2026 CA insurance regulation shifts wildfire losses from insurers to banks \u2014 breaks 'Dixie Fire 2021 = no problem' generalization; ACL 1.29% under-reserved 20-30bps vs peer median for >300% CRE; base rate ~35-55% of 2007-vintage 300%+ CRE CA community banks failed/distress-acquired",
+          "Ryback's 2005-2010 C-suite tenure track record + credit reaching pattern: same management that allowed 8.55% NPL peak in Q1 2009 and admitted 'lapse in credit discipline' now oversees 389% CRE; Q1 2026 $330K reserve RELEASE with NPLs tripling YoY and ACL/NPL coverage collapsing 367%\u2192137% is textbook credit-reaching; ROA-based comp helps but doesn't fully neutralize"
+        ],
+        "probability_weighted_return": "1.35x in 5 years (~5.7% IRR) \u2014 below 2.0x growth BUY threshold but at/near 1.5x financials BUY floor; Druckenmiller fat-pitch math says 5.7% IRR x 1.5% position = 8.6bps annual portfolio contribution (below 25bps worth-attention bar)",
+        "position_size_max_pct": 1.5,
+        "entry_prices": {
+          "starter": 48.0,
+          "add": 42.0,
+          "full": 36.0,
+          "stop_loss": null
+        }
+      },
+      "extraction_gaps": [
+        "No earnings call transcript available \u2014 Motley Fool scraper returned HTTP 410",
+        "10-K FY2025 (filed 3/19/2026) not read in full",
+        "Cornerstone acquired loan pool vintage NPL not separately tracked",
+        "California wildfire-zone CRE exposure not broken out by county risk tier",
+        "Wire fraud control environment commentary ($726K Q1 loss)"
+      ],
+      "current": {
+        "price": 52.66,
+        "delta_1d": -1.03,
+        "delta_1w": 2.93,
+        "delta_1m": 2.5,
+        "pct_from_52w_high": -1.03,
+        "pct_from_52w_low": 26.94,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 9.13,
+        "market_cap_B": 0.37,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "demotion_note": {
+        "from_tier": 1,
+        "reason": "v1.9 daily tier-audit: verdict=HOLD conviction=5 CR=populated not_in_portfolio=True (HOLD no longer holds T1 unless owned). Placed in T1 by /trigger-dr 2026-05-24 under outdated v1.3 rule.",
+        "date": "2026-05-25"
+      },
+      "_display_label": "PLBC"
+    },
     "pltr": {
       "id": "pltr",
       "name": "Palantir Technologies",
@@ -23117,7 +24639,7 @@ const GRAPH_DATA = {
       "sector": null,
       "industry": null,
       "created": "2026-05-11",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "source_note": "Created via Step 9.6 promotion confirmation on 2026-05-11 (two-day rule met: appearances 2026-05-08 + 2026-05-11)",
       "current": {
         "price": 136.88,
@@ -23185,6 +24707,18 @@ const GRAPH_DATA = {
             "sec-intel.md \u00a7F/Flag#8 Agent C"
           ],
           "origin": "sec-intel.md \u00a7A + \u00a7B + \u00a7F Flag #8 Agent C"
+        },
+        {
+          "date": "2026-05-25",
+          "content": "Forensic Flag #8 ESCALATED (resolution of 2026-05-24 'plan-applicability AMBIGUOUS'; forward-only append, does NOT rewrite the prior cluster signal): CEO Alexander Karp's 5/20 open-market sale of 397,744 sh (~$54.11M) CONFIRMED DISCRETIONARY \u2014 Form 4 acc 0001823951-26-000007 shows aff10b5One=0 (unchecked) and no Rule 10b5-1 footnote (M-code RSU vest -> C-code Class B->A conversion -> S-code open-market sale $132.95\u2013$136.61). With President Stephen Cohen's $43.5M (also discretionary, acc 0001823920-26-000007), PLTR's top-two executives sold ~$97.6M discretionary on NVDA-print day (5/20), inside a ~$125.5M six-person C-suite cluster. Per v1.8 polarity rule, HIGH-negative does NOT auto-promote; PLTR stays Tier 2. manual_review on Karp CLEARED.",
+          "sources": [
+            "sec-intel.md Agent C \u00a7B + \u00a7F Flag #8",
+            "SEC Form 4 acc 0001823951-26-000007",
+            "SEC Form 4 acc 0001823920-26-000007"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "polarity": "negative"
         }
       ],
       "edges": [],
@@ -26121,7 +27655,7 @@ const GRAPH_DATA = {
       "sector": "Information Technology",
       "industry": "Semiconductors",
       "created": "2026-05-04",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "source_note": "Created from Step 9.6 promotion-candidate two-day-confirmation rule met across 2026-04-28 (Agent B Section G derate -3.01pp) and 2026-05-04 (Agent B Section G post-Q3-print +7.64pp). Cross-day-confirmed within 14d window.",
       "current": {
         "price": 1478.6899,
@@ -26327,6 +27861,17 @@ const GRAPH_DATA = {
             "SEC Form 4 accessions 0001363249-26-000037 through -000040"
           ],
           "origin": "sec-intel.md \u00a7A + \u00a7B Agent C"
+        },
+        {
+          "date": "2026-05-25",
+          "content": "CORRECTION of 2026-05-24 classification (forward-only append, does NOT rewrite the prior signal): the 4x Form 4 cluster filed 2026-05-22 (transactions 5/20\u201321; CEO Goeckeler, Visoso, Ilkbahar, Shek; acc 0001363249-26-000037..040) was tagged 5/24 as '10b5-1 SCHEDULED sells' and folded into cross-cohort exit Flag #7. Direct ownership-summary extraction shows all are transaction_type='tax', code F \u2014 shares WITHHELD for RSU-vesting tax, NOT open-market dispositions and NOT 10b5-1 plan sales. Aggregate ~$6.88M (Goeckeler 2,331sh ~$3.40M; Visoso 1,588sh ~$2.45M; Ilkbahar 481sh ~$0.72M; Shek 216sh ~$0.32M). ACTION: SNDK removed from Flag #7 exit/distribution aggregate \u2014 F-code withholding carries no distribution signal. Corroborated by Agent B (SNDK \u22124.12% Fri = rotation/funding-source, not thesis-breaker).",
+          "sources": [
+            "sec-intel.md Agent C \u00a7B + \u00a7F Flag #7",
+            "SEC Form 4 acc 0001363249-26-000037 through -000040"
+          ],
+          "significance": "medium",
+          "verification": "CONFIRMED",
+          "polarity": "ambiguous"
         }
       ],
       "edges": [],
@@ -26653,6 +28198,197 @@ const GRAPH_DATA = {
         "note": "Demoted nodes remain fully tracked; signals/edges/promises/triggers preserved. Re-promotion path: fresh DR with verdict {BUY,HOLD} + conviction>=5 + successful CR, OR price/sector/signal trigger fires."
       },
       "_display_label": "SPRU"
+    },
+    "stba": {
+      "id": "stba",
+      "name": "S&T Bancorp, Inc.",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Financials",
+      "industry": "Banks - Regional",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "thesis": {
+        "verdict": "HOLD",
+        "conviction": 6,
+        "previous_verdict": null,
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/STBA_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "key_bull": [
+          "NIB deposit franchise at 27.8% of $8.19B deposits = $2.27B free funding worth ~$100M/yr in NIM advantage",
+          "Aggressive capital return: $50M Q1 buyback (3% of mkt cap in 1 qtr) + 3.30% dividend = 9-10% total yield; $50.4M remaining on $100M authorization",
+          "Fortress CET1 at 14.18% (vs 4.5% min, 11% well-cap) enables continued buybacks, M&A optionality, and credit-loss absorption",
+          "Top-quartile NIM at 3.92% (FTE) with management guiding stability through 2026",
+          "M&A wildcard: management in active discussions for $1-7B asset targets in PA / OH / MD-DE expansion markets"
+        ],
+        "key_bear": [
+          "NIM 3.92% is cycle peak \u2014 ~25bps of expansion was one-time funding-mix repositioning; structural NIM is 3.65-3.75% with 2 more Fed cuts pending",
+          "Loan growth stalled: -$112.6M QoQ (annualized -5.5%); management walked back FY guide from mid-single to low-single digits; Pittsburgh metro is a no-growth market",
+          "CRE concentration 44% of loans ($3.53B); office sub-exposure ~6-7% of total loans in Pittsburgh's stressed market; opacity around office disclosure is itself a flag",
+          "2008-09 track record: took $108.7M TARP, cut dividend 52% \u2014 current capital makes recurrence unlikely but caps position size",
+          "Valuation at 1.54x P/TBV is 52-week high; 10-year avg is ~1.3x; probability-weighted 5yr return is 1.35x / 6.1% IRR \u2014 fails the 1.5x/8% BUY floor at current price"
+        ],
+        "probability_weighted_return": "1.35x in 5yr / 6.1% IRR at $44.86 (HOLD); 1.51x / 8.6% IRR at $40 (BUY trigger)",
+        "entry_prices": {
+          "starter": 41.0,
+          "add": 37.0,
+          "full": 33.0,
+          "stop_loss": null
+        }
+      },
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 44.86,
+          "trigger": "Deep research refresh Q1 2026 (seed DR)",
+          "delta_context": "52-week high; P/TBV 1.54x; mkt cap $1.61B; +20.3% YTD; +3.6% 1w; +3.91% 1m; +5.19% 3m; +20.33% 6m. Above 200d avg by 11%; above 50d avg by 4%"
+        }
+      ],
+      "trigger_points": [
+        {
+          "type": "starter_entry",
+          "price": 41.0,
+          "rationale": "P/TBV ~1.41x; 9% pullback from current high; quality-at-fair-price zone for 2% position",
+          "status": "pending"
+        },
+        {
+          "type": "build_entry",
+          "price": 37.0,
+          "rationale": "P/TBV ~1.27x; 17% pullback; build to 4-5% position",
+          "status": "pending"
+        },
+        {
+          "type": "aggressive_add",
+          "price": 33.0,
+          "rationale": "P/TBV ~1.13x; credit-panic price; max 6-8% position (capped due to 2008 TARP history)",
+          "status": "pending"
+        },
+        {
+          "type": "trim_exit",
+          "price": 54.0,
+          "rationale": "P/TBV ~1.85x; sell-into-euphoria threshold for regional bank; above 10-year-high multiple",
+          "status": "pending"
+        }
+      ],
+      "management_promises": [
+        {
+          "date": "2026-04-23",
+          "promise": "Full-year 2026 loan growth mid-single digits (revised from prior guide)",
+          "status": "at_risk",
+          "check_date": "2026-07-25",
+          "context": "Q1 2026 saw -$112.6M loans QoQ; management walked back Q2 to 'low single digits' while keeping full-year mid-single. Pipeline up 10-15% per management but conversion timing pushed to H2"
+        },
+        {
+          "date": "2026-04-23",
+          "promise": "NIM stability around 3.92% for FY26",
+          "status": "tracking",
+          "check_date": "2026-07-25",
+          "context": "Q1 NIM declined 7bps to 3.92% (4bps was Q4 interest-recovery comp). 25bps of recent NIM expansion is one-time funding-mix gain; structural NIM is 3.65-3.75%"
+        },
+        {
+          "date": "2026-04-23",
+          "promise": "Noninterest expense ~3% YoY growth (~$58M quarterly run rate)",
+          "status": "tracking",
+          "check_date": "2026-07-25",
+          "context": "Q1 NIE in line; expansion-market banker hiring (OH, MD/DE) is the wildcard"
+        },
+        {
+          "date": "2026-04-23",
+          "promise": "Fee income $13-14M/quarter",
+          "status": "tracking",
+          "check_date": "2026-07-25",
+          "context": "Q1 was $13.6M in line"
+        },
+        {
+          "date": "2026-04-23",
+          "promise": "CET1 target 12-13% over time (implies continued aggressive capital return)",
+          "status": "tracking",
+          "check_date": "2026-10-23",
+          "context": "Currently 14.18%, well above target. $50.4M buyback remaining on $100M authorization; Q1 executed $49.6M at $43.30 average. Pace likely moderates at higher prices"
+        },
+        {
+          "date": "2026-04-23",
+          "promise": "Active M&A discussions in $1-7B asset target range",
+          "status": "tracking",
+          "check_date": "2026-12-31",
+          "context": "If no deal announced by Q4 2026, management pipeline credibility weakens. M&A is wildcard \u2014 could be 15% upside or 15% downside depending on TBV dilution"
+        },
+        {
+          "date": "2026-01-01",
+          "promise": "CEO McComish 5x stock ownership requirement effective Aug 23, 2026",
+          "status": "at_risk",
+          "check_date": "2026-08-23",
+          "context": "McComish currently NOT at required holding level; sales limited to tax-cover. Governance signal: 4+ years into tenure and not at guideline ownership"
+        }
+      ],
+      "signals": [],
+      "edges": [
+        {
+          "target": "fed_rates",
+          "weight": 5.0,
+          "direction": "stock_to_macro",
+          "context": "STBA NIM 3.92% is highly sensitive to Fed policy. ~25bps of recent NIM expansion was one-time funding-mix gain; 2 Fed cuts in 2026H2 would compress NIM 15-25bps via floating-rate loan repricing. Per Q1 2026 8-K earnings release.",
+          "evidence_source": "STBA Q1 2026 8-K earnings release; CFO Kochvar commentary on March 2026 earnings call about deposit cost trajectory",
+          "added": "2026-05-24"
+        },
+        {
+          "target": "cre_office_stress",
+          "weight": 4.0,
+          "direction": "stock_to_macro",
+          "context": "STBA CRE concentration 44% of $7.96B loans = $3.53B. Office sub-exposure estimated 6-7% of total loans ($480-560M), concentrated in Pittsburgh and Western PA. Class B/C office in Pittsburgh metro at 20%+ vacancy. Office stress is the dominant tail risk for STBA credit thesis.",
+          "evidence_source": "STBA Q1 2026 8-K loan composition table; 2024 10-K CRE disclosure",
+          "added": "2026-05-24"
+        },
+        {
+          "target": "regional_bank_consolidation",
+          "weight": 3.0,
+          "direction": "stock_to_macro",
+          "context": "STBA at $9.8B assets is in the prime M&A range \u2014 management actively pursuing $1-7B asset targets per Q1 2026 call. Also a potential takeout target for larger PA/Mid-Atlantic acquirers (FNB, M&T). 25-40% takeout premium plausible.",
+          "evidence_source": "Q1 2026 earnings call commentary by CEO McComish on $1-7B target range",
+          "added": "2026-05-24"
+        }
+      ],
+      "extraction_gaps": [
+        "Office CRE sub-exposure not separately disclosed in Q1 release \u2014 need to read FY25 10-K (filed Feb 27 2026) for property-type detail",
+        "DSI Asset Management acquisition referenced in user briefing \u2014 no SEC filings or press releases confirm a transaction; either immaterial or non-existent",
+        "Deposit beta on the way down (rate-cut cycle) \u2014 Q1 showed deposit costs down 12bps, but need full beta calculation through next 2 quarters",
+        "Uninsured deposit percentage not separately disclosed in Q1 release \u2014 estimated 35-40% from cohort analogy; need FY25 10-K confirmation",
+        "Wealth management AUA trajectory ($2.1B at YE 2025) \u2014 not a strategic priority being marketed; need segment disclosure detail"
+      ],
+      "cohort_context": {
+        "cohort_name": "Q1 2026 broad-scan FULL PASS regional banks",
+        "members": [
+          "CHCO",
+          "WBS",
+          "WTBA",
+          "FBIZ",
+          "PLBC",
+          "BHRB",
+          "STBA"
+        ],
+        "stba_position": "Upper-quality middle of cohort \u2014 better NIM/capital than most, similar credit, similar valuation. CHCO is the cohort outlier on quality+price (2.76x P/TBV). STBA is the most 'average' cohort member; needs price-driven entry to differentiate from HOLD 5-6 pivot.",
+        "differentiators": "27.8% NIB deposit franchise (top-tier); CET1 14.18% (second only to CHCO); aggressive $100M buyback program; M&A optionality at $9.8B asset size"
+      },
+      "current": {
+        "price": 44.86,
+        "delta_1d": -0.27,
+        "delta_1w": 3.6,
+        "delta_1m": 3.91,
+        "pct_from_52w_high": -0.27,
+        "pct_from_52w_low": 16.25,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 11.73,
+        "market_cap_B": 1.61,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "demotion_note": {
+        "from_tier": 1,
+        "reason": "v1.9 daily tier-audit: verdict=HOLD conviction=6 CR=null not_in_portfolio=True (HOLD no longer holds T1 unless owned). Placed in T1 by /trigger-dr 2026-05-24 under outdated v1.3 rule.",
+        "date": "2026-05-25"
+      },
+      "_display_label": "STBA"
     },
     "stx": {
       "id": "stx",
@@ -28584,6 +30320,211 @@ const GRAPH_DATA = {
       },
       "_display_label": "TROW"
     },
+    "ufcs": {
+      "id": "ufcs",
+      "name": "United Fire Group, Inc.",
+      "type": "stock",
+      "tier": 2,
+      "sector": "Financial Services",
+      "industry": "Insurance - Property & Casualty",
+      "created": "2026-05-24",
+      "last_updated": "2026-05-25",
+      "signals": [
+        {
+          "date": "2026-05-24",
+          "type": "deep_research_seed",
+          "significance": "HIGH",
+          "polarity": "ambiguous",
+          "summary": "Seed DR Q1 2026: PASS 4/10. Q1 2026 print clean (CR 95.6%, EPS $1.15 beat $0.83 consensus by 38%, neutral PYD, II +15%, NPW +12%). But +30% YTD / +82% from 52w low rally has priced the turnaround; underlying loss ratio ticked UP 0.5pts to 57.0% as renewal rate decelerated from 8.7% to 4.3% \u2014 same rate-vs-trend vise as SIGI. Prob-weighted return 1.46x / 7.9% IRR \u2014 below 1.5x / 8% IRR BUY bar. Watchlist: re-rate at $42 (HOLD) or $38 (starter); 3 more clean PYD quarters required for upgrade.",
+          "verification": "CONFIRMED",
+          "source_agent": "DR-opus-4-7"
+        },
+        {
+          "date": "2026-05-24",
+          "type": "forensic_flag",
+          "significance": "MEDIUM",
+          "polarity": "negative",
+          "summary": "AM Best Dec 2025 affirmation explicitly characterizes UFCS operating performance as 'marginal' (vs THG 'strong', CINF 'strong'). Third-party rating-agency-encoded structural weakness despite headline turnaround. Watch for outlook revision to Negative.",
+          "verification": "CONFIRMED",
+          "source_agent": "DR-opus-4-7"
+        },
+        {
+          "date": "2026-05-24",
+          "type": "ownership",
+          "significance": "MEDIUM",
+          "polarity": "negative",
+          "summary": "No open-market insider buying in 2026 despite CEO Leidwinger having 14 months from Nov-2022 appointment to mid-2024 stock bottom at $25.79. Only transaction: 5,234 sh withheld at $36.40 for RSU tax (Mar 2026). Director RSU grants at $48.04 (May 2026) routine. Conspicuous absence given insider-ownership 17.4%.",
+          "verification": "CONFIRMED",
+          "source_agent": "DR-opus-4-7"
+        },
+        {
+          "date": "2026-05-24",
+          "type": "capital_return",
+          "significance": "MEDIUM",
+          "polarity": "positive",
+          "summary": "Dividend +25% to $0.20/quarter Feb 2026 (still 39% BELOW pre-2020 $0.33 baseline). Buyback authorization doubled from 1M to 2M shares (7.8% of float) through Aug 2028 \u2014 May 2026. Implies ~5% total capital return yield if executed.",
+          "verification": "CONFIRMED",
+          "source_agent": "DR-opus-4-7"
+        }
+      ],
+      "edges": [],
+      "management_promises": [
+        {
+          "promise": "Expense ratio improvement 60-70 bps annually at 10% NPW growth",
+          "made_date": "2026-05-06",
+          "source": "Q1 2026 earnings call (CEO Leidwinger)",
+          "check_date": "2027-02-28",
+          "status": "tracking",
+          "notes": "Q1 2026 delivered 300bps YoY (37.9% -> 34.9%) at 12% NPW growth \u2014 running well ahead. Need FY 2026 to hold sub-36% to confirm."
+        },
+        {
+          "promise": "Underwriting discipline / 'right rate for the exposures'",
+          "made_date": "2026-05-06",
+          "source": "Q1 2026 earnings call (COO Stephenson)",
+          "check_date": "2026-07-31",
+          "status": "at_risk",
+          "notes": "Q1 2026 underlying loss ratio UP 0.5pts to 57.0% with renewal rate decelerating to 4.3% \u2014 rate-vs-trend vise visible. Q2 2026 underlying LR is the proof test."
+        },
+        {
+          "promise": "No new commercial auto / casualty PYD charges (implicit)",
+          "made_date": "2026-05-06",
+          "source": "Q1 2026 absence of PYD",
+          "check_date": "2027-02-28",
+          "status": "tracking",
+          "notes": "Q4 2025 + Q1 2026 = 2 consecutive clean quarters. YE 2026 reserve study (next 10-K Feb 2027) is the multi-year test."
+        },
+        {
+          "promise": "Execute 2M share buyback through Aug 2028",
+          "made_date": "2026-05-20",
+          "source": "8-K dividend / buyback authorization",
+          "check_date": "2026-10-31",
+          "status": "tracking",
+          "notes": "Need Q2/Q3 2026 disclosure of actual shares repurchased. ~$95M @ $47/sh = 7.8% of float; execution test."
+        }
+      ],
+      "trigger_points": [
+        {
+          "type": "watchlist_rerate_hold",
+          "level": 42.0,
+          "rationale": "P/B ~1.13x \u2014 re-rate to HOLD 5",
+          "status": "not_fired"
+        },
+        {
+          "type": "starter_entry",
+          "level": 38.0,
+          "rationale": "P/B ~1.03x \u2014 opportunistic value if no concurrent reserve charge",
+          "status": "not_fired"
+        },
+        {
+          "type": "add",
+          "level": 32.0,
+          "rationale": "P/B ~0.87x with 3+ consecutive clean PYD quarters",
+          "status": "not_fired"
+        },
+        {
+          "type": "aggressive_add",
+          "level": 28.0,
+          "rationale": "P/B ~0.76x = below tangible book; only if no concurrent reserve charge",
+          "status": "not_fired"
+        },
+        {
+          "type": "stop_loss_pyd",
+          "level": "Adverse PYD > $30M in any single quarter",
+          "rationale": "Material reserve concern \u2014 repeat of 2017/2019 pattern; exit immediately if owned",
+          "status": "not_fired"
+        },
+        {
+          "type": "stop_loss_underlying_cr",
+          "level": "Underlying CR > 94% for 2 consecutive quarters",
+          "rationale": "Structural margin failure / rate-trend vise broken",
+          "status": "not_fired"
+        },
+        {
+          "type": "stop_loss_dividend",
+          "level": "Dividend cut or suspension",
+          "rationale": "Capital preservation regime change \u2014 2020 redux",
+          "status": "not_fired"
+        },
+        {
+          "type": "stop_loss_rating",
+          "level": "AM Best downgrade OR outlook to Negative",
+          "rationale": "Independent third-party warning; agent willingness to place business with UFCS impacted",
+          "status": "not_fired"
+        },
+        {
+          "type": "trim_overvaluation",
+          "level": 70.0,
+          "rationale": "P/B > 1.7x without proportional ROE > 16% \u2014 sell into euphoria",
+          "status": "not_fired"
+        },
+        {
+          "type": "rerate_clean_quarters",
+          "level": "3+ consecutive clean PYD quarters + FY 2026 CR \u2264 94.5%",
+          "rationale": "Upgrade verdict to BUY 7 if all met AND price <$38",
+          "status": "not_fired"
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-05-24",
+          "price": 47.17,
+          "trigger": "Deep research seed Q1 2026",
+          "delta_context": "Down 5.5% from 52w high $49.94; up 82.9% from 52w low $25.79; P/B 1.28x; P/E fwd 10.4x; +30.6% YTD; +18% in 1M"
+        }
+      ],
+      "thesis": {
+        "verdict": "PASS",
+        "conviction": 4,
+        "previous_verdict": null,
+        "last_deep_research": "2026-05-24",
+        "report_path": "deep_research_reports/UFCS_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "key_bull": [
+          "Investment income tailwind durable: Q1 2026 fixed-income yield 4.43%, II +15% YoY; $10-12M of visible incremental NII into FY 2026-2027 (~$0.31 EPS)",
+          "Expense ratio improvement structural (34.9% Q1 2026 vs 37.9% Q4 2024 = 300bps) at 12% NPW growth \u2014 operating leverage delivering",
+          "Capital return finally activated: +25% dividend hike Feb 2026 + 2M share buyback doubled May 2026 = ~5% total capital return yield if executed",
+          "New CEO Leidwinger (late-2022) delivered 2 consecutive clean PYD quarters (Q4 2025 + Q1 2026) \u2014 first time in years; FY 2025 underwriting profit $67M vs $9M FY 2024",
+          "P/B 1.28x is genuinely modest vs peer set (SIGI 1.46x, HIG 1.79x, CINF/THG ~1.8x) on TTM ROE 14.8%"
+        ],
+        "key_bear": [
+          "+30.6% YTD / +82% from 52w low has priced the turnaround; multiple-expansion thesis already played out",
+          "Underlying loss ratio UP 0.5pts to 57.0% in Q1 2026 as renewal rate decelerated 8.7% -> 4.3% \u2014 same rate-vs-trend vise as SIGI (also PASS 4/10)",
+          "Multi-decade commercial auto / Gulf Coast reserve mispricing history (2017, 2019, 2020 dividend cut); 2 clean quarters does not erase structural risk; YE 2026 reserve study is next test",
+          "AM Best calls operating performance 'marginal' \u2014 third-party rating-agency-encoded structural weakness despite turnaround narrative",
+          "Insider behavior contradicts thesis: 17.4% insider class made ZERO open-market purchases at $25-30 in 2024-early 2025; CEO took only RSU comp",
+          "Dividend $0.20 today is 39% BELOW pre-2020 $0.33 \u2014 six years post-cut; management itself signaling caution on earnings durability"
+        ],
+        "probability_weighted_return": "1.46x in 5 years / 7.9% IRR \u2014 below 1.5x / 8% IRR BUY threshold (Bull 20%/2.25x, Base 45%/1.53x, Conservative 25%/1.04x, Bear 10%/0.64x)",
+        "entry_prices": {
+          "starter": 38.0,
+          "add": 32.0,
+          "full": 28.0,
+          "stop_loss": "Any quarter with adverse PYD > $30M, OR underlying CR > 94% for 2 consecutive quarters, OR dividend cut, OR AM Best outlook revision to Negative"
+        }
+      },
+      "extraction_gaps": [
+        "Schedule P loss triangle not directly reviewed \u2014 would let analyst triangulate reserve adequacy by AY/LOB; this is the structural reserve-risk verification",
+        "Pre-FY 2024 historical metrics (CR, ROE, BV CAGR) approximated from secondary sources; through-the-cycle ROE estimate is load-bearing for compounder math",
+        "Commercial auto exposure by state/territory not separately verified \u2014 Gulf Coast specifically was the 2019 wound location",
+        "2008-2009 UFCS drawdown not directly verified from primary source",
+        "Full Q1 2026 earnings transcript Q&A not directly captured (Seeking Alpha paywall) \u2014 used Benzinga/Yahoo summary",
+        "No FY 2026 GAAP CR guide from management \u2014 limits accountability vs SIGI which guides 96.5-97.5%"
+      ],
+      "current": {
+        "price": 47.17,
+        "delta_1d": -1.99,
+        "delta_1w": -1.85,
+        "delta_1m": 18.04,
+        "pct_from_52w_high": -4.13,
+        "pct_from_52w_low": 37.32,
+        "last_close_date": "2026-05-22",
+        "pe_forward": 10.41,
+        "market_cap_B": 1.21,
+        "data_source": "yfinance_via_market-data.json",
+        "last_updated": "2026-05-25"
+      },
+      "_display_label": "UFCS"
+    },
     "usb": {
       "id": "usb",
       "name": "U.S. Bancorp",
@@ -29770,7 +31711,7 @@ const GRAPH_DATA = {
       "sector": "consumer_staples",
       "industry": "discount_stores",
       "created": "2026-04-22",
-      "last_updated": "2026-05-24",
+      "last_updated": "2026-05-25",
       "summary": "Excellent business at egregious 46x trailing PE. PASS at 3/10 conviction. 1.02x probability-weighted 5Y return (0.4% IRR) \u2014 worse than Treasury bonds. Watching for entry at $95-98 (35x PE). Tariff uncertainty + advertising-growth deceleration risk compound valuation fragility.",
       "thesis": {
         "verdict": "PASS",
@@ -29808,10 +31749,10 @@ const GRAPH_DATA = {
         "pct_from_52w_high": -10.38,
         "pct_from_52w_low": 16.27,
         "last_close_date": "2026-05-22",
-        "pe_forward": 36.61,
+        "pe_forward": 36.57,
         "market_cap_B": 958.67,
         "data_source": "yfinance_via_market-data.json",
-        "last_updated": "2026-05-24",
+        "last_updated": "2026-05-25",
         "as_of_date": "2026-05-01",
         "delta_3m": 5.27,
         "delta_ytd": 15.82,
@@ -30983,6 +32924,17 @@ const GRAPH_DATA = {
       "source": "deep_research_reports/CCL_Q1_FY2026_opus.md"
     },
     {
+      "from": "cffi",
+      "to": "fed_rates",
+      "type": "unknown",
+      "context": "Rate cuts (2026 environment) drive mortgage banking volume tailwind (+58% origination YoY in Q1 26) but compress NIM over time. Net positive in short term, neutral medium term.",
+      "directness": 1,
+      "weight": 4,
+      "last_activated": null,
+      "activation_count": 0,
+      "source": ""
+    },
+    {
       "from": "cfg",
       "to": "fed_rates",
       "type": "unknown",
@@ -31300,6 +33252,17 @@ const GRAPH_DATA = {
       "last_activated": null,
       "activation_count": 0,
       "source": "deep_research_reports/DLTR_Q4_FY2025_opus.md"
+    },
+    {
+      "from": "efc",
+      "to": "fed_rates",
+      "type": "unknown",
+      "context": "EFC's credit-heavy book (83% non-QM/CRE/CLO, 4% agency) makes it less directly Fed-rate-sensitive than pure-agency mREITs like AGNC (where edge weight is 8.0). However, repo funding costs, mortgage spread environment, and the steepness of the yield curve materially affect: (1) carry on the credit book (steeper curve = wider NIM on financed credit assets), (2) Longbridge HECM origination economics (rate-sensitive to senior decision-making and HMBS securitization spreads), (3) mark-to-market valuations across the book. Q1 2026 demonstrated EFC navigating Iran-volatility-driven spread widening with +3% BV growth net of dividends \u2014 hedge book is effective. Edge weight 6.0 reflects moderate (not primary) Fed sensitivity.",
+      "directness": 1,
+      "weight": 6.0,
+      "last_activated": null,
+      "activation_count": 0,
+      "source": ""
     },
     {
       "from": "fang",
@@ -32238,23 +34201,23 @@ const GRAPH_DATA = {
     }
   ],
   "meta": {
-    "last_updated": "2026-05-24",
-    "total_nodes": 109,
-    "total_edges": 131,
+    "last_updated": "2026-05-25",
+    "total_nodes": 119,
+    "total_edges": 133,
     "tier_counts": {
       "tier_1": 12,
-      "tier_2": 85,
+      "tier_2": 95,
       "macro": 5,
       "sector": 5,
       "commodity": 1
     },
-    "updated_today": 102,
-    "updated_this_week": 107,
+    "updated_today": 21,
+    "updated_this_week": 118,
     "active_triggers": 14,
     "elevated_triggers": 0,
     "edge_types": {
       "competitive_threat": 4,
-      "unknown": 12,
+      "unknown": 14,
       "supply_chain": 10,
       "macro_sensitivity": 34,
       "sector_membership": 24,

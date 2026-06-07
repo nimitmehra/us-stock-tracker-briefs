@@ -2911,15 +2911,16 @@ const GRAPH_DATA = {
       "sector": "consumer cyclical",
       "industry": null,
       "created": "2026-05-06",
-      "last_updated": "2026-06-06",
+      "last_updated": "2026-06-07",
       "summary": "Amazon.com, Inc. \u2014 portfolio holding. Pending initial deep research; routes to growth prompt.",
       "thesis": {
-        "verdict": null,
-        "conviction": null,
+        "verdict": "PASS",
+        "conviction": 5,
         "previous_verdict": null,
-        "last_deep_research": null,
-        "report_path": null,
-        "critical_review_path": null
+        "last_deep_research": "2026-06-02",
+        "report_path": "deep_research_reports/AMZN_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "reconciliation_note": "Gate 1 marginal-pass; Gate 3 fails (capex-ROIC unanswerable, FCF negative). PASS for new money. Portfolio holding -> Tier 1 (Arm a). Reconciled by /update-graph 2026-06-07 from DR report primary source (summary.json was stale)."
       },
       "current": {
         "price": 246.03,
@@ -3200,7 +3201,7 @@ const GRAPH_DATA = {
       "management_promises": [],
       "trigger_points": [],
       "extraction_gaps": [],
-      "pending_initial_dr": true,
+      "pending_initial_dr": false,
       "portfolio_provenance": {
         "added_via": "portfolio.txt",
         "added_on": "2026-05-06",
@@ -5120,7 +5121,7 @@ const GRAPH_DATA = {
       "sector": "energy",
       "industry": "uranium",
       "created": "2026-04-22",
-      "last_updated": "2026-06-06",
+      "last_updated": "2026-06-07",
       "summary": "Watchlist member \u2014 screened, not deep-researched. Largest publicly-traded uranium producer; nuclear renaissance and AI-datacenter power demand thesis.",
       "screening": {
         "last_screened": "2026-04-22",
@@ -5139,10 +5140,10 @@ const GRAPH_DATA = {
         "pct_from_52w_high": -22.86,
         "pct_from_52w_low": 72.65,
         "last_close_date": "2026-06-05",
-        "pe_forward": 54.21,
+        "pe_forward": 54.31,
         "market_cap_B": 45.05,
         "data_source": "yfinance_via_market-data.json",
-        "last_updated": "2026-06-06",
+        "last_updated": "2026-06-07",
         "as_of_date": "2026-05-01",
         "delta_3m": -1.62,
         "delta_ytd": 19.99,
@@ -7714,7 +7715,35 @@ const GRAPH_DATA = {
         "data_source": "yfinance_via_market-data.json",
         "last_updated": "2026-06-06"
       },
-      "thesis": null,
+      "thesis": {
+        "verdict": "PASS",
+        "conviction": 3,
+        "phase": "phase1_pass",
+        "gate_failed": "Gate 1 (3x return path) \u2014 valuation",
+        "previous_verdict": null,
+        "last_deep_research": "2026-06-06",
+        "report_path": "deep_research_reports/CIEN_Q2_FY2026_opus.md",
+        "critical_review_path": null,
+        "key_bull": [
+          "#1 in optical transport, DCI, and submarine; ~50% US share; WaveLogic 6e + 400ZR/ZR+ leadership",
+          "Cloud revenue 46% of total, +70% YoY; ~$6.4B hardware backlog, ~80% converting in 12 months (real 2027 visibility)",
+          "Clean financials: SBC only ~3.9% of revenue, GAAP-adj EPS gap only ~10%, no forensic flags",
+          "Rule of 40 ~52 (TTM); Q2 FY26 rev +40% YoY, adj EPS $1.64 +290%, FY26 guide raised to $6.3B"
+        ],
+        "key_bear": [
+          "Valuation is the binding constraint: ~11x EV/FY26-revenue vs historical optical range 1-4x; even aggressive bull case only ~2x in 5yr, not the 3x growth bar",
+          "AI/DCI capex is cyclical, not structural \u2014 40% growth is a hyperscaler-capex spike off a ~7% historical CAGR",
+          "Customer concentration: two cloud customers = 34% of revenue; same hyperscalers can push merchant/standardized coherent pluggables",
+          "Market sold the beat-and-raise -19% (perfection-priced after +151% YTD) \u2014 confirms the asymmetry is unattractive at $488"
+        ],
+        "probability_weighted_return": "<1.0x once multiple reverts toward optical-sector norms; ~2x ceiling only in aggressive bull case at $488",
+        "entry_prices": {
+          "starter": 340,
+          "add": 320,
+          "full": 310,
+          "stop_loss": null
+        }
+      },
       "signals": [
         {
           "date": "2026-06-03",
@@ -7756,8 +7785,35 @@ const GRAPH_DATA = {
       ],
       "edges": [],
       "management_promises": [],
-      "trigger_points": [],
+      "trigger_points": [
+        {
+          "type": "entry_starter",
+          "price": 340,
+          "status": "pending",
+          "note": "Re-evaluate full Phase-2 DR if drawdown to ~7-8x EV/FY26-rev"
+        },
+        {
+          "type": "entry_full",
+          "price": 310,
+          "status": "pending",
+          "note": "3x path opens near here"
+        },
+        {
+          "type": "thesis_watch",
+          "price": null,
+          "status": "pending",
+          "note": "Re-evaluate at Q3 FY26 (~Sept 2026) for FY27 guide / structural-vs-cyclical read"
+        }
+      ],
       "extraction_gaps": [],
+      "price_snapshots": [
+        {
+          "date": "2026-06-06",
+          "price": 488.21,
+          "trigger": "Deep research refresh Q2 FY2026 (PASS \u2014 Gate 1 valuation)",
+          "delta_context": "-19% post-Q2-print on perfection-pricing after +151% YTD; beat-and-raise rejected in AVGO-led optical rout"
+        }
+      ],
       "_display_label": "CIEN"
     },
     "cna": {
@@ -19421,7 +19477,7 @@ const GRAPH_DATA = {
       "sector": null,
       "industry": null,
       "created": "2026-05-24",
-      "last_updated": "2026-06-06",
+      "last_updated": "2026-06-07",
       "source_note": "Created from promotion-candidate two-day confirmation on 2026-05-24 (first appearance 2026-05-14, today's second confirms). Source: Agent B Section G.",
       "current": {
         "price": 49.2,
@@ -19436,7 +19492,15 @@ const GRAPH_DATA = {
         "data_source": "yfinance_via_market-data.json",
         "last_updated": "2026-06-06"
       },
-      "thesis": null,
+      "thesis": {
+        "previous_verdict": null,
+        "verdict": "PASS",
+        "conviction": 3,
+        "last_deep_research": "2026-06-06",
+        "report_path": "deep_research_reports/HPE_Q2_FY2026_opus.md",
+        "critical_review_path": null,
+        "reconciliation_note": "Gate analysis negative: $14B Juniper M&A value-destruction risk, insiders net sellers, wide GAAP/non-GAAP gap. Non-portfolio -> stays Tier 2. Reconciled by /update-graph 2026-06-07 from DR report primary source (summary.json was stale)."
+      },
       "signals": [
         {
           "date": "2026-05-29",
@@ -23725,7 +23789,7 @@ const GRAPH_DATA = {
       "sector": "Information Technology",
       "industry": "Semiconductors",
       "created": "2026-06-03",
-      "last_updated": "2026-06-06",
+      "last_updated": "2026-06-07",
       "source_note": "Promoted T2 via Step 9.6 on 2026-06-03 - Agent A F.1 appearances 2026-05-27 + 2026-06-02 (within 14d window) + today reinforcement; Huang Computex 06-02 \"next trillion-dollar company\" endorsement; Q1 FY27 rev $2.418B +28% YoY; Q2 guide $2.7B +35%. NVDA holds $2B stake from March integration into NVLink Fusion.",
       "current": {
         "price": 263.47,
@@ -23737,12 +23801,38 @@ const GRAPH_DATA = {
         "pct_from_52w_low": 323.63,
         "pe_forward": 42.68,
         "pe_trailing": null,
-        "market_cap_B": 230.48,
+        "market_cap_B": 230.68,
         "last_close_date": "2026-06-05",
         "data_source": "yfinance_via_market-data.json",
-        "last_updated": "2026-06-06"
+        "last_updated": "2026-06-07"
       },
-      "thesis": null,
+      "thesis": {
+        "verdict": "HOLD",
+        "conviction": 4,
+        "previous_verdict": "HOLD 6/10 (DR, pre-critical-review)",
+        "last_deep_research": "2026-06-06",
+        "report_path": "deep_research_reports/MRVL_Q1_FY2027_opus.md",
+        "critical_review_path": "deep_research_reports/MRVL_Q1_FY2027_critical_review.md",
+        "key_bull": [
+          "Credible structural #2 with a share floor: ~20% custom-AI silicon share is real; multi-sourcing means hyperscalers won't let it go to zero",
+          "Concrete, not-vapor demand signals: disclosed/countable design-win counts (18 sockets/5 XPU); ~$1B FY27 capacity prepayments",
+          "Dated mechanical near-term flow: S&P 500 inclusion June 22 forces ~1-1.5% index buying (finite; sell-the-news setup into Aug 27)"
+        ],
+        "key_bear": [
+          "Amazon socket erosion is IN MOTION, not a 35% future tail: Trainium 2 in-house (Annapurna) + 3/4 to Alchip + SerDes to Synopsys; impairs FY28-double/$10B-FY29 (analyst-sourced, needs filing-level verification)",
+          "Valuation mechanically asymmetric to downside: above every analyst PT ($195-233 vs $263); re-rate to 6-10x EV/Rev = -54% to -73%; beta 1.79, ~4% short = no cushion, Aug 27 miss could gap -25-35%",
+          "Margin-dilutive growth + fictional GAAP earnings: non-GAAP GM 64.5%->58.9% guided flat-down; GAAP NI $34.5M; true P/owner's-earnings ~115x not '20x'; SBC+convertible dilution buybacks don't offset"
+        ],
+        "probability_weighted_return": "~1.5x / ~9% IRR at $263 (below 3x growth bar); ~2.0x / ~14% IRR at ~$190-200 (BUY level)",
+        "entry_prices": {
+          "starter": 210,
+          "add": 185,
+          "full": 160,
+          "stop_loss": null
+        },
+        "previous_conviction": 6,
+        "critical_review_status": "WEAKENED"
+      },
       "signals": [
         {
           "date": "2026-06-03",
@@ -23769,9 +23859,86 @@ const GRAPH_DATA = {
         }
       ],
       "edges": [],
-      "management_promises": [],
-      "trigger_points": [],
-      "extraction_gaps": [],
+      "management_promises": [
+        {
+          "date": "2026-05-27",
+          "promise": "Data center revenue growth to accelerate to ~50% in FY27",
+          "status": "tracking",
+          "check_date": "2026-08-31",
+          "source": "Q1 FY27 call (Murphy)"
+        },
+        {
+          "date": "2026-05-27",
+          "promise": "Custom revenue to more than double YoY in FY28",
+          "status": "at_risk",
+          "check_date": "2027-03-31",
+          "source": "Q1 FY27 call (Murphy)",
+          "status_note": "At risk per critical review 2026-06-06: rests on unsigned 'third tranche'/unauditable $75B pipeline; Amazon flagship socket erosion (Trainium 3/4 to Alchip) impairs the math."
+        },
+        {
+          "date": "2026-05-27",
+          "promise": "Custom business to deliver $10B+ revenue in FY29",
+          "status": "at_risk",
+          "check_date": "2027-12-31",
+          "source": "Q1 FY27 call (Murphy)",
+          "status_note": "At risk per critical review 2026-06-06: rests on unsigned 'third tranche'/unauditable $75B pipeline; Amazon flagship socket erosion (Trainium 3/4 to Alchip) impairs the math."
+        },
+        {
+          "date": "2026-05-27",
+          "promise": "FY27 total revenue ~$11.5B (+40%); FY28 ~$16.5B (+45%)",
+          "status": "tracking",
+          "check_date": "2026-08-31",
+          "source": "Q1 FY27 raised guidance"
+        }
+      ],
+      "trigger_points": [
+        {
+          "type": "starter_buy",
+          "level": 210,
+          "status": "pending",
+          "note": "Initiate 2% only below $210"
+        },
+        {
+          "type": "add",
+          "level": 185,
+          "status": "pending",
+          "note": "Add to 4% below $185"
+        },
+        {
+          "type": "aggressive_add",
+          "level": 160,
+          "status": "pending",
+          "note": "To 5-6% below $160 if DC growth still >=40%"
+        },
+        {
+          "type": "exit_warning",
+          "level": null,
+          "status": "amber_partially_fired",
+          "note": "Exit if DC growth <35% 2 qtrs, named XPU socket lost/delayed, or SBC >12% | 2026-06-06 CR: 'named XPU socket lost/delayed' condition PARTIALLY FIRED (Amazon Trainium 3/4 reportedly to Alchip + Annapurna in-house, SerDes to Synopsys). Analyst-sourced, not company-confirmed; verify at filing level."
+        }
+      ],
+      "extraction_gaps": [
+        {
+          "date": "2026-06-06",
+          "gap": "edges[] empty understates correlation/concentration. Intended edges: ai_disruption, semiconductor_sector, NVDA ($2B stake). Author via macro-node-authoring with source-verified context. Flagged by critical review 2026-06-06."
+        }
+      ],
+      "price_snapshots": [
+        {
+          "date": "2026-06-06",
+          "price": 263.47,
+          "trigger": "Deep research refresh Q1 FY2027 (seed DR)",
+          "delta_context": "-16.7% June 5 on AVGO-adjacent custom-ASIC sentiment unwind after +29% wk on Huang endorsement + S&P500 inclusion"
+        }
+      ],
+      "forensic_flags": [
+        {
+          "date": "2026-06-06",
+          "flag": "GAAP profitability / S&P-500 index qualification driven by a one-time $1.9B deferred-tax valuation-allowance release (Q3 FY26), not operations. GAAP NI only $34.5M in Q1 FY27. True P/owner's-earnings ~115x (charging $830M/yr SBC), GAAP ~1,600x.",
+          "severity": "medium",
+          "source": "Critical review 2026-06-06 (Agent 2 Marvell PDF income statement + stockanalysis)"
+        }
+      ],
       "_display_label": "MRVL"
     },
     "msft": {
@@ -25721,15 +25888,16 @@ const GRAPH_DATA = {
       "sector": "technology",
       "industry": null,
       "created": "2026-05-06",
-      "last_updated": "2026-06-06",
+      "last_updated": "2026-06-07",
       "summary": "Cloudflare, Inc. \u2014 portfolio holding. Pending initial deep research; routes to growth prompt.",
       "thesis": {
-        "verdict": null,
-        "conviction": null,
+        "verdict": "PASS",
+        "conviction": 8,
         "previous_verdict": null,
-        "last_deep_research": null,
-        "report_path": null,
-        "critical_review_path": null
+        "last_deep_research": "2026-06-02",
+        "report_path": "deep_research_reports/NET_Q1_2026_opus.md",
+        "critical_review_path": null,
+        "reconciliation_note": "Gate 1 FAILS decisively for new money at fresh ATH (~29x rev); existing position HOLD, trim-criteria review warranted. Portfolio holding -> Tier 1 (Arm a). Reconciled by /update-graph 2026-06-07 from DR report primary source (summary.json was stale)."
       },
       "current": {
         "price": 250.11,
@@ -26131,7 +26299,7 @@ const GRAPH_DATA = {
       "management_promises": [],
       "trigger_points": [],
       "extraction_gaps": [],
-      "pending_initial_dr": true,
+      "pending_initial_dr": false,
       "portfolio_provenance": {
         "added_via": "portfolio.txt",
         "added_on": "2026-05-06",
@@ -28062,7 +28230,7 @@ const GRAPH_DATA = {
       "name": "Global Crude Oil Prices (Brent / WTI)",
       "type": "commodity",
       "created": "2026-04-22",
-      "last_updated": "2026-06-04",
+      "last_updated": "2026-06-07",
       "_phase_1f_note": "Tier 2 reciprocal commodity_exposure edges added for XOM, CVX, COP, FANG, PBR (d=1) and LNG (d=2) on 2026-04-22. Tier 1 edges (CCL, DAL, FDX) retain original DR-sourced wording and higher provenance weight.",
       "summary": "Post-Iran/Hormuz-spike oil regime \u2014 Brent ~$93-95, WTI ~$88-90 as of April 22 following the US-Iran ceasefire (April 7) that cut Brent 16% in a single day from the $113/bbl crisis peak. Three Tier 1 stocks have source-verified commodity_exposure edges spanning three structurally distinct channels: CCL is PURE DIRECT (zero fuel hedging, $160M bottom-line per 10% fuel move), DAL is DIRECT-WITH-ASYMMETRIC-COUNTER-HEDGE (jet fuel exposed via COGS but Monroe refinery ~200,000 bbl/day delivered $300M Q2 crisis benefit as crack spreads tripled), and FDX is ATTENUATED via a weekly-updated fuel surcharge index (surcharge lag creates short-term margin shifts but across-cycle pass-through with small positive spread at Freight). Hormuz geopolitical crisis tracking lives in the separate Iran-US Crisis HiveMind; this node references it via the economic transmission channel per macro-authoring-prompt \u00a7Cross-system crises.",
       "current": {
@@ -28594,6 +28762,17 @@ const GRAPH_DATA = {
           "sources": [
             "market-action.md Agent B A/Commodities",
             "news-intel.md Agent A A/B5/B7"
+          ],
+          "significance": "high",
+          "verification": "CONFIRMED",
+          "polarity": "ambiguous",
+          "source_agent": "A"
+        },
+        {
+          "date": "2026-06-07",
+          "content": "OPEC+ seven voluntary-cut producers (Saudi, Russia, Iraq, Kuwait, Kazakhstan, Algeria, Oman) agreed a 188,000 bpd July quota increase in the 06-07 video meeting \u2014 fourth increase since the Hormuz closure, same cadence as June; Saudi and Russia take the largest shares. INTERPRETATION: a paper increase, not physical supply \u2014 with the Strait of Hormuz effectively closed (~7 transits Fri vs ~100/day normal), incremental Gulf quota cannot reach market; a delegate-side framing called it 'more a policy signal than a real supply boost\u2026 the market is short of physical barrels, not quota announcements.' Mildly bearish on sentiment, near-neutral on the physical balance that sets the Brent risk premium. Closes the 'OPEC+ Sun 06-07 meeting pending' open thread carried in the 2026-06-04 signal. (Weekend run; energy markets closed \u2014 OPEC+ outcome prices at Sun-night futures open.)",
+          "sources": [
+            "news-intel.md Agent A A/B7"
           ],
           "significance": "high",
           "verification": "CONFIRMED",
@@ -34903,7 +35082,7 @@ const GRAPH_DATA = {
       "sector": "technology",
       "industry": null,
       "created": "2026-05-06",
-      "last_updated": "2026-06-06",
+      "last_updated": "2026-06-07",
       "summary": "Seagate Technology Holdings plc \u2014 portfolio holding. Pending initial deep research; routes to growth prompt.",
       "thesis": {
         "verdict": "PASS",
@@ -34943,9 +35122,9 @@ const GRAPH_DATA = {
         "pct_from_52w_low": 580.89,
         "last_close_date": "2026-06-05",
         "data_source": "yfinance_via_market-data.json",
-        "last_updated": "2026-06-06",
+        "last_updated": "2026-06-07",
         "pe_forward": 31.9,
-        "market_cap_B": 191.74
+        "market_cap_B": 190.03
       },
       "price_snapshots": [
         {
@@ -41344,7 +41523,7 @@ const GRAPH_DATA = {
     }
   ],
   "meta": {
-    "last_updated": "2026-06-06",
+    "last_updated": "2026-06-07",
     "total_nodes": 137,
     "total_edges": 134,
     "tier_counts": {
@@ -41354,7 +41533,7 @@ const GRAPH_DATA = {
       "sector": 5,
       "commodity": 1
     },
-    "updated_today": 128,
+    "updated_today": 7,
     "updated_this_week": 134,
     "active_triggers": 14,
     "elevated_triggers": 1,
